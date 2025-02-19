@@ -8020,6 +8020,45 @@ export const searchIndex = [
     ]
   },
   {
+    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Collection%E6%8E%A5%E5%8F%A3.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Collection 接口",
+        "slug": "collection-接口",
+        "content": "单列集合；需要导包，在 java.util 下；Collection 接口，不是类，是单列集合的顶层"
+      },
+      {
+        "header": "常见的成员方法",
+        "slug": "常见的成员方法",
+        "content": "方法\n作用 boolean add(Object e)\n添加元素 boolean addAll(Collection c)\n添加集合 boolean remove(Object o)\n删除元素 boolean removeIf(Predicate filter)\n按照条件删除元素 void clear()\n清空集合 int size()\n获取集合长度 boolean contains(Object o)\n是否包含 boolean isEmpty\n是否为空 Object[] toArray()\n集合转数组 Iterator<E> iterator()\n获取迭代器对象"
+      },
+      {
+        "header": "集合的遍历",
+        "slug": "集合的遍历",
+        "content": "转数组循环遍历 Collection c = new ArrayList();\nObject[] obj = c.toArray();\nfor(int i = 0; i < obj.length; i++){ System.out.println(obj[i]);\n} 迭代器遍历 Collection c = new ArrayList();\nIterator it = c.iterator();\nwhile (it.hasNext()) { Object obj = it.next(); System.out.println(obj);\n} 增强 for 循环(for each 遍历) 增强 for 循环底层也是迭代器遍历，只是简化写法\n增强 for 循环也可以用来遍历数组\n格式：for(数据类型 变量名 : 数组名/集合名){...} Collection c = new ArrayList();\nfor (Object obj : c) { System.out.println(obj);\n}"
+      },
+      {
+        "header": "方法的应用",
+        "slug": "方法的应用",
+        "content": "package com.wuziqi.gobang.controller; import java.util.ArrayList;\nimport java.util.Collection;\nimport java.util.Iterator;\nimport java.util.function.Predicate; public class DemoCollection { public static void main(String[] args) { // 多态格式的，Collection是类，所以只能创建子对象 Collection c = new ArrayList(); System.out.println(c); // 结果为[]: 说明底层重写了toString方法 // boolean add(Object e)：集合中添加一个元素 c.add(\"aaa\"); c.add(\"bbb\"); // Collection只能添加引用类型，这块不报错说明底层自动转成Integer类型了 c.add(111); System.out.println(c); // [aaa, bbb, 111] // boolean addAll(Collection c)：集合中添加一个集合 Collection c1 = new ArrayList(); c1.addAll(c); System.out.println(c1); // [aaa, bbb, 111] // boolean remove(Object o)：删除某一元素 c1.remove(\"aaa\"); System.out.println(c1); // [bbb, 111] // boolean removeIf(Predicate filter)：根据条件删除 // Object是泛型，当然可以换成String等 c.removeIf(new Predicate<Object>() { @Override public boolean test(Object t) { // Object和上边对应 // return true; // 满足条件，要把该元素删除掉 // reutrn false; // 不满足，不能删掉元素 return t instanceof Integer; } }); // c.removeIf((o) -> o.equals(111)); // 与上边的重写方法一样效果 System.out.println(c); // [aaa, bbb] // boolean isEmpty()：是否为空 System.out.println(c.isEmpty()); // false // int Size()：获取长度 System.out.println(c.size()); // 2 // boolean contains(Object o)：是否包含 System.out.println(c); // [aaa, bbb] c.add(111); System.out.println(c.contains(\"ddd\")); // false System.out.println(c.contains(111)); // true // void clear()：清空集合 c.clear(); System.out.println(c); // [] System.out.println(c.isEmpty()); // true // Object[] toArray()：转成数组进行遍历 System.out.println(c1); // [bbb, 111] Object[] objs = c1.toArray(); for (int i = 0; i < objs.length; i++){ System.out.println(objs[i]); // bbb 111 } // Iterator<E> iterator()：通过迭代器对象遍历 c1.add(new Pigs(\"小明\", 18)); // 结果：[bbb, 111, com.wuziqi.gobang.controller.Pigs@23fc625e] // 给Pigs加上toString()方法后 // 打印结果：[bbb, 111, Pigs{name='小明', age=18}] System.out.println(c1); /** * Iterator是接口 * 有两个子方法 * hasNext()：判断是否还有元素 * next()：获取下一个元素 * */ Iterator it = c1.iterator(); // 需要导包，也是多态格式 while (it.hasNext()){ System.out.println(it.next()); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环(for each遍历) for (Object obj : c1){ System.out.println(obj); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环遍历数组 int arr[] = {1,2,3,4,5,6,7,8,9}; for (Object obj : arr){ System.out.println(obj); // 1,2,3,4,5,6,7,8,9 } }\n}\nclass Pigs{ private String name; private int age; Pigs(String name, int age){ this.name = name; this.age = age; } @Override public String toString() { return \"Pigs{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Iterator%E8%BF%AD%E4%BB%A3%E5%99%A8.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Iterator 迭代器",
+        "slug": "iterator-迭代器",
+        "content": ""
+      }
+    ]
+  },
+  {
     "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8F%8C%E5%88%97%E9%9B%86%E5%90%88Map/HashMap%E5%AE%9E%E7%8E%B0%E7%B1%BB.html",
     "title": "",
     "pathLocale": "/",
@@ -8183,45 +8222,6 @@ export const searchIndex = [
         "header": "方法的应用",
         "slug": "方法的应用",
         "content": "package com.wuziqi.gobang.Map; import java.util.Comparator;\nimport java.util.Set;\nimport java.util.TreeMap;\nimport java.util.Map.Entry; public class DemoTreeMap { public static void main(String[] args) { TreeMap<String, Student> tm = new TreeMap<String, Student>(); tm.put(\"9527\", new Student(\"Tom\", 18)); tm.put(\"9530\", new Student(\"Jerry\", 18)); tm.put(\"9526\", new Student(\"Rose\", 18)); tm.put(\"9531\", new Student(\"Nose\", 18)); tm.put(\"9525\", new Student(\"Fore\", 18)); Set<String> keys = tm.keySet(); for (String key : keys) { System.out.println(key + \":\" + tm.get(key)); // 结果：根据键值，进行了排序 // 9525:Student{name='Fore', age=18} // 9526:Student{name='Rose', age=18} // 9527:Student{name='Tom', age=18} // 9530:Student{name='Jerry', age=18} // 9531:Student{name='Nose', age=18} } TreeMap<Student, String> tm2 = new TreeMap<Student, String>( new Comparator<Student>() { @Override public int compare(Student o1, Student o2) { int i = o1.getAge() - o2.getAge(); int ii = i == 0 ? o1.getName().compareTo(o2.getName()) : i; return ii; } } ); tm2.put(new Student(\"Tom\", 18),\"9527\"); tm2.put(new Student(\"Jerry\", 17), \"9530\"); tm2.put(new Student(\"Rose\", 16), \"9526\"); tm2.put(new Student(\"Nose\", 20), \"9531\"); tm2.put(new Student(\"Tom\", 18), \"9525\"); Set<Entry<Student, String>> sets = tm2.entrySet(); for (Entry<Student, String> entry : sets) { System.out.println(entry.getKey() + \":\" + entry.getValue()); // 结果： // Student{name='Rose', age=16}:9526 // Student{name='Jerry', age=17}:9530 // Student{name='Tom', age=18}:9525 // Student{name='Nose', age=20}:9531 } }\n}\nclass Student { private String name; private int age; public Student(String name, int age) { this.name = name; this.age = age; } public String getName() { return name; } public void setName(String name) { this.name = name; } public int getAge() { return age; } public void setAge(int age) { this.age = age; } @Override public String toString() { return \"Student{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}\n//class Student implements Comparable<Student>{\n// private String name;\n// private int age;\n//\n// public Student(String name, int age) {\n// this.name = name;\n// this.age = age;\n// }\n//\n// public String getName() {\n// return name;\n// }\n//\n// public void setName(String name) {\n// this.name = name;\n// }\n//\n// public int getAge() {\n// return age;\n// }\n//\n// public void setAge(int age) {\n// this.age = age;\n// }\n//\n// @Override\n// public String toString() {\n// return \"Student{\" +\n// \"name='\" + name + '\\'' +\n// \", age=\" + age +\n// '}';\n// }\n// @Override\n// public int compareTo(Student o) {\n// int i = this.age - o.age;\n// int ii = i == 0 ? this.name.compareTo(o.name) : i;\n// return ii;\n// }\n//}"
-      }
-    ]
-  },
-  {
-    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Collection%E6%8E%A5%E5%8F%A3.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Collection 接口",
-        "slug": "collection-接口",
-        "content": "单列集合；需要导包，在 java.util 下；Collection 接口，不是类，是单列集合的顶层"
-      },
-      {
-        "header": "常见的成员方法",
-        "slug": "常见的成员方法",
-        "content": "方法\n作用 boolean add(Object e)\n添加元素 boolean addAll(Collection c)\n添加集合 boolean remove(Object o)\n删除元素 boolean removeIf(Predicate filter)\n按照条件删除元素 void clear()\n清空集合 int size()\n获取集合长度 boolean contains(Object o)\n是否包含 boolean isEmpty\n是否为空 Object[] toArray()\n集合转数组 Iterator<E> iterator()\n获取迭代器对象"
-      },
-      {
-        "header": "集合的遍历",
-        "slug": "集合的遍历",
-        "content": "转数组循环遍历 Collection c = new ArrayList();\nObject[] obj = c.toArray();\nfor(int i = 0; i < obj.length; i++){ System.out.println(obj[i]);\n} 迭代器遍历 Collection c = new ArrayList();\nIterator it = c.iterator();\nwhile (it.hasNext()) { Object obj = it.next(); System.out.println(obj);\n} 增强 for 循环(for each 遍历) 增强 for 循环底层也是迭代器遍历，只是简化写法\n增强 for 循环也可以用来遍历数组\n格式：for(数据类型 变量名 : 数组名/集合名){...} Collection c = new ArrayList();\nfor (Object obj : c) { System.out.println(obj);\n}"
-      },
-      {
-        "header": "方法的应用",
-        "slug": "方法的应用",
-        "content": "package com.wuziqi.gobang.controller; import java.util.ArrayList;\nimport java.util.Collection;\nimport java.util.Iterator;\nimport java.util.function.Predicate; public class DemoCollection { public static void main(String[] args) { // 多态格式的，Collection是类，所以只能创建子对象 Collection c = new ArrayList(); System.out.println(c); // 结果为[]: 说明底层重写了toString方法 // boolean add(Object e)：集合中添加一个元素 c.add(\"aaa\"); c.add(\"bbb\"); // Collection只能添加引用类型，这块不报错说明底层自动转成Integer类型了 c.add(111); System.out.println(c); // [aaa, bbb, 111] // boolean addAll(Collection c)：集合中添加一个集合 Collection c1 = new ArrayList(); c1.addAll(c); System.out.println(c1); // [aaa, bbb, 111] // boolean remove(Object o)：删除某一元素 c1.remove(\"aaa\"); System.out.println(c1); // [bbb, 111] // boolean removeIf(Predicate filter)：根据条件删除 // Object是泛型，当然可以换成String等 c.removeIf(new Predicate<Object>() { @Override public boolean test(Object t) { // Object和上边对应 // return true; // 满足条件，要把该元素删除掉 // reutrn false; // 不满足，不能删掉元素 return t instanceof Integer; } }); // c.removeIf((o) -> o.equals(111)); // 与上边的重写方法一样效果 System.out.println(c); // [aaa, bbb] // boolean isEmpty()：是否为空 System.out.println(c.isEmpty()); // false // int Size()：获取长度 System.out.println(c.size()); // 2 // boolean contains(Object o)：是否包含 System.out.println(c); // [aaa, bbb] c.add(111); System.out.println(c.contains(\"ddd\")); // false System.out.println(c.contains(111)); // true // void clear()：清空集合 c.clear(); System.out.println(c); // [] System.out.println(c.isEmpty()); // true // Object[] toArray()：转成数组进行遍历 System.out.println(c1); // [bbb, 111] Object[] objs = c1.toArray(); for (int i = 0; i < objs.length; i++){ System.out.println(objs[i]); // bbb 111 } // Iterator<E> iterator()：通过迭代器对象遍历 c1.add(new Pigs(\"小明\", 18)); // 结果：[bbb, 111, com.wuziqi.gobang.controller.Pigs@23fc625e] // 给Pigs加上toString()方法后 // 打印结果：[bbb, 111, Pigs{name='小明', age=18}] System.out.println(c1); /** * Iterator是接口 * 有两个子方法 * hasNext()：判断是否还有元素 * next()：获取下一个元素 * */ Iterator it = c1.iterator(); // 需要导包，也是多态格式 while (it.hasNext()){ System.out.println(it.next()); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环(for each遍历) for (Object obj : c1){ System.out.println(obj); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环遍历数组 int arr[] = {1,2,3,4,5,6,7,8,9}; for (Object obj : arr){ System.out.println(obj); // 1,2,3,4,5,6,7,8,9 } }\n}\nclass Pigs{ private String name; private int age; Pigs(String name, int age){ this.name = name; this.age = age; } @Override public String toString() { return \"Pigs{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Iterator%E8%BF%AD%E4%BB%A3%E5%99%A8.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Iterator 迭代器",
-        "slug": "iterator-迭代器",
-        "content": ""
       }
     ]
   },
@@ -11121,217 +11121,6 @@ export const searchIndex = [
     ]
   },
   {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "函数组件",
-        "slug": "函数组件",
-        "content": "函数组件是 React 16.8 版本引入 Hooks API 后的主要编程范式"
-      },
-      {
-        "header": "1. 定义函数组件",
-        "slug": "_1-定义函数组件",
-        "content": "函数组件是一个使用 JavaScript 函数定义的 React 组件。它接收一个 props 参数，并返回一个 React 元素。 const MyComponent = (props) => { return <div>{props.message}</div>;\n};"
-      },
-      {
-        "header": "2. 使用 Props",
-        "slug": "_2-使用-props",
-        "content": "函数组件可以通过 props 接收父组件传递的数据，并在组件内部使用。也可以通过解构赋值的方式从 props 中获取数据。 const MyComponent = ({ message }) => { return <div>{message}</div>;\n};"
-      },
-      {
-        "header": "3. 使用 Hooks",
-        "slug": "_3-使用-hooks",
-        "content": "Hooks 是 React 16.8 版本引入的新特性，它允许你在函数组件内部使用状态和其他 React 特性。"
-      },
-      {
-        "header": "4. 性能优化",
-        "slug": "_4-性能优化",
-        "content": "函数组件默认是记忆化的，但可以通过 React.memo 进行进一步优化。 const MyComponent = React.memo(function MyComponent(props) { // 仅当 props 发生变化时才重新渲染\n});"
-      },
-      {
-        "header": "5. 错误处理",
-        "slug": "_5-错误处理",
-        "content": "函数组件可以使用 try/catch 语句来捕获和处理错误。也可以使用 Error Boundaries 来捕获函数组件中的错误。 class ErrorBoundary extends React.Component { constructor(props) { super(props); this.state = { hasError: false }; } static getDerivedStateFromError(error) { return { hasError: true }; } componentDidCatch(error, errorInfo) { // 你同样可以将错误日志上报给服务器 console.log(error, errorInfo); } render() { if (this.state.hasError) { // 你可以渲染任何自定义的退路 UI return <h1>Something went wrong.</h1>; } return this.props.children; }\n}"
-      },
-      {
-        "header": "6. 条件渲染",
-        "slug": "_6-条件渲染",
-        "content": "在函数组件中，你可以使用 JavaScript 的逻辑来实现条件渲染。例如，你可以使用 if 语句或三元运算符来根据条件渲染不同的元素。 const MyComponent = ({ isLoading, data }) => { if (isLoading) { return <div>Loading...</div>; } if (!data) { return <div>No data available</div>; } return <div>{data}</div>;\n};"
-      },
-      {
-        "header": "7.列表渲染",
-        "slug": "_7-列表渲染",
-        "content": "const MyComponent = ({ items }) => { return ( <ul> {items.map((item) => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n};"
-      },
-      {
-        "header": "8. Fragment 和高阶组件",
-        "slug": "_8-fragment-和高阶组件",
-        "content": "使用 Fragment 来分组元素，而不添加额外的 DOM 节点。 import React, { Fragment } from 'react'; const MyComponent = () => { return ( <Fragment> <ChildA /> <ChildB /> </Fragment> );\n};"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%B1%BB%E7%BB%84%E4%BB%B6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "类组件",
-        "slug": "类组件",
-        "content": ""
-      },
-      {
-        "header": "类组件技术点和概念",
-        "slug": "类组件技术点和概念",
-        "content": "类组件在 React 中是通过 ES6 类定义的，它们提供了更多的功能，如生命周期方法和状态管理。"
-      },
-      {
-        "header": "1. 定义类组件",
-        "slug": "_1-定义类组件",
-        "content": "类组件是通过继承React.Component来定义的。\nimport React, { Component } from 'react'; class MyComponent extends Component { render() { return <div>Hello, {this.props.name}</div>; }\n}"
-      },
-      {
-        "header": "2. 构造函数",
-        "slug": "_2-构造函数",
-        "content": "在构造函数中，可以初始化 state 和绑定方法。\nclass MyComponent extends Component { constructor(props) { super(props); this.state = { count: 0 }; this.handleClick = this.handleClick.bind(this); } handleClick() { this.setState({ count: this.state.count + 1 }); } render() { return ( <div> <p>You clicked {this.state.count} times</p> <button onClick={this.handleClick}>Click me</button> </div> ); }\n}"
-      },
-      {
-        "header": "3. render 方法",
-        "slug": "_3-render-方法",
-        "content": "render方法是类组件中唯一必须实现的方法，它返回要渲染的 React 元素。\nrender() { return <div>{this.props.message}</div>;\n}"
-      },
-      {
-        "header": "4. 生命周期方法",
-        "slug": "_4-生命周期方法",
-        "content": "类组件有多个生命周期方法，可以用来执行副作用操作或响应组件状态和 props 的变化。"
-      },
-      {
-        "header": "4.1 componentDidMount",
-        "slug": "_4-1-componentdidmount",
-        "content": "在组件挂载后执行，通常用于执行 DOM 操作或数据获取。\ncomponentDidMount() { console.log('Component is mounted');\n}"
-      },
-      {
-        "header": "4.2 componentDidUpdate",
-        "slug": "_4-2-componentdidupdate",
-        "content": "在组件更新后执行，可以用来处理 DOM 或执行副作用。\ncomponentDidUpdate(prevProps, prevState) { if (this.props.message !== prevProps.message) { console.log('Message has changed'); }\n}"
-      },
-      {
-        "header": "4.3 componentWillUnmount",
-        "slug": "_4-3-componentwillunmount",
-        "content": "在组件卸载前执行，通常用于清理操作，如取消网络请求或清除定时器。\ncomponentWillUnmount() { console.log('Component will unmount');\n}"
-      },
-      {
-        "header": "5. 状态管理",
-        "slug": "_5-状态管理",
-        "content": "类组件通过this.state来管理内部状态。\nthis.state = { count: 0 }; // 更新状态\nthis.setState({ count: this.state.count + 1 });"
-      },
-      {
-        "header": "6. 默认 Props 和 PropTypes",
-        "slug": "_6-默认-props-和-proptypes",
-        "content": "可以使用defaultProps和PropTypes来设置默认 props 和进行 props 类型检查。\nMyComponent.propTypes = { message: PropTypes.string.isRequired\n}; MyComponent.defaultProps = { message: 'Hello World'\n};"
-      },
-      {
-        "header": "7. 性能优化",
-        "slug": "_7-性能优化",
-        "content": "可以使用shouldComponentUpdate来进行性能优化，避免不必要的渲染。\nshouldComponentUpdate(nextProps, nextState) { return this.props.message !== nextProps.message;\n}"
-      },
-      {
-        "header": "8. Context",
-        "slug": "_8-context",
-        "content": "类组件可以使用contextType来消费 context。\nstatic contextType = MyContext; render() { const value = this.context; return <div>{value}</div>;\n}"
-      },
-      {
-        "header": "9. Refs",
-        "slug": "_9-refs",
-        "content": "类组件可以使用React.createRef来创建 refs，并可以通过this.ref.current来访问 DOM 元素或组件实例。\nconstructor(props) { super(props); this.myRef = React.createRef();\n} render() { return <div ref={this.myRef}>Hello</div>;\n}"
-      },
-      {
-        "header": "10. 错误处理",
-        "slug": "_10-错误处理",
-        "content": "类组件可以使用静态方法getDerivedStateFromError和componentDidCatch来捕获和处理错误。\nstatic getDerivedStateFromError(error) { return { hasError: true };\n} componentDidCatch(error, info) { // 错误处理逻辑\n}"
-      },
-      {
-        "header": "11. 条件渲染和列表渲染",
-        "slug": "_11-条件渲染和列表渲染",
-        "content": "与函数组件类似，类组件也可以进行条件渲染和列表渲染。\nrender() { const { items } = this.props; return ( <ul> {items.map(item => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E5%90%88.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "组件的组合",
-        "slug": "组件的组合",
-        "content": "组件组合是 React 中的核心概念之一，它允许你将复杂的 UI 分解成独立可复用的组件。"
-      },
-      {
-        "header": "1. 组合基础",
-        "slug": "_1-组合基础",
-        "content": "在 React 中，组件可以嵌套组合，子组件可以接收来自父组件的 props。\nfunction Welcome(props) { return <h1>Hello, {props.name}</h1>;\n} function App() { return <Welcome name=\"Kimi\" />;\n}"
-      },
-      {
-        "header": "2. Props 传递",
-        "slug": "_2-props-传递",
-        "content": "父组件可以通过 props 向子组件传递数据。\nfunction Avatar(props) { return ( <img src={props.user.avatarUrl} alt={props.user.name} /> );\n} function UserInfo(props) { return ( <div> <Avatar user={props.user} /> <h2>{props.user.name}</h2> </div> );\n}"
-      },
-      {
-        "header": "3. 子组件组合",
-        "slug": "_3-子组件组合",
-        "content": "子组件可以进一步组合更小的组件。\nfunction Comment(props) { return ( <div className=\"Comment\"> <Avatar user={props.author} /> <div className=\"Comment-content\"> <div className=\"username\">{props.author.name}</div> <div className=\"text\">{props.text}</div> </div> </div> );\n}"
-      },
-      {
-        "header": "4. 条件渲染",
-        "slug": "_4-条件渲染",
-        "content": "组件可以根据条件渲染不同的子组件。\nfunction App() { const [isLoggedIn, setIsLoggedIn] = useState(false); function handleLoginClick() { setIsLoggedIn(true); } return ( <div> {isLoggedIn ? <Dashboard /> : <Login />} <button onClick={handleLoginClick}>Log in</button> </div> );\n}"
-      },
-      {
-        "header": "5. 列表渲染",
-        "slug": "_5-列表渲染",
-        "content": "父组件可以使用 JavaScript 的map方法渲染子组件列表。\nfunction NumberList(props) { const numbers = props.numbers; return ( <ul> {numbers.map((number) => ( <ListItem key={number.id} value={number} /> ))} </ul> );\n}"
-      },
-      {
-        "header": "6. Fragments",
-        "slug": "_6-fragments",
-        "content": "使用React.Fragment可以组合多个子组件而不添加额外的 DOM 元素。\nimport React, { Fragment } from 'react'; function Dialog({ children, title }) { return ( <Fragment> <h1>{title}</h1> <p>{children}</p> </Fragment> );\n}"
-      },
-      {
-        "header": "7. 高阶组件（HOC）",
-        "slug": "_7-高阶组件-hoc",
-        "content": "高阶组件是一个函数，它接受一个组件并返回一个新的组件。\nfunction withExtraInfo(WrappedComponent) { return class extends React.Component { render() { const extraInfo = someFunctionToCollectExtraInfo(); return ( <WrappedComponent {...this.props} extraInfo={extraInfo} /> ); } };\n}"
-      },
-      {
-        "header": "8. Context API",
-        "slug": "_8-context-api",
-        "content": "Context 允许你在组件树中传递值，而不必在每个层级手动传递 props。\nconst MyContext = React.createContext(defaultValue); function App() { return ( <MyContext.Provider value={/* some value */}> <ChildComponent /> </MyContext.Provider> );\n} function ChildComponent() { return ( <MyContext.Consumer> {value => /* 渲染一些东西 */} </MyContext.Consumer> );\n}"
-      },
-      {
-        "header": "9. 组件的封装和复用",
-        "slug": "_9-组件的封装和复用",
-        "content": "你应该构建可复用的组件，这样你可以在不同的项目中使用它们。\nfunction Button({ onClick, children }) { return <button onClick={onClick}>{children}</button>;\n} function App() { return <Button onClick={() => alert('Clicked!')}>Click me</Button>;\n}"
-      },
-      {
-        "header": "10. 组件的拆分",
-        "slug": "_10-组件的拆分",
-        "content": "将大组件拆分为更小的子组件，可以提高代码的可维护性和可读性。\n// 大组件\nfunction Post({ user, content }) { return ( <article> <UserInfo user={user} /> <Content content={content} /> </article> );\n} // 小组件\nfunction UserInfo({ user }) { // ...\n} function Content({ content }) { // ...\n}"
-      },
-      {
-        "header": "11. 组件之间的通信",
-        "slug": "_11-组件之间的通信",
-        "content": "组件之间可以通过 props、state 提升、Context 或状态管理库（如 Redux）进行通信。"
-      },
-      {
-        "header": "12. 组件的性能优化",
-        "slug": "_12-组件的性能优化",
-        "content": "通过避免不必要的渲染和使用React.memo、useMemo、useCallback等进行性能优化。\n组件组合是 React 中最重要的概念之一，它使得构建大型应用程序变得简单和可维护。通过合理地组合组件，你可以创建出既强大又灵活的用户界面。"
-      }
-    ]
-  },
-  {
     "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useContext.html",
     "title": "",
     "pathLocale": "/",
@@ -11820,6 +11609,217 @@ export const searchIndex = [
         "header": "11. 状态的依赖性",
         "slug": "_11-状态的依赖性",
         "content": "如果你在useEffect中使用状态，请确保将状态作为依赖项，以避免遗漏更新。\nuseEffect(() => { console.log(count);\n}, [count]); // 将count作为依赖项"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "函数组件",
+        "slug": "函数组件",
+        "content": "函数组件是 React 16.8 版本引入 Hooks API 后的主要编程范式"
+      },
+      {
+        "header": "1. 定义函数组件",
+        "slug": "_1-定义函数组件",
+        "content": "函数组件是一个使用 JavaScript 函数定义的 React 组件。它接收一个 props 参数，并返回一个 React 元素。 const MyComponent = (props) => { return <div>{props.message}</div>;\n};"
+      },
+      {
+        "header": "2. 使用 Props",
+        "slug": "_2-使用-props",
+        "content": "函数组件可以通过 props 接收父组件传递的数据，并在组件内部使用。也可以通过解构赋值的方式从 props 中获取数据。 const MyComponent = ({ message }) => { return <div>{message}</div>;\n};"
+      },
+      {
+        "header": "3. 使用 Hooks",
+        "slug": "_3-使用-hooks",
+        "content": "Hooks 是 React 16.8 版本引入的新特性，它允许你在函数组件内部使用状态和其他 React 特性。"
+      },
+      {
+        "header": "4. 性能优化",
+        "slug": "_4-性能优化",
+        "content": "函数组件默认是记忆化的，但可以通过 React.memo 进行进一步优化。 const MyComponent = React.memo(function MyComponent(props) { // 仅当 props 发生变化时才重新渲染\n});"
+      },
+      {
+        "header": "5. 错误处理",
+        "slug": "_5-错误处理",
+        "content": "函数组件可以使用 try/catch 语句来捕获和处理错误。也可以使用 Error Boundaries 来捕获函数组件中的错误。 class ErrorBoundary extends React.Component { constructor(props) { super(props); this.state = { hasError: false }; } static getDerivedStateFromError(error) { return { hasError: true }; } componentDidCatch(error, errorInfo) { // 你同样可以将错误日志上报给服务器 console.log(error, errorInfo); } render() { if (this.state.hasError) { // 你可以渲染任何自定义的退路 UI return <h1>Something went wrong.</h1>; } return this.props.children; }\n}"
+      },
+      {
+        "header": "6. 条件渲染",
+        "slug": "_6-条件渲染",
+        "content": "在函数组件中，你可以使用 JavaScript 的逻辑来实现条件渲染。例如，你可以使用 if 语句或三元运算符来根据条件渲染不同的元素。 const MyComponent = ({ isLoading, data }) => { if (isLoading) { return <div>Loading...</div>; } if (!data) { return <div>No data available</div>; } return <div>{data}</div>;\n};"
+      },
+      {
+        "header": "7.列表渲染",
+        "slug": "_7-列表渲染",
+        "content": "const MyComponent = ({ items }) => { return ( <ul> {items.map((item) => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n};"
+      },
+      {
+        "header": "8. Fragment 和高阶组件",
+        "slug": "_8-fragment-和高阶组件",
+        "content": "使用 Fragment 来分组元素，而不添加额外的 DOM 节点。 import React, { Fragment } from 'react'; const MyComponent = () => { return ( <Fragment> <ChildA /> <ChildB /> </Fragment> );\n};"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%B1%BB%E7%BB%84%E4%BB%B6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "类组件",
+        "slug": "类组件",
+        "content": ""
+      },
+      {
+        "header": "类组件技术点和概念",
+        "slug": "类组件技术点和概念",
+        "content": "类组件在 React 中是通过 ES6 类定义的，它们提供了更多的功能，如生命周期方法和状态管理。"
+      },
+      {
+        "header": "1. 定义类组件",
+        "slug": "_1-定义类组件",
+        "content": "类组件是通过继承React.Component来定义的。\nimport React, { Component } from 'react'; class MyComponent extends Component { render() { return <div>Hello, {this.props.name}</div>; }\n}"
+      },
+      {
+        "header": "2. 构造函数",
+        "slug": "_2-构造函数",
+        "content": "在构造函数中，可以初始化 state 和绑定方法。\nclass MyComponent extends Component { constructor(props) { super(props); this.state = { count: 0 }; this.handleClick = this.handleClick.bind(this); } handleClick() { this.setState({ count: this.state.count + 1 }); } render() { return ( <div> <p>You clicked {this.state.count} times</p> <button onClick={this.handleClick}>Click me</button> </div> ); }\n}"
+      },
+      {
+        "header": "3. render 方法",
+        "slug": "_3-render-方法",
+        "content": "render方法是类组件中唯一必须实现的方法，它返回要渲染的 React 元素。\nrender() { return <div>{this.props.message}</div>;\n}"
+      },
+      {
+        "header": "4. 生命周期方法",
+        "slug": "_4-生命周期方法",
+        "content": "类组件有多个生命周期方法，可以用来执行副作用操作或响应组件状态和 props 的变化。"
+      },
+      {
+        "header": "4.1 componentDidMount",
+        "slug": "_4-1-componentdidmount",
+        "content": "在组件挂载后执行，通常用于执行 DOM 操作或数据获取。\ncomponentDidMount() { console.log('Component is mounted');\n}"
+      },
+      {
+        "header": "4.2 componentDidUpdate",
+        "slug": "_4-2-componentdidupdate",
+        "content": "在组件更新后执行，可以用来处理 DOM 或执行副作用。\ncomponentDidUpdate(prevProps, prevState) { if (this.props.message !== prevProps.message) { console.log('Message has changed'); }\n}"
+      },
+      {
+        "header": "4.3 componentWillUnmount",
+        "slug": "_4-3-componentwillunmount",
+        "content": "在组件卸载前执行，通常用于清理操作，如取消网络请求或清除定时器。\ncomponentWillUnmount() { console.log('Component will unmount');\n}"
+      },
+      {
+        "header": "5. 状态管理",
+        "slug": "_5-状态管理",
+        "content": "类组件通过this.state来管理内部状态。\nthis.state = { count: 0 }; // 更新状态\nthis.setState({ count: this.state.count + 1 });"
+      },
+      {
+        "header": "6. 默认 Props 和 PropTypes",
+        "slug": "_6-默认-props-和-proptypes",
+        "content": "可以使用defaultProps和PropTypes来设置默认 props 和进行 props 类型检查。\nMyComponent.propTypes = { message: PropTypes.string.isRequired\n}; MyComponent.defaultProps = { message: 'Hello World'\n};"
+      },
+      {
+        "header": "7. 性能优化",
+        "slug": "_7-性能优化",
+        "content": "可以使用shouldComponentUpdate来进行性能优化，避免不必要的渲染。\nshouldComponentUpdate(nextProps, nextState) { return this.props.message !== nextProps.message;\n}"
+      },
+      {
+        "header": "8. Context",
+        "slug": "_8-context",
+        "content": "类组件可以使用contextType来消费 context。\nstatic contextType = MyContext; render() { const value = this.context; return <div>{value}</div>;\n}"
+      },
+      {
+        "header": "9. Refs",
+        "slug": "_9-refs",
+        "content": "类组件可以使用React.createRef来创建 refs，并可以通过this.ref.current来访问 DOM 元素或组件实例。\nconstructor(props) { super(props); this.myRef = React.createRef();\n} render() { return <div ref={this.myRef}>Hello</div>;\n}"
+      },
+      {
+        "header": "10. 错误处理",
+        "slug": "_10-错误处理",
+        "content": "类组件可以使用静态方法getDerivedStateFromError和componentDidCatch来捕获和处理错误。\nstatic getDerivedStateFromError(error) { return { hasError: true };\n} componentDidCatch(error, info) { // 错误处理逻辑\n}"
+      },
+      {
+        "header": "11. 条件渲染和列表渲染",
+        "slug": "_11-条件渲染和列表渲染",
+        "content": "与函数组件类似，类组件也可以进行条件渲染和列表渲染。\nrender() { const { items } = this.props; return ( <ul> {items.map(item => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E5%90%88.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "组件的组合",
+        "slug": "组件的组合",
+        "content": "组件组合是 React 中的核心概念之一，它允许你将复杂的 UI 分解成独立可复用的组件。"
+      },
+      {
+        "header": "1. 组合基础",
+        "slug": "_1-组合基础",
+        "content": "在 React 中，组件可以嵌套组合，子组件可以接收来自父组件的 props。\nfunction Welcome(props) { return <h1>Hello, {props.name}</h1>;\n} function App() { return <Welcome name=\"Kimi\" />;\n}"
+      },
+      {
+        "header": "2. Props 传递",
+        "slug": "_2-props-传递",
+        "content": "父组件可以通过 props 向子组件传递数据。\nfunction Avatar(props) { return ( <img src={props.user.avatarUrl} alt={props.user.name} /> );\n} function UserInfo(props) { return ( <div> <Avatar user={props.user} /> <h2>{props.user.name}</h2> </div> );\n}"
+      },
+      {
+        "header": "3. 子组件组合",
+        "slug": "_3-子组件组合",
+        "content": "子组件可以进一步组合更小的组件。\nfunction Comment(props) { return ( <div className=\"Comment\"> <Avatar user={props.author} /> <div className=\"Comment-content\"> <div className=\"username\">{props.author.name}</div> <div className=\"text\">{props.text}</div> </div> </div> );\n}"
+      },
+      {
+        "header": "4. 条件渲染",
+        "slug": "_4-条件渲染",
+        "content": "组件可以根据条件渲染不同的子组件。\nfunction App() { const [isLoggedIn, setIsLoggedIn] = useState(false); function handleLoginClick() { setIsLoggedIn(true); } return ( <div> {isLoggedIn ? <Dashboard /> : <Login />} <button onClick={handleLoginClick}>Log in</button> </div> );\n}"
+      },
+      {
+        "header": "5. 列表渲染",
+        "slug": "_5-列表渲染",
+        "content": "父组件可以使用 JavaScript 的map方法渲染子组件列表。\nfunction NumberList(props) { const numbers = props.numbers; return ( <ul> {numbers.map((number) => ( <ListItem key={number.id} value={number} /> ))} </ul> );\n}"
+      },
+      {
+        "header": "6. Fragments",
+        "slug": "_6-fragments",
+        "content": "使用React.Fragment可以组合多个子组件而不添加额外的 DOM 元素。\nimport React, { Fragment } from 'react'; function Dialog({ children, title }) { return ( <Fragment> <h1>{title}</h1> <p>{children}</p> </Fragment> );\n}"
+      },
+      {
+        "header": "7. 高阶组件（HOC）",
+        "slug": "_7-高阶组件-hoc",
+        "content": "高阶组件是一个函数，它接受一个组件并返回一个新的组件。\nfunction withExtraInfo(WrappedComponent) { return class extends React.Component { render() { const extraInfo = someFunctionToCollectExtraInfo(); return ( <WrappedComponent {...this.props} extraInfo={extraInfo} /> ); } };\n}"
+      },
+      {
+        "header": "8. Context API",
+        "slug": "_8-context-api",
+        "content": "Context 允许你在组件树中传递值，而不必在每个层级手动传递 props。\nconst MyContext = React.createContext(defaultValue); function App() { return ( <MyContext.Provider value={/* some value */}> <ChildComponent /> </MyContext.Provider> );\n} function ChildComponent() { return ( <MyContext.Consumer> {value => /* 渲染一些东西 */} </MyContext.Consumer> );\n}"
+      },
+      {
+        "header": "9. 组件的封装和复用",
+        "slug": "_9-组件的封装和复用",
+        "content": "你应该构建可复用的组件，这样你可以在不同的项目中使用它们。\nfunction Button({ onClick, children }) { return <button onClick={onClick}>{children}</button>;\n} function App() { return <Button onClick={() => alert('Clicked!')}>Click me</Button>;\n}"
+      },
+      {
+        "header": "10. 组件的拆分",
+        "slug": "_10-组件的拆分",
+        "content": "将大组件拆分为更小的子组件，可以提高代码的可维护性和可读性。\n// 大组件\nfunction Post({ user, content }) { return ( <article> <UserInfo user={user} /> <Content content={content} /> </article> );\n} // 小组件\nfunction UserInfo({ user }) { // ...\n} function Content({ content }) { // ...\n}"
+      },
+      {
+        "header": "11. 组件之间的通信",
+        "slug": "_11-组件之间的通信",
+        "content": "组件之间可以通过 props、state 提升、Context 或状态管理库（如 Redux）进行通信。"
+      },
+      {
+        "header": "12. 组件的性能优化",
+        "slug": "_12-组件的性能优化",
+        "content": "通过避免不必要的渲染和使用React.memo、useMemo、useCallback等进行性能优化。\n组件组合是 React 中最重要的概念之一，它使得构建大型应用程序变得简单和可维护。通过合理地组合组件，你可以创建出既强大又灵活的用户界面。"
       }
     ]
   },

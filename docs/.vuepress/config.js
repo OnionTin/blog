@@ -17,6 +17,7 @@ export default defineUserConfig({
   host: 'localhost', // ip
   port: '8099', //端口号
   base: '/blog/',
+  // dest: 'dist',
   lang: 'zh-CN',
   title: '你好，幸运儿！',
   description: "OnionTin's owner blog",
