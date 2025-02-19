@@ -1,0 +1,53 @@
+<template><div><h2 id="keyof-类型运算符" tabindex="-1"><a class="header-anchor" href="#keyof-类型运算符"><span>keyof 类型运算符</span></a></h2>
+<blockquote>
+<p>keyof 类型运算符用于获取一个类型的所有键的联合，这些键可以是类型中的属性名、索引签名的键，或者是类型的字符串字面量类型。使用 keyof 类型运算符可以提高代码的复用性和灵活性。</p>
+</blockquote>
+<h3 id="基本用法" tabindex="-1"><a class="header-anchor" href="#基本用法"><span>基本用法</span></a></h3>
+<blockquote>
+<p>PointKeys 是一个类型，它包含了 Point 类型的所有键，即 &quot;x&quot; | &quot;y&quot; | &quot;z&quot;。</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts" data-title="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">Point</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  x<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  y<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  z<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">PointKeys</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> Point<span class="token punctuation">;</span>
+<span class="token comment">// "x" | "y" | "z"</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="结合索引签名" tabindex="-1"><a class="header-anchor" href="#结合索引签名"><span>结合索引签名</span></a></h3>
+<blockquote>
+<p>DictionaryKeys&lt;T&gt; 尝试获取 Dictionary&lt;T&gt; 类型的键，但由于 Dictionary 具有一个索引签名，所以 keyof 运算符返回的是索引签名的键的类型，通常是 string | number | symbol。</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts" data-title="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">Dictionary<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> <span class="token class-name">DictionaryKeys<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">></span></span> <span class="token operator">=</span> <span class="token keyword">keyof</span> Dictionary<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token comment">// "keyof" does not work with index signatures,</span>
+<span class="token comment">// so the type will be "string" | "number" | "symbol" (depending on the key type)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="字符串字面量类型" tabindex="-1"><a class="header-anchor" href="#字符串字面量类型"><span>字符串字面量类型</span></a></h3>
+<div class="language-typescript line-numbers-mode" data-ext="ts" data-title="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">Direction</span> <span class="token operator">=</span> <span class="token string">"up"</span> <span class="token operator">|</span> <span class="token string">"down"</span> <span class="token operator">|</span> <span class="token string">"left"</span> <span class="token operator">|</span> <span class="token string">"right"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">DirectionKeys</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> <span class="token keyword">typeof</span> Direction<span class="token punctuation">;</span>
+<span class="token comment">// "up" | "down" | "left" | "right"</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="在泛型中的应用" tabindex="-1"><a class="header-anchor" href="#在泛型中的应用"><span>在泛型中的应用</span></a></h3>
+<blockquote>
+<p>getProperty 是一个泛型函数，它接受一个对象 obj 和一个键 key，然后返回对象在该键上的值。K extends keyof T 确保 key 是 obj 的一个有效键。</p>
+</blockquote>
+<div class="language-typescript line-numbers-mode" data-ext="ts" data-title="ts"><pre v-pre class="language-typescript"><code><span class="token keyword">function</span> <span class="token generic-function"><span class="token function">getProperty</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>obj<span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token constant">K</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">K</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> point<span class="token operator">:</span> Point <span class="token operator">=</span> <span class="token punctuation">{</span> x<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> y<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> z<span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">getProperty</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> <span class="token string">"x"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// x: number</span>
+<span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token function">getProperty</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> <span class="token string">"y"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// y: number</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项"><span>注意事项</span></a></h3>
+<ol>
+<li>keyof 类型运算符不能直接用于接口或类型别名中的索引签名，因为索引签名的键的类型是动态的。</li>
+<li>当使用 keyof 运算符时，如果类型的键是数字索引签名，那么返回的键类型将是 number 或 string，具体取决于索引签名的配置。</li>
+<li>keyof 运算符可以与类型查询操作符 T[K] 结合使用，以获取特定键的类型。</li>
+</ol>
+</div></template>
+
+

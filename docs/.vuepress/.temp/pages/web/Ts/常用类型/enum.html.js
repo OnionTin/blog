@@ -1,0 +1,16 @@
+import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Ts/常用类型/enum.html.vue"
+const data = JSON.parse("{\"path\":\"/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/enum.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"enmu(枚举: 把所有的可能的情况都列出来)\",\"slug\":\"enmu-枚举-把所有的可能的情况都列出来\",\"link\":\"#enmu-枚举-把所有的可能的情况都列出来\",\"children\":[{\"level\":3,\"title\":\"普通枚举\",\"slug\":\"普通枚举\",\"link\":\"#普通枚举\",\"children\":[]},{\"level\":3,\"title\":\"带字符串值的枚举\",\"slug\":\"带字符串值的枚举\",\"link\":\"#带字符串值的枚举\",\"children\":[]},{\"level\":3,\"title\":\"带数字值的枚举\",\"slug\":\"带数字值的枚举\",\"link\":\"#带数字值的枚举\",\"children\":[]},{\"level\":3,\"title\":\"常数成员和计算成员\",\"slug\":\"常数成员和计算成员\",\"link\":\"#常数成员和计算成员\",\"children\":[]},{\"level\":3,\"title\":\"反向映射\",\"slug\":\"反向映射\",\"link\":\"#反向映射\",\"children\":[]},{\"level\":3,\"title\":\"枚举作为类型\",\"slug\":\"枚举作为类型\",\"link\":\"#枚举作为类型\",\"children\":[]},{\"level\":3,\"title\":\"字符串枚举\",\"slug\":\"字符串枚举\",\"link\":\"#字符串枚举\",\"children\":[]},{\"level\":3,\"title\":\"数字枚举\",\"slug\":\"数字枚举\",\"link\":\"#数字枚举\",\"children\":[]},{\"level\":3,\"title\":\"外部枚举\",\"slug\":\"外部枚举\",\"link\":\"#外部枚举\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727255714000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"web/Ts/常用类型/enum.md\",\"excerpt\":\"<h2>enmu(枚举: 把所有的可能的情况都列出来)</h2>\\n<blockquote>\\n<p>枚举（Enums）是一种特殊的类型，它为一组数值赋予了更加友好的名字。枚举可以被用来定义命名的常数集合，这使得代码更加易读和易于维护。</p>\\n</blockquote>\\n<h3>普通枚举</h3>\\n<div class=\\\"language-typescript\\\" data-ext=\\\"ts\\\" data-title=\\\"ts\\\"><pre class=\\\"language-typescript\\\"><code>enmu Sex<span class=\\\"token punctuation\\\">{</span>\\n  Male<span class=\\\"token punctuation\\\">,</span>   <span class=\\\"token comment\\\">// 不写值的话, 自动转成0</span>\\n  Female <span class=\\\"token operator\\\">=</span> <span class=\\\"token number\\\">1</span>  <span class=\\\"token comment\\\">// 赋值为1</span>\\n<span class=\\\"token punctuation\\\">}</span>\\n<span class=\\\"token keyword\\\">let</span> i<span class=\\\"token operator\\\">:</span> <span class=\\\"token punctuation\\\">{</span> name<span class=\\\"token operator\\\">:</span>  <span class=\\\"token builtin\\\">string</span><span class=\\\"token punctuation\\\">,</span> sex<span class=\\\"token operator\\\">:</span> Sex <span class=\\\"token punctuation\\\">}</span><span class=\\\"token punctuation\\\">;</span>\\ni <span class=\\\"token operator\\\">=</span> <span class=\\\"token punctuation\\\">{</span>\\n  name<span class=\\\"token operator\\\">:</span> <span class=\\\"token string\\\">'ths'</span><span class=\\\"token punctuation\\\">,</span>\\n  sex<span class=\\\"token operator\\\">:</span> Sex<span class=\\\"token punctuation\\\">.</span>Male <span class=\\\"token comment\\\">// 自动转成0了</span>\\n<span class=\\\"token punctuation\\\">}</span>\\n</code></pre></div>\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

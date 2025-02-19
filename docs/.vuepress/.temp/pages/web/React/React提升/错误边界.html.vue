@@ -1,0 +1,59 @@
+<template><div><!-- @format -->
+<h2 id="react-中错误边界-error-boundaries" tabindex="-1"><a class="header-anchor" href="#react-中错误边界-error-boundaries"><span>React 中错误边界（Error Boundaries）</span></a></h2>
+<p>错误边界（Error Boundaries）是 React 中用于捕获子组件树中 JavaScript 错误并提供回退 UI 的组件，它们在渲染期间、生命周期方法和构造函数中捕获错误。</p>
+<h3 id="_1-定义错误边界" tabindex="-1"><a class="header-anchor" href="#_1-定义错误边界"><span>1. 定义错误边界</span></a></h3>
+<p>错误边界是一个 React 组件，它通过定义特定的生命周期方法来捕获子组件中的错误。</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx" data-title="jsx"><pre v-pre class="language-jsx"><code><span class="token keyword">class</span> <span class="token class-name">ErrorBoundary</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">hasError</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">getDerivedStateFromError</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 更新 state 使下一次渲染能够显示降级后的 UI</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">hasError</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentDidCatch</span><span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> errorInfo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 你同样可以将错误日志上报给服务器</span>
+    <span class="token function">logErrorToMyService</span><span class="token punctuation">(</span>error<span class="token punctuation">,</span> errorInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>hasError<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 你可以自定义降级后的 UI 并渲染</span>
+      <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Something went wrong.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-使用错误边界" tabindex="-1"><a class="header-anchor" href="#_2-使用错误边界"><span>2. 使用错误边界</span></a></h3>
+<p>错误边界可以像普通组件一样使用，包裹可能抛出错误的组件。</p>
+<div class="language-jsx line-numbers-mode" data-ext="jsx" data-title="jsx"><pre v-pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ErrorBoundary</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MyComponent</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ErrorBoundary</span></span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-捕获错误的范围" tabindex="-1"><a class="header-anchor" href="#_3-捕获错误的范围"><span>3. 捕获错误的范围</span></a></h3>
+<p>错误边界只能捕获其子组件树中的错误，而不能捕获其自身的错误。</p>
+<h3 id="_4-错误边界的限制" tabindex="-1"><a class="header-anchor" href="#_4-错误边界的限制"><span>4. 错误边界的限制</span></a></h3>
+<p>错误边界不能捕获以下错误：</p>
+<ul>
+<li>事件处理器中的错误</li>
+<li>异步代码中的错误（例如 <code v-pre>setTimeout</code> 或 <code v-pre>requestAnimationFrame</code> 回调）</li>
+<li>服务端渲染中的错误</li>
+<li>其自身（而非子组件）中的错误</li>
+</ul>
+<h3 id="_5-错误处理" tabindex="-1"><a class="header-anchor" href="#_5-错误处理"><span>5. 错误处理</span></a></h3>
+<p>错误边界通过 <code v-pre>static getDerivedStateFromError()</code> 和 <code v-pre>componentDidCatch()</code> 方法来处理错误。</p>
+<ul>
+<li><code v-pre>static getDerivedStateFromError()</code>：在渲染阶段被调用，用于更新状态以显示回退 UI。</li>
+<li><code v-pre>componentDidCatch()</code>：在提交阶段被调用，可以执行副作用操作，如日志记录。</li>
+</ul>
+<h3 id="_6-性能考虑" tabindex="-1"><a class="header-anchor" href="#_6-性能考虑"><span>6. 性能考虑</span></a></h3>
+<p>错误边界可能会影响性能，因为它们增加了组件的渲染次数。</p>
+<h3 id="_7-与-concurrent-mode-结合" tabindex="-1"><a class="header-anchor" href="#_7-与-concurrent-mode-结合"><span>7. 与 Concurrent Mode 结合</span></a></h3>
+<p>错误边界可以与 React 的 Concurrent Mode 结合使用，以实现更流畅的加载体验和更好的资源调度。</p>
+<h3 id="_8-实际案例" tabindex="-1"><a class="header-anchor" href="#_8-实际案例"><span>8. 实际案例</span></a></h3>
+<p>错误边界通常用于捕获并处理应用程序中的意外错误，避免整个应用崩溃，提供更优雅的错误处理方式。</p>
+</div></template>
+
+

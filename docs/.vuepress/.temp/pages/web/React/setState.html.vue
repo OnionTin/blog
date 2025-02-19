@@ -1,0 +1,49 @@
+<template><div><!-- @format -->
+<h2 id="setstate" tabindex="-1"><a class="header-anchor" href="#setstate"><span>setState</span></a></h2>
+<blockquote>
+<p>setState 触发更新是异步的，函数式的话在函数体内能够获取到最新的值</p>
+</blockquote>
+<h3 id="setstate-更新状态的-2-种写法" tabindex="-1"><a class="header-anchor" href="#setstate-更新状态的-2-种写法"><span>setState 更新状态的 2 种写法</span></a></h3>
+<h4 id="_1-setstate-statechange-callback-对象式的-setstate" tabindex="-1"><a class="header-anchor" href="#_1-setstate-statechange-callback-对象式的-setstate"><span>1. setState(stateChange,[callback]) ------对象式的 setState</span></a></h4>
+<ol>
+<li>stateChange 为状态改变对象(该对象可以体现出状态的更改)</li>
+<li>callback 是可选的回调函数，它在状态更新完毕、界面也更新后(render 调用后)才被调用</li>
+</ol>
+<h4 id="_2-setstate-updater-callback-函数式的-setstate" tabindex="-1"><a class="header-anchor" href="#_2-setstate-updater-callback-函数式的-setstate"><span>2. setState(updater,[callback])------函数式的 setState</span></a></h4>
+<ol>
+<li>updater 为返回 stateChange 对象的函数。</li>
+<li>updater 可以接收到 state 和 props。</li>
+<li>callback 是可选的回调函数,它在状态更新、界面也更新后(render 调用后)才被调用。</li>
+</ol>
+<h4 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结:</span></a></h4>
+<ol>
+<li>
+<p>对象式的 setState 是函数式的 setState 的简写方式(语法糖)</p>
+</li>
+<li>
+<p>使用原则:</p>
+<p>(1). 如果新状态不依赖于原状态 ==&gt; 使用对象方式</p>
+<p>(2). 如果新状态依赖于原状态 ==&gt; 使用函数方式</p>
+<p>(3). 如果需要在 setState()执行后获取最新的状态数据，要在第二个 callback 函数中读取</p>
+</li>
+</ol>
+<div class="language-jsx line-numbers-mode" data-ext="jsx" data-title="jsx"><pre v-pre class="language-jsx"><code>state <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// 对象式的setState</span>
+  <span class="token comment">// 1. 获取原来的count值</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> count <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+  <span class="token comment">// 2. 更新状态</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">count</span><span class="token operator">:</span> count <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'12行的输出'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 0</span>
+
+  <span class="token comment">// 函数式的setState</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> props</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">count</span><span class="token operator">:</span> state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+
