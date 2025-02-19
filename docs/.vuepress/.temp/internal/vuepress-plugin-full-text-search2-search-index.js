@@ -51,6 +51,63 @@ export const searchIndex = [
     ]
   },
   {
+    "path": "/nvm/nvm.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "nvm",
+        "slug": "nvm",
+        "content": ""
+      },
+      {
+        "header": "1.下载",
+        "slug": "_1-下载",
+        "content": "下载 nvm 安装包\n官网"
+      },
+      {
+        "header": "2.卸载 Node",
+        "slug": "_2-卸载-node",
+        "content": ""
+      },
+      {
+        "header": "3. 安装 Nvm",
+        "slug": "_3-安装-nvm",
+        "content": ""
+      },
+      {
+        "header": "4. 配置镜像",
+        "slug": "_4-配置镜像",
+        "content": "找到 nvm 安装路径 -> 找到 settings.txt 文件 -> 添加下载源 node_mirror: https://npmmirror.com/mirrors/node/\nnpm_mirror: https://npmmirror.com/mirrors/npm/"
+      },
+      {
+        "header": "安装 Node",
+        "slug": "安装-node",
+        "content": "nvm install 18.xxx"
+      },
+      {
+        "header": "查看已安装的 Node 版本",
+        "slug": "查看已安装的-node-版本",
+        "content": "nvm ls\nnode -v"
+      },
+      {
+        "header": "使用 Node",
+        "slug": "使用-node",
+        "content": "nvm use 18.xxx"
+      },
+      {
+        "header": "Nvm 相关命令",
+        "slug": "nvm-相关命令",
+        "content": "命令\n作用 nvm list\n查看已经安装的版本 nvm list installed\n查看已经安装的版本 nvm list available\n查看网络可以安装的版本 nvm arch\n查看当前的系统位数和当前 nodejs 的位数 nvm install [arch]\n安装制定版本的 node 并且可以指定平台 version 版本号 arch 平台 nvm on\n打开 nodejs 版本控制 nvm off\n关闭 nodejs 版本控制 nvm proxy [url]\n查看和设置代理 nvm node_mirror [url]\n设置或者查看 setting.txt 中的 node_mirror，如果不设置的默认是 https://nodejs.org/dist/ nvm npm_mirror [url]\n设置或者查看 setting.txt 中的 npm_mirror,如果不设置的话默认的是：https://github.com/npm/npm/archive/. nvm uninstall [version]\n卸载指定的版本 nvm use [version] [arch]\n切换指定的 node 版本和位数 nvm root [path]\n设置和查看 root 路径 nvm version\n查看当前的版本 nvm install-latest-npm\n安装最新的 npm nvm install-latest-ctags\n安装最新的 ctags nvm reinstall-packages [version]\n重新安装指定的 npm 包 nvm unload\n卸载 nvm"
+      },
+      {
+        "header": "环境配置",
+        "slug": "环境配置",
+        "content": ""
+      }
+    ]
+  },
+  {
     "path": "/posts/archive1.html",
     "title": "Archive Article1",
     "pathLocale": "/",
@@ -403,63 +460,6 @@ export const searchIndex = [
     ]
   },
   {
-    "path": "/nvm/nvm.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "nvm",
-        "slug": "nvm",
-        "content": ""
-      },
-      {
-        "header": "1.下载",
-        "slug": "_1-下载",
-        "content": "下载 nvm 安装包\n官网"
-      },
-      {
-        "header": "2.卸载 Node",
-        "slug": "_2-卸载-node",
-        "content": ""
-      },
-      {
-        "header": "3. 安装 Nvm",
-        "slug": "_3-安装-nvm",
-        "content": ""
-      },
-      {
-        "header": "4. 配置镜像",
-        "slug": "_4-配置镜像",
-        "content": "找到 nvm 安装路径 -> 找到 settings.txt 文件 -> 添加下载源 node_mirror: https://npmmirror.com/mirrors/node/\nnpm_mirror: https://npmmirror.com/mirrors/npm/"
-      },
-      {
-        "header": "安装 Node",
-        "slug": "安装-node",
-        "content": "nvm install 18.xxx"
-      },
-      {
-        "header": "查看已安装的 Node 版本",
-        "slug": "查看已安装的-node-版本",
-        "content": "nvm ls\nnode -v"
-      },
-      {
-        "header": "使用 Node",
-        "slug": "使用-node",
-        "content": "nvm use 18.xxx"
-      },
-      {
-        "header": "Nvm 相关命令",
-        "slug": "nvm-相关命令",
-        "content": "命令\n作用 nvm list\n查看已经安装的版本 nvm list installed\n查看已经安装的版本 nvm list available\n查看网络可以安装的版本 nvm arch\n查看当前的系统位数和当前 nodejs 的位数 nvm install [arch]\n安装制定版本的 node 并且可以指定平台 version 版本号 arch 平台 nvm on\n打开 nodejs 版本控制 nvm off\n关闭 nodejs 版本控制 nvm proxy [url]\n查看和设置代理 nvm node_mirror [url]\n设置或者查看 setting.txt 中的 node_mirror，如果不设置的默认是 https://nodejs.org/dist/ nvm npm_mirror [url]\n设置或者查看 setting.txt 中的 npm_mirror,如果不设置的话默认的是：https://github.com/npm/npm/archive/. nvm uninstall [version]\n卸载指定的版本 nvm use [version] [arch]\n切换指定的 node 版本和位数 nvm root [path]\n设置和查看 root 路径 nvm version\n查看当前的版本 nvm install-latest-npm\n安装最新的 npm nvm install-latest-ctags\n安装最新的 ctags nvm reinstall-packages [version]\n重新安装指定的 npm 包 nvm unload\n卸载 nvm"
-      },
-      {
-        "header": "环境配置",
-        "slug": "环境配置",
-        "content": ""
-      }
-    ]
-  },
-  {
     "path": "/ui/ui.html",
     "title": "",
     "pathLocale": "/",
@@ -509,42 +509,6 @@ export const searchIndex = [
     "title": "",
     "pathLocale": "/",
     "contents": []
-  },
-  {
-    "path": "/web/Ts/",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Ts",
-        "slug": "ts",
-        "content": ""
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/TypeScript.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "TypeScript",
-        "slug": "typescript",
-        "content": "ts 是 js 的超级，在满足所有的 js 语法基础上，又增加了类型判断等特性，通过 tsc 编译成我们想要的 js 版本"
-      }
-    ]
-  },
-  {
-    "path": "/web/Vue/",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Vue",
-        "slug": "vue",
-        "content": "react 和 vue 对比,细致全面\n;"
-      }
-    ]
   },
   {
     "path": "/web/React/BrowserRouter.html",
@@ -1640,6 +1604,42 @@ export const searchIndex = [
         "header": "虚拟 DOM 的组成——ReactElementelement 对象结构：",
         "slug": "虚拟-dom-的组成——reactelementelement-对象结构",
         "content": "type：元素的类型，可以是原生 html 类型（字符串），或者自定义组件（函数或 class）\nkey：组件的唯一标识，用于 Diff 算法，下面会详细介绍\nref：用于访问原生 dom 节点\nprops：传入组件的 props，chidren 是 props 中的一个属性，它存储了当前组件的孩子节点，可以是数组（多个孩子节点）或对象（只有一个孩子节点）\nowner：当前正在构建的 Component 所属的 Component\nself：（非生产环境）指定当前位于哪个组件实例\n_source：（非生产环境）指定调试代码来自的文件(fileName)和代码行数(lineNumber);"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Ts",
+        "slug": "ts",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/TypeScript.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "TypeScript",
+        "slug": "typescript",
+        "content": "ts 是 js 的超级，在满足所有的 js 语法基础上，又增加了类型判断等特性，通过 tsc 编译成我们想要的 js 版本"
+      }
+    ]
+  },
+  {
+    "path": "/web/Vue/",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Vue",
+        "slug": "vue",
+        "content": "react 和 vue 对比,细致全面\n;"
       }
     ]
   },
@@ -5032,1392 +5032,6 @@ export const searchIndex = [
     ]
   },
   {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/Function.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Function",
-        "slug": "function",
-        "content": "全局类型 Function 是所有 JavaScript 函数值的类型。它包括了所有函数对象共有的属性，如 call、bind 和 apply。此外，Function 类型的值可以被调用，并且这些调用返回 any 类型 。 当你在函数中声明 this 参数时，你为该函数调用时的上下文对象提供了一个类型注解。这在对象的方法或回调函数中尤其有用，以确保函数调用时 this 的类型是正确的。Printer 接口定义了一个 print 方法，该方法声明了 this 参数为 Printer 类型。这确保了 print 方法中的 this 指的是 Printer 类型的对象。 interface Printer { print(this: Printer, message: string): void;\n} function setupPrinter(p: Printer) { const printer: Printer = { print: function (this: Printer, message: string) { console.log(message); }, }; window.onload = function (this: Printer) { this.print(\"The page has finished loading.\"); }.bind(printer);\n} const myPrinter: Printer = { print: function (this: Printer, message: string) { console.log(`Printing: ${message}`); },\n}; setupPrinter(myPrinter); 在回调函数中声明 this 参数时，你可以确保回调函数中的 this 与期望的类型一致。doSomething 函数接受一个回调函数 f，该回调函数声明了 this 参数为 Printer 类型。这确保了当 doSomething 调用 f 时，this 指向 Printer 类型的对象。 function doSomething(f: (this: Printer, message: string) => void) { return f.call(printer, \"Hello, World!\");\n} doSomething(myPrinter.print);"
-      },
-      {
-        "header": "注意",
-        "slug": "注意",
-        "content": "需要注意的是，箭头函数不绑定自己的 this，它们继承父执行上下文的 this。因此，当你在类的方法中使用箭头函数时，this 可能不会指向你期望的对象。为了避免这种情况，可以使用普通函数或使用 bind 来确保 this 的正确性。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/never.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "never",
-        "slug": "never",
-        "content": "永远不会有返回值, 空是有值的, 值为空, 所以不能用 never function a(): never { throw new error(\"这种是没有返回值...\");\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/unknown.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "unknown(未知类型, 类型安全的 any)",
-        "slug": "unknown-未知类型-类型安全的-any",
-        "content": "// any类型可以赋值给任意变量\nlet a: any;\nlet b = \"string\";\nb = a;\nb = true;\n// 所以不建议使用any, 而是用unknown;\n// unknown类型不可以赋值给任意变量\n// 解决办法:\nlet c: unknown;\nlet d: string;\nc = \"hello\";\nd = c as string; // 类型断言\n// 或者\nd = <string>c; // 类型断言"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/void.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "void",
-        "slug": "void",
-        "content": "函数没有返回值的时候用 function a(): void { return; // 或者 return undefined; // 或者 return null;\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%A1%A8%E8%BE%BE%E5%BC%8F.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "函数类型表达式",
-        "slug": "函数类型表达式",
-        "content": "函数类型表达式用于定义函数的类型。这包括函数的参数类型、返回值类型以及可选的 this 上下文类型。函数类型表达式可以是匿名的，也可以是具名的（类型别名）。"
-      },
-      {
-        "header": "基本函数类型表达式",
-        "slug": "基本函数类型表达式",
-        "content": "// 匿名函数类型表达式\nlet myFunction: (param: string) => number; // 具名函数类型表达式\ntype MyFunctionType = (param: string) => number;"
-      },
-      {
-        "header": "函数类型的组成部分",
-        "slug": "函数类型的组成部分",
-        "content": "参数类型：函数的每个参数都需要一个类型注解。\n返回类型：使用 => 后面跟着返回值类型来指定函数的返回类型。\n可选参数：使用 ? 指定可选参数。\n剩余参数：使用 ... 定义剩余参数。\nthis 类型：使用 this 参数来定义函数调用时上下文的类型。 // 带参数和返回类型的函数\nlet greet: (name: string) => string;\ngreet = function (name: string): string { return `Hello, ${name}!`;\n}; // 带可选参数的函数\nlet log: (message: string, important?: boolean) => void;\nlog = function (message: string, important: boolean = false): void { if (important) { console.error(message); } else { console.log(message); }\n}; // 带剩余参数的函数\nlet sum: (...numbers: number[]) => number;\nsum = function (...numbers: number[]): number { return numbers.reduce((acc, curr) => acc + curr, 0);\n}; // 带 `this` 类型的函数\ntype StringArray = Array<string>;\nlet join: (this: StringArray, separator: string) => string;\njoin = function (this: StringArray, separator: string): string { return this.join(separator);\n};"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "函数重载",
-        "slug": "函数重载",
-        "content": "函数重载（Function Overloading）是一种允许一个函数根据参数的类型和数量有不同的行为的机制。函数重载通过在相同的函数名下提供多个不同的函数签名来实现。"
-      },
-      {
-        "header": "函数重载的基本语法",
-        "slug": "函数重载的基本语法",
-        "content": "greet 函数被重载了两次，一次接受一个 string 类型的参数，另一次接受一个 number 类型的参数。实现签名包含了两个重载签名的逻辑。 function greet(person: string): void;\nfunction greet(person: number): void; function greet(person: string | number): void { if (typeof person === \"string\") { console.log(\"Hello, \" + person); } else { console.log(\"Hello, person number \" + person); }\n}"
-      },
-      {
-        "header": "重载签名和实现签名",
-        "slug": "重载签名和实现签名",
-        "content": ""
-      },
-      {
-        "header": "重载签名",
-        "slug": "重载签名",
-        "content": "定义了函数可以被调用的不同方式。它们指定了函数的参数列表和返回类型，但不包含函数的实现。"
-      },
-      {
-        "header": "重载签名的例子",
-        "slug": "重载签名的例子",
-        "content": "// 重载签名\nfunction processInput(input: string): void;\nfunction processInput(input: number): void;\nfunction processInput(input: boolean): void; // 实现签名\nfunction processInput(input: string | number | boolean): void { if (typeof input === \"string\") { console.log(\"Processing string input: \" + input); } else if (typeof input === \"number\") { console.log(\"Processing number input: \" + input); } else { console.log(\"Processing boolean input: \" + input); }\n}"
-      },
-      {
-        "header": "实现签名",
-        "slug": "实现签名",
-        "content": "是函数的实际实现，它包含了函数的逻辑。实现签名必须与重载签名匹配，但可以包含更多的逻辑。"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "重载签名必须在实现签名之前声明。\n重载签名的参数类型必须不同，否则 TypeScript 编译器无法区分它们。\n实现签名的参数类型应该是重载签名参数类型的联合。\n函数的实现应该能够处理所有重载签名定义的情况。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%89%A9%E4%BD%99%E5%BD%A2%E5%8F%82.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "剩余形参",
-        "slug": "剩余形参",
-        "content": "剩余参数（Rest Parameters）是一种函数参数的高级用法，它允许你将一个不确定数量的参数表示为一个数组。这在处理函数调用时非常有用，特别是当你需要传递任意数量的参数时。"
-      },
-      {
-        "header": "剩余形参",
-        "slug": "剩余形参-1",
-        "content": "剩余形参使用三个点 ... 开头，它出现在函数参数列表的最后，用于收集所有剩余的参数。sum 函数使用剩余形参 ...numbers 来收集所有传递给它的数字，并使用 reduce 方法计算总和。 function sum(...numbers: number[]): number { return numbers.reduce((acc, curr) => acc + curr, 0);\n} console.log(sum(1, 2, 3, 4, 5)); // 输出: 15"
-      },
-      {
-        "header": "剩余实参",
-        "slug": "剩余实参",
-        "content": "剩余实参（Rest Arguments）是 JavaScript 的一个特性，它允许你将函数调用时的实参表示为一个数组。这在 TypeScript 中也可以使用，但它不是类型系统的一部分，而是 JavaScript 的一部分。我们使用剩余实参 ...numbers 来将数组 numbers 作为单独的参数传递给 sum 函数。 function sum(...args: number[]) { return args.reduce((acc, curr) => acc + curr, 0);\n} const numbers = [1, 2, 3, 4, 5];\nconsole.log(sum(...numbers)); // 输出: 15"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%84.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "参数解构",
-        "slug": "参数解构",
-        "content": "参数解构（Parameter Destructuring）是一种方便的功能，允许你在函数调用时直接解构传递给函数的参数。这意味着你可以在函数体内直接访问对象或数组的特定属性或元素，而不需要显式地从参数中提取它们。"
-      },
-      {
-        "header": "对象参数解构",
-        "slug": "对象参数解构",
-        "content": "当你的函数接受一个对象作为参数时，你可以在函数定义时直接解构这个对象。greetUser 函数在参数定义时解构了 User 对象，并且为 email 提供了一个默认值。 interface User { name: string; age: number; email?: string; // 可选属性\n} function greet(user: User) { console.log(`Hello, ${user.name}!`);\n} // 使用解构\nfunction greetUser({ name, age, email = \"no email provided\" }: User) { console.log(`Hello, ${name}! You are ${age} years old.`); if (email) { console.log(`Your email is ${email}.`); } else { console.log(\"No email provided.\"); }\n} const user = { name: \"Alice\", age: 30, email: \"alice@example.com\" };\ngreetUser(user);"
-      },
-      {
-        "header": "数组参数解构",
-        "slug": "数组参数解构",
-        "content": "类似地，如果函数接受一个数组作为参数，你也可以解构这个数组 function sum(a: number, b: number, c: number): number { return a + b + c;\n} // 使用解构\nfunction sumValues([a, b, c]: [number, number, number]): number { return a + b + c;\n} const numbers = [1, 2, 3];\nconsole.log(sumValues(numbers)); // 输出: 6"
-      },
-      {
-        "header": "默认参数值",
-        "slug": "默认参数值",
-        "content": "function initConfig({ width = 800, height = 600, color = \"white\",\n}: { width?: number; height?: number; color?: string;\n}) { console.log(`Config: width=${width}, height=${height}, color=${color}`);\n} initConfig({ width: 1024 }); // 使用部分参数和默认值"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "可选参数",
-        "slug": "可选参数",
-        "content": "可选参数是指在函数调用时不是必须的参数。你可以通过在参数类型后面添加一个问号 ? 来标记一个参数为可选的。这意味着在调用函数时，可以省略这个参数，如果省略了，它将默认为 undefined。"
-      },
-      {
-        "header": "可选参数的基本用法",
-        "slug": "可选参数的基本用法",
-        "content": "function greet(name: string, greeting?: string) { console.log(greeting ? greeting : \"Hello\", name);\n} greet(\"World\"); // 输出: Hello World\ngreet(\"World\", \"Hi\"); // 输出: Hi World"
-      },
-      {
-        "header": "在回调函数中的可选参数",
-        "slug": "在回调函数中的可选参数",
-        "content": "当你在处理回调函数时，你可能也想参数是可选的。但是，需要特别注意的是，你不能在函数类型中直接在回调的参数中标记为可选，除非你打算在调用回调时不传递该参数。 // 错误示例\nfunction myForEach(arr: any[], callback: (arg: any, index?: number) => void) { for (let i = 0; i < arr.length; i++) { callback(arr[i], i); }\n} 正确的做法是，确保在调用回调时，提供的所有参数都是必需的，或者在函数体内做好处理可选参数的逻辑。 // 正确示例\nfunction myForEach(arr: any[], callback: (arg: any, index?: number) => void) { for (let i = 0; i < arr.length; i++) { // 可能不想提供索引，只调用 callback 与一个参数 if (callback.length === 1) { callback(arr[i]); } else { callback(arr[i], i); } }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%9C%A8%E5%87%BD%E6%95%B0%E4%B8%AD%E5%A3%B0%E6%98%8Ethis.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "在函数中声明 this",
-        "slug": "在函数中声明-this",
-        "content": "可以在函数中声明 this 参数，以指定调用该函数时上下文对象的类型。这通常在对象的方法或回调函数中使用，以确保函数调用时 this 的类型正确。通过在函数中声明 this 参数，你可以提高代码的类型安全性，并减少因 this 引起的错误。"
-      },
-      {
-        "header": "在对象方法中声明 this",
-        "slug": "在对象方法中声明-this",
-        "content": "在对象的方法中使用 this 时，你可以声明 this 参数来指定对象本身的类型。greet 方法声明了 this: User，这告诉 TypeScript this 指的是 User 类型的对象。 interface User { name: string; age: number; greet(this: User): void;\n} const user: User = { name: \"Alice\", age: 30, greet: function (this: User): void { console.log( `Hello, my name is ${this.name} and I am ${this.age} years old.` ); },\n}; user.greet(); // 输出: Hello, my name is Alice and I am 30 years old."
-      },
-      {
-        "header": "在回调函数中声明 this",
-        "slug": "在回调函数中声明-this",
-        "content": "可以声明 this 参数，以确保回调函数中的 this 与期望的类型一致。setupPrinter 函数中的回调函数声明了 this: Printer，确保在回调函数中 this 指向 Printer 类型的对象。 interface Printer { print(this: Printer, message: string): void;\n} function setupPrinter(p: Printer) { const printer: Printer = { print: function (this: Printer, message: string) { console.log(message); }, }; window.onload = function (this: Printer) { this.print(\"The page has finished loading.\"); }.bind(printer);\n} const myPrinter: Printer = { print: function (this: Printer, message: string) { console.log(`Printing: ${message}`); },\n}; setupPrinter(myPrinter);"
-      },
-      {
-        "header": "使用箭头函数和 this 参数",
-        "slug": "使用箭头函数和-this-参数",
-        "content": "箭头函数不绑定自己的 this，它继承了父执行上下文的 this。因此，当你在类的方法中使用箭头函数时，this 可能不会指向你期望的对象。greet 方法是一个箭头函数，它不绑定自己的 this，因此 this.name 在执行时是 undefined。 class User { name: string; greet: () => void; constructor(name: string) { this.name = name; this.greet = () => { console.log(`Hello, my name is ${this.name}`); }; }\n} const user = new User(\"Alice\");\nuser.greet(); // 输出: Hello, my name is undefined"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "声明 this 参数不会改变函数的行为，它只是为编译器提供了类型信息。\n在箭头函数中，this 是在函数创建时绑定的，而不是在调用时绑定的，因此箭头函数中通常不需要声明 this 参数。\n在使用 bind 或其他函数调用方法（如 call 或 apply）时，需要确保 this 参数的类型正确。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E6%9E%84%E9%80%A0%E7%AD%BE%E5%90%8D.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "构造签名",
-        "slug": "构造签名",
-        "content": "构造签名（Construct Signatures）是接口的一部分，用于描述一个构造函数的参数列表和返回类型。这允许接口能够描述一个类或者一个函数构造器的形态。"
-      },
-      {
-        "header": "基本语法",
-        "slug": "基本语法",
-        "content": "构造签名通常与 new 关键字一起使用，表示创建一个新对象的构造函数。这个接口 Constructable 描述了一个构造函数，它接受一个 string 参数，并返回一个 Object 类型的新实例。 interface Constructable { new (arg: string): Object;\n}"
-      },
-      {
-        "header": "实现构造签名",
-        "slug": "实现构造签名",
-        "content": "class MyClass implements Constructable { constructor(arg: string) { // ... }\n} const myInstance = new MyClass(\"Hello, World!\");"
-      },
-      {
-        "header": "带有多个参数的构造签名",
-        "slug": "带有多个参数的构造签名",
-        "content": "interface Constructable { new (arg1: string, arg2: number): Object;\n}"
-      },
-      {
-        "header": "带有可选参数的构造签名",
-        "slug": "带有可选参数的构造签名",
-        "content": "interface Constructable { new (arg1: string, arg2?: number): Object;\n}"
-      },
-      {
-        "header": "带有剩余参数的构造签名",
-        "slug": "带有剩余参数的构造签名",
-        "content": "interface Constructable { new (arg1: string, ...args: number[]): Object;\n}"
-      },
-      {
-        "header": "泛型构造签名",
-        "slug": "泛型构造签名",
-        "content": "interface Constructable { new <T>(arg: T): Object;\n}"
-      },
-      {
-        "header": "多个构造签名",
-        "slug": "多个构造签名",
-        "content": "interface Constructable { new (config: { a: number }): Object; new (config: { b: string }): Object;\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E8%B0%83%E7%94%A8%E7%AD%BE%E5%90%8D.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "调用签名",
-        "slug": "调用签名",
-        "content": "调用签名（Call Signatures）是接口中用于描述函数类型的一种方式。它们定义了函数的参数列表和返回类型。调用签名使得接口可以作为一种通用的函数类型，用于任何符合调用签名描述的函数。"
-      },
-      {
-        "header": "基本语法",
-        "slug": "基本语法",
-        "content": "接口可以包含一个或多个调用签名。GreetFunction 接口定义了一个调用签名，它指定了函数必须接受一个 string 类型的参数并且没有返回值（void）。 interface GreetFunction { (name: string): void;\n} // 实现这个接口的任何函数都必须接受一个 string 参数并返回 void\nconst greet: GreetFunction = function (name: string): void { console.log(`Hello, ${name}!`);\n};"
-      },
-      {
-        "header": "带有可选参数的调用签名",
-        "slug": "带有可选参数的调用签名",
-        "content": "interface GreetFunction { (name: string, optionalGreeting?: string): void;\n} const greet: GreetFunction = function ( name: string, optionalGreeting?: string\n): void { const greeting = optionalGreeting || \"Hello\"; console.log(`${greeting}, ${name}!`);\n};"
-      },
-      {
-        "header": "带有剩余参数的调用签名",
-        "slug": "带有剩余参数的调用签名",
-        "content": "interface GreetFunction { (name: string, ...greetings: string[]): void;\n} const greet: GreetFunction = function ( name: string, ...greetings: string[]\n): void { console.log(`Hello, ${name}!`); greetings.forEach((greeting) => console.log(greeting));\n};"
-      },
-      {
-        "header": "带有 this 类型的调用签名",
-        "slug": "带有-this-类型的调用签名",
-        "content": "interface GreetThis { (this: { name: string }): string;\n} const greet: GreetThis = function (): string { return `Hello, ${this.name}!`;\n}; const user = { name: \"Alice\", greet: greet,\n}; console.log(user.greet.call(user)); // \"Hello, Alice!\""
-      },
-      {
-        "header": "泛型调用签名",
-        "slug": "泛型调用签名",
-        "content": "interface GenericGreet { <T>(value: T): T;\n} const genericGreet: GenericGreet = function <T>(value: T): T { return value;\n};"
-      },
-      {
-        "header": "多个调用签名",
-        "slug": "多个调用签名",
-        "content": "接口可以有多个调用签名，但它们必须有不同的参数列表。 interface GreetFunction { (name: string): void; (name: string, greeting: string): string;\n} const greet: GreetFunction = function ( name: string, greeting?: string\n): string | void { if (greeting) { return `${greeting}, ${name}!`; } else { console.log(`Hello, ${name}!`); }\n};"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "调用签名不能有同名参数。\n调用签名的参数类型和返回类型必须完全匹配。\n调用签名可以与其他属性或方法共存于同一个接口中。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E4%BA%A4%E5%8F%89%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "交叉类型(&)",
-        "slug": "交叉类型",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\n// C = { name: string; age: number; }"
-      },
-      {
-        "header": "使用场景",
-        "slug": "使用场景",
-        "content": "扩展接口：当你想要为接口添加额外的属性或方法时，交叉类型可以帮助你模块化和重用代码。 组合函数签名：你可以使用交叉类型来组合多个函数签名，这样函数可以接受不同的参数或者返回多个类型。 实现混入（Mixins）：在 TypeScript 中，混入是一种设计模式，它允许将多个类的功能组合到一个类中。交叉类型是实现混入的一种方式。 增强对象类型：当你需要确保一个变量满足多个类型的所有属性时，交叉类型非常有用。"
-      },
-      {
-        "header": "交叉类型与联合类型",
-        "slug": "交叉类型与联合类型",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A | B;\n// C = { name: string; } | { age: number; }\nconst c1: C = { name: \"张三\" };\nconst c2: C = { age: 18 };"
-      },
-      {
-        "header": "交叉类型与接口",
-        "slug": "交叉类型与接口",
-        "content": "interface A { name: string;\n}\ninterface B { age: number;\n}\ninterface C extends A, B { // C = { name: string; age: number; }\n}"
-      },
-      {
-        "header": "交叉类型与函数",
-        "slug": "交叉类型与函数",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst fn = (a: A, b: B): C => { return { ...a, ...b };\n};\nconst result = fn({ name: \"张三\" }, { age: 18 });\nconsole.log(result);"
-      },
-      {
-        "header": "交叉类型与类",
-        "slug": "交叉类型与类",
-        "content": "class A { name: string; constructor(name: string) { this.name = name; }\n}\nclass B { age: number; constructor(age: number) { this.age = age; }\n}\nclass C extends A, B { constructor(name: string, age: number) { super(name); super(age); }\n}\nconst c = new C('张三', 18);\nconsole.log(c);"
-      },
-      {
-        "header": "交叉类型与枚举",
-        "slug": "交叉类型与枚举",
-        "content": "enum A { a = 1, b = 2,\n}\nenum B { c = 3, d = 4,\n}\nenum C { e = 5, f = 6,\n}\ntype D = A & B & C;\n// D = { a: 1; b: 2; c: 3; d: 4; e: 5; f: 6; }"
-      },
-      {
-        "header": "交叉类型与类型别名",
-        "slug": "交叉类型与类型别名",
-        "content": "type A = { name: string }; // A = { name: string; }\ntype B = { age: number }; // B = { age: number; }\ntype C = A & B; // C = { name: string; age: number; }"
-      },
-      {
-        "header": "交叉类型与泛型",
-        "slug": "交叉类型与泛型",
-        "content": "type A<T> = T & { name: string }; // A = <T>(T & { name: string; })\nconst a: A<number> = { name: \"张三\", age: 18 };"
-      },
-      {
-        "header": "交叉类型与类型断言",
-        "slug": "交叉类型与类型断言",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型守卫",
-        "slug": "交叉类型与类型守卫",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (c.name) { console.log(c.name);\n}\nif (c.age) { console.log(c.age);\n}"
-      },
-      {
-        "header": "交叉类型与类型推断",
-        "slug": "交叉类型与类型推断",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B; // C = { name: string; age: number; }\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c.name;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型检查",
-        "slug": "交叉类型与类型检查",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (typeof c.name === \"string\") { console.log(c.name);\n}\nif (typeof c.age === \"number\") { console.log(c.age);\n}"
-      },
-      {
-        "header": "交叉类型与类型转换",
-        "slug": "交叉类型与类型转换",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型合并",
-        "slug": "交叉类型与类型合并",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E5%B1%9E%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "属性修饰符",
-        "slug": "属性修饰符",
-        "content": "对象类型的属性可以被赋予不同的修饰符，以定义它们的特性，如是否可选、是否只读等。"
-      },
-      {
-        "header": "可选属性",
-        "slug": "可选属性",
-        "content": "interface Person { name: string; age?: number; // 可选属性，不需要在所有对象中都提供\n} const person1: Person = { name: \"Alice\", // age 属性被省略，将被赋值为 undefined\n}; const person2: Person = { name: \"Bob\", age: 30, // 提供了 age 属性\n};"
-      },
-      {
-        "header": "必需属性",
-        "slug": "必需属性",
-        "content": "interface Person { name: string; // 必需属性 age: number; // 必需属性\n} const person: Person = { name: \"Alice\", age: 30,\n};"
-      },
-      {
-        "header": "只读属性",
-        "slug": "只读属性",
-        "content": "interface Point { readonly x: number; readonly y: number;\n} const point: Point = { x: 10, y: 20,\n};\n// Error: Cannot assign to 'x' because it is a read-only property.\n// point.x = 5;"
-      },
-      {
-        "header": "属性修饰符的组合",
-        "slug": "属性修饰符的组合",
-        "content": "interface Person { name: string; age?: number; // 可选属性 readonly id: number; // 只读属性\n} const person: Person = { name: \"Alice\", id: 1, // age 属性是可选的，可以省略\n};\n// Error: Cannot assign to 'id' because it is a read-only property.\n// person.id = 2;"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "扩展类型",
-        "slug": "扩展类型",
-        "content": "对象类型的扩展可以通过接口（interface）和类型别名（type）来实现。这两种方式都允许你基于现有的类型定义新的类型，从而增加新的属性或方法。"
-      },
-      {
-        "header": "使用 interface 扩展类型",
-        "slug": "使用-interface-扩展类型",
-        "content": "接口可以通过 extends 关键字来扩展一个或多个接口，从而继承它们的属性。 interface Animal { name: string;\n} interface Bear extends Animal { honey: boolean;\n} const bear: Bear = { name: \" Winnie\", honey: true,\n};"
-      },
-      {
-        "header": "使用 type 扩展类型",
-        "slug": "使用-type-扩展类型",
-        "content": "类型别名 type 可以使用交叉类型（&）来组合多个类型。 type Animal = { name: string;\n}; type Bear = Animal & { honey: boolean;\n}; const bear: Bear = { name: \" Winnie\", honey: true,\n};"
-      },
-      {
-        "header": "扩展现有类型",
-        "slug": "扩展现有类型",
-        "content": "如果你想为现有的类型（如数组）添加新的属性，可以使用声明合并。例如，为数组添加一个 last 属性。 interface Array<T> { last: T;\n} let nums: number[] = [1, 2, 3];\nconsole.log(nums.last); // 3"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E6%BA%A2%E5%87%BA%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "溢出属性检查",
-        "slug": "溢出属性检查",
-        "content": "对象类型的溢出属性检查（Excess Property Checks）是一种类型安全特性，它会在对象字面量被赋值给变量或者作为参数传递给函数时，检查对象字面量是否包含目标类型未定义的属性。如果对象字面量有目标类型中不存在的属性，编译器将会报错。 例如，如果有一个接口 SquareConfig，它定义了 color 和 width 属性，然后你尝试创建一个对象字面量并将其赋值给一个 SquareConfig 类型的变量，但对象字面量中包含了一个 SquareConfig 未定义的属性，如下所示： interface SquareConfig { color?: string; width?: number;\n} function createSquare(config: SquareConfig): { color: string; area: number } { return { color: config.color || \"red\", area: config.width ? config.width * config.width : 20, };\n}\n// 错误：属性 'colour' 不存在于类型 'SquareConfig'。\nlet mySquare = createSquare({ colour: \"red\", width: 100 }); 在这个例子中，对象字面量 { colour: \"red\", width: 100 } 包含了一个 SquareConfig 接口中未定义的属性 colour，所以 TypeScript 编译器会报错，指出 'colour' does not exist in type 'SquareConfig'\n。"
-      },
-      {
-        "header": "要解决这个问题，你可以做以下几件事情之一：",
-        "slug": "要解决这个问题-你可以做以下几件事情之一",
-        "content": "修正属性名，确保对象字面量中的属性名称与目标类型中的属性名称相匹配。\n如果确实需要传递额外的属性，可以修改目标类型的定义，以包含这些额外的属性。\n使用类型断言，将对象字面量断言为任意类型，来绕过溢出属性检查（但这种做法会失去类型安全）。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/any.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "any(建议尽量避免)",
-        "slug": "any-建议尽量避免",
-        "content": "// 隐式的any类型\nlet a;\na = 10;\na = \"str\";\na = true;\n// 隐式的定义变量并声明类型\nlet b = 10;"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/array.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "array",
-        "slug": "array",
-        "content": "let arr1: string[];\nlet arr2: Array<number>;\nlet arr3: Array<any>;"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/BigInt.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "BigInt",
-        "slug": "bigint",
-        "content": "BigInt 是一种特殊的数据类型，用于表示大于 2^53 - 1 的整数，这个值是 JavaScript 中可以用 Number 表示的最大整数。BigInt 可以表示任意大的整数，非常适合用于处理大整数运算，如加密算法、大数据处理等场景。"
-      },
-      {
-        "header": "创建 BigInt",
-        "slug": "创建-bigint",
-        "content": "可以通过在整数后面添加 n 后缀，或者使用 BigInt() 函数创建 BigInt。 // 使用 n 后缀\nconst bigNumber1 = 123456789012345678901234567890n;\n// 使用 BigInt 函数\nconst bigNumber2 = BigInt(\"123456789012345678901234567890\");"
-      },
-      {
-        "header": "BigInt 运算",
-        "slug": "bigint-运算",
-        "content": "BigInt 支持标准的算术运算符，如 +, -, *, / 等 const sum = bigNumber1 + bigNumber2;\nconst difference = bigNumber1 - bigNumber2;\nconst product = bigNumber1 * bigNumber2;\nconst quotient = bigNumber1 / bigNumber2;"
-      },
-      {
-        "header": "类型检查",
-        "slug": "类型检查",
-        "content": "使用 typeof 检查 BigInt 类型时，返回值为 \"bigint\"。 typeof 10n === \"bigint\"; // true\ntypeof BigInt(10) === \"bigint\"; // true"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "BigInt 不能与 Number 类型混合运算，必须显式转换。 BigInt 不支持 Math 库中的函数。 转换 BigInt 为 Number 可能会导致精度丢失。 const theBiggestInt = 9007199254740991n;\nconst alsoHuge = BigInt(9007199254740991);\nconst hugeString = BigInt(\"9007199254740991\");\nconsole.log(theBiggestInt === alsoHuge); // true\nconsole.log(theBiggestInt === hugeString); // true const previousMaxSafe = BigInt(Number.MAX_SAFE_INTEGER);\nconst maxPlusOne = previousMaxSafe + 1n;\nconst multi = previousMaxSafe * 2n;\nconst subtr = multi - 10n;\nconst mod = multi % 10n;\nconst bigN = 2n ** 54n;"
-      },
-      {
-        "header": "限制与建议",
-        "slug": "限制与建议",
-        "content": "精度问题：在处理非常大的数值时，使用 BigInt 可以避免 Number 类型的精度问题。 性能考虑：BigInt 操作通常比 Number 操作慢，因为它们需要自定义实现且缺乏本地硬件支持。 环境支持：确保你的运行环境支持 BigInt，例如，较老的浏览器或 Node.js 版本可能不支持。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/enum.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "enmu(枚举: 把所有的可能的情况都列出来)",
-        "slug": "enmu-枚举-把所有的可能的情况都列出来",
-        "content": "枚举（Enums）是一种特殊的类型，它为一组数值赋予了更加友好的名字。枚举可以被用来定义命名的常数集合，这使得代码更加易读和易于维护。"
-      },
-      {
-        "header": "普通枚举",
-        "slug": "普通枚举",
-        "content": "enmu Sex{ Male, // 不写值的话, 自动转成0 Female = 1 // 赋值为1\n}\nlet i: { name: string, sex: Sex };\ni = { name: 'ths', sex: Sex.Male // 自动转成0了\n}"
-      },
-      {
-        "header": "带字符串值的枚举",
-        "slug": "带字符串值的枚举",
-        "content": "enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n} console.log(Color.Red); // \"FF0000\"\nconsole.log(Color[Color.Red]); // 0"
-      },
-      {
-        "header": "带数字值的枚举",
-        "slug": "带数字值的枚举",
-        "content": "enum Color { Red = 1, Green = 2, Blue = 3,\n} console.log(Color.Red); // 1\nconsole.log(Color.Green); // 2\nconsole.log(Color.Blue); // 3"
-      },
-      {
-        "header": "常数成员和计算成员",
-        "slug": "常数成员和计算成员",
-        "content": "enum Color { Red, Green, Blue = Color.Red * 2, DarkRed = Color.Red + 10,\n} console.log(Color.Blue); // 2\nconsole.log(Color.DarkRed); // 12"
-      },
-      {
-        "header": "反向映射",
-        "slug": "反向映射",
-        "content": "enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n}\nconsole.log(Color[\"FF0000\"]); // Color.Red"
-      },
-      {
-        "header": "枚举作为类型",
-        "slug": "枚举作为类型",
-        "content": "let c: Color = Color.Green;"
-      },
-      {
-        "header": "字符串枚举",
-        "slug": "字符串枚举",
-        "content": "enum Status { Pending = \"PENDING\", Approved = \"APPROVED\", Rejected = \"REJECTED\",\n} function printStatus(status: Status) { console.log(status);\n} printStatus(Status.Approved); // \"APPROVED\""
-      },
-      {
-        "header": "数字枚举",
-        "slug": "数字枚举",
-        "content": "enum NumberEnum { One, Two, Three,\n} console.log(NumberEnum.One); // 0\nconsole.log(NumberEnum.Two); // 1\nconsole.log(NumberEnum.Three); // 2"
-      },
-      {
-        "header": "外部枚举",
-        "slug": "外部枚举",
-        "content": "// app.ts\nimport { Color } from \"./colors\";\n// colors.ts\nexport enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n}\nconsole.log(Color.Red); // \"FF0000\""
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/interface%E5%92%8Ctype%E5%8C%BA%E5%88%AB.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "interface 和 type 区别",
-        "slug": "interface-和-type-区别",
-        "content": "类型别名和接口非常相似，在很多情况下你可以在它们之间自由选择。interface 的几乎所有功能都在 type 中可用，主要区别在于无法重新打开类型以添加 ​​ 新属性，而接口始终可扩展。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/interface%E6%8E%A5%E5%8F%A3.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "interface 接口",
-        "slug": "interface-接口",
-        "content": "接口（Interfaces）是一种强大的方式，用于定义对象的结构，它是一种对类型而不是对值的描述。接口可以被理解为对象的蓝图，它规定了对象必须具有的结构和类型，但不实现它们。接口主要用于类型检查和确保对象符合预期的形状"
-      },
-      {
-        "header": "基本语法",
-        "slug": "基本语法",
-        "content": "Person 接口，它要求任何实现这个接口的对象都必须有 name（字符串类型）和 age（数字类型）两个属性 interface Person { name: string; // 接口中所有的属性不能赋值 age: number; say(): void; // 不能有方法体, 接口只定义对象的结构而没有实际的值, 类似抽象方法\n}\ninterface Person{ // 接口可以重名 sex: string;\n} let p1: Person = { name: 'ths', age: 18, say(): void //或者 say(){ console.log('11111') }; // 再或者 say:()=>{ console.log('11111') }\n}"
-      },
-      {
-        "header": "实现接口",
-        "slug": "实现接口",
-        "content": "User 类实现了 Person 接口，这意味着 User 类的实例必须包含 name 和 age 属性 /* 定义类时, 可以用类去实现一个接口, 用到关键字 implements\n接口其实对类进行了限制，与抽象类很像，区别在于抽象类中可以有抽象方法也可以有其他的，\n接口内只能有抽象方法\n另外的区别在于使用抽象类时使用extends, 接口使用implements*/\nclass User implements Person { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; }\n}"
-      },
-      {
-        "header": "只读属性(readonly)",
-        "slug": "只读属性-readonly",
-        "content": "接口也可以定义只读属性，这些属性必须在初始化时赋值，以后不能修改 interface Point { readonly x: number; readonly y: number;\n}"
-      },
-      {
-        "header": "函数类型",
-        "slug": "函数类型",
-        "content": "接口不仅可以用于对象类型，还可以用来定义函数类型 interface SearchFunction { (source: string, subString: string): boolean;\n}"
-      },
-      {
-        "header": "扩展接口",
-        "slug": "扩展接口",
-        "content": "interface Person { name: string; age: number;\n} interface Logger { log(message: string): void;\n} interface PersonLogger extends Person, Logger { logName(): void;\n} class ConcretePersonLogger implements PersonLogger { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } log(message: string): void { console.log(message); } logName(): void { console.log(this.name); }\n}"
-      },
-      {
-        "header": "索引签名",
-        "slug": "索引签名",
-        "content": "interface StringArray { [index: number]: string;\n} let myArray: StringArray;\nmyArray = [\"Bob\", \"Fred\"]; let myStr: string = myArray[0];"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/tuple.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "tuple",
-        "slug": "tuple",
-        "content": "元组, 元组就是长度固定的数组, 最好不要太长, 太长不如用数组了 let tarr: [string, number];\ntarr = [\"str\", 123];"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/type(%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D).html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "type(类型别名)",
-        "slug": "type-类型别名",
-        "content": "类型别名允许你为复杂的类型定义创建简洁的名称，从而简化代码 type UserID = number; // 类型别名\nfunction getUserByID(id: UserID): User { // 实现根据 ID 获取用户 console.log(\"Fetching user with ID:\", id); return {} as User; // 模拟返回用户\n}\ntype User = { id: number; name: string; roles: string[]; isActive: boolean; metadata?: { createdAt: Date; updatedAt?: Date; };\n}; let user: User = { id: 1, name: \"Alice\", roles: [\"admin\"], isActive: true, metadata: { createdAt: new Date(), },\n};"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E4%BA%A4%E5%8F%89%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "交叉类型(&)",
-        "slug": "交叉类型",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\n// C = { name: string; age: number; }"
-      },
-      {
-        "header": "使用场景",
-        "slug": "使用场景",
-        "content": "扩展接口：当你想要为接口添加额外的属性或方法时，交叉类型可以帮助你模块化和重用代码。 组合函数签名：你可以使用交叉类型来组合多个函数签名，这样函数可以接受不同的参数或者返回多个类型。 实现混入（Mixins）：在 TypeScript 中，混入是一种设计模式，它允许将多个类的功能组合到一个类中。交叉类型是实现混入的一种方式。 增强对象类型：当你需要确保一个变量满足多个类型的所有属性时，交叉类型非常有用。"
-      },
-      {
-        "header": "交叉类型与联合类型",
-        "slug": "交叉类型与联合类型",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A | B;\n// C = { name: string; } | { age: number; }\nconst c1: C = { name: \"张三\" };\nconst c2: C = { age: 18 };"
-      },
-      {
-        "header": "交叉类型与接口",
-        "slug": "交叉类型与接口",
-        "content": "interface A { name: string;\n}\ninterface B { age: number;\n}\ninterface C extends A, B { // C = { name: string; age: number; }\n}"
-      },
-      {
-        "header": "交叉类型与函数",
-        "slug": "交叉类型与函数",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst fn = (a: A, b: B): C => { return { ...a, ...b };\n};\nconst result = fn({ name: \"张三\" }, { age: 18 });\nconsole.log(result);"
-      },
-      {
-        "header": "交叉类型与类",
-        "slug": "交叉类型与类",
-        "content": "class A { name: string; constructor(name: string) { this.name = name; }\n}\nclass B { age: number; constructor(age: number) { this.age = age; }\n}\nclass C extends A, B { constructor(name: string, age: number) { super(name); super(age); }\n}\nconst c = new C('张三', 18);\nconsole.log(c);"
-      },
-      {
-        "header": "交叉类型与枚举",
-        "slug": "交叉类型与枚举",
-        "content": "enum A { a = 1, b = 2,\n}\nenum B { c = 3, d = 4,\n}\nenum C { e = 5, f = 6,\n}\ntype D = A & B & C;\n// D = { a: 1; b: 2; c: 3; d: 4; e: 5; f: 6; }"
-      },
-      {
-        "header": "交叉类型与类型别名",
-        "slug": "交叉类型与类型别名",
-        "content": "type A = { name: string }; // A = { name: string; }\ntype B = { age: number }; // B = { age: number; }\ntype C = A & B; // C = { name: string; age: number; }"
-      },
-      {
-        "header": "交叉类型与泛型",
-        "slug": "交叉类型与泛型",
-        "content": "type A<T> = T & { name: string }; // A = <T>(T & { name: string; })\nconst a: A<number> = { name: \"张三\", age: 18 };"
-      },
-      {
-        "header": "交叉类型与类型断言",
-        "slug": "交叉类型与类型断言",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型守卫",
-        "slug": "交叉类型与类型守卫",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (c.name) { console.log(c.name);\n}\nif (c.age) { console.log(c.age);\n}"
-      },
-      {
-        "header": "交叉类型与类型推断",
-        "slug": "交叉类型与类型推断",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B; // C = { name: string; age: number; }\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c.name;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型检查",
-        "slug": "交叉类型与类型检查",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (typeof c.name === \"string\") { console.log(c.name);\n}\nif (typeof c.age === \"number\") { console.log(c.age);\n}"
-      },
-      {
-        "header": "交叉类型与类型转换",
-        "slug": "交叉类型与类型转换",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      },
-      {
-        "header": "交叉类型与类型合并",
-        "slug": "交叉类型与类型合并",
-        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%87%BD%E6%95%B0.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "函数",
-        "slug": "函数",
-        "content": "// 参数类型注解\nfunction greet(name: string) { console.log(\"Hello, \" + name.toUpperCase() + \"!!\");\n}\ngreet(\"12\"); // 返回值类型注解\nasync function getFavoriteNumber(): Promise<number> { return 26;\n} // 匿名函数(ts根据上下文推断)\nconst names = [\"Alice\", \"Bob\", \"Eve\"];\nnames.forEach(function (s) { console.log(s.toUpperCase());\n});\nnames.forEach((s) => { console.log(s.toUpperCase());\n});"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%A3%B0%E6%98%8E%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "声明类型",
-        "slug": "声明类型",
-        "content": "类型\n例子\n描述 number\n1, 2, 3, 4\n任意数字 string\n'hello'\n任意字符串 boolean\ntrue, false\n布尔值 true 或 false 字面量\n其本身\n限制变量的取值只能是字面量 any\nany\n任意类型 unkown\nunknown\n未知类型，类型安全的 any void\nvoid\n没有值，或者 undefined array\n[1, 2, 3]\n任意数字数组 tuple\n[1, 'a']\n固定长度数组 enum\nenum{A,B}\n枚举类型 object\n{name:'孙悟空'}\n任意对象 null\nnull\n只能是 null never\nnever\n永不发生"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%AD%97%E9%9D%A2%E9%87%8F.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "字面量",
-        "slug": "字面量",
-        "content": "字面量类型是指直接给出具体值的类型。它们通常用于那些只能有有限个具体值的变量。字面量类型可以是字符串字面量类型、数字字面量类型或者其他原始数据类型的字面量。"
-      },
-      {
-        "header": "使用场景",
-        "slug": "使用场景",
-        "content": "字面量类型在以下场景中非常有用： 限制变量的值：确保变量只能是某些特定的值。\n类型守卫：与类型谓词结合使用，进行类型检查。\n函数重载：用于区分函数的重载版本。\n枚举类型的替代：在某些情况下，字面量类型可以作为枚举类型的替代。"
-      },
-      {
-        "header": "字符串字面量类型",
-        "slug": "字符串字面量类型",
-        "content": "Easing 是一个字符串字面量类型，它只能取 \"ease-in\"、\"ease-out\" 或 \"ease-in-out\" 这三个值。 type Easing = \"ease-in\" | \"ease-out\" | \"ease-in-out\"; function animate(element: Element, easing: Easing) { if (easing === \"ease-in\") { // ... } else if (easing === \"ease-out\") { // ... } else if (easing === \"ease-in-out\") { // ... } else { // Error: Type 'never' is not assignable to type 'Easing' const error: never = easing; }\n}"
-      },
-      {
-        "header": "数字数面量类型",
-        "slug": "数字数面量类型",
-        "content": "StatusCode 是一个数字字面量类型，它只能取 200、301、404 或 500 这几个值。 type StatusCode = 200 | 301 | 404 | 500; function handleResponse(status: StatusCode) { if (status === 200) { console.log(\"OK\"); } else if (status === 301) { console.log(\"Moved Permanently\"); } else if (status === 404) { console.log(\"Not Found\"); } else if (status === 500) { console.log(\"Internal Server Error\"); } else { // Error: Type 'never' is not assignable to type 'StatusCode' const error: never = status; }\n}"
-      },
-      {
-        "header": "布尔字面量类型(通常用于类型守卫)",
-        "slug": "布尔字面量类型-通常用于类型守卫",
-        "content": "isStringOrNumber 是一个类型谓词函数，它返回一个布尔值来告诉 TypeScript value 是一个字符串或数字。 function isStringOrNumber(value: string | number): value is string | number { return typeof value === \"string\" || typeof value === \"number\";\n} if (isStringOrNumber(\"Hello\")) { console.log(\"It's a string!\");\n}"
-      },
-      {
-        "header": "模板字面量类型",
-        "slug": "模板字面量类型",
-        "content": "模板字面量类型用于指定字符串必须是特定的格式\nName 是一个模板字面量类型，它只能是 \"Hello, ${string}!\" 或 \"Goodbye, ${string}!\" 格式的字符串。 type Name = `Hello, ${string}!` | `Goodbye, ${string}!`; function greet(name: Name) { console.log(name);\n} greet(`Hello, Alice!`); // OK\ngreet(`Goodbye, Bob!`); // OK\ngreet(`Hi, Charlie!`); // Error"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%AF%B9%E8%B1%A1.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "对象",
-        "slug": "对象",
-        "content": "// ;分割\nfunction printCoord(pt: { x: number; y: number }) { console.log(\"The coordinate's x value is \" + pt.x); console.log(\"The coordinate's y value is \" + pt.y);\n}\nprintCoord({ x: 3, y: 7 }); // 可选属性(?)\nfunction printName(obj: { first: string; last?: string }) { // ...\n}\nprintName({ first: \"Bob\" });\nprintName({ first: \"Alice\", last: \"Alisson\" }); 在 JavaScript 中，如果你访问一个不存在的属性，你将获得值 undefined 而不是运行时错误。因此，当你从可选属性中读取数据时，你必须在使用它之前检查 undefined。 function printName(obj: { first: string; last?: string }) { // 报错：'obj.last' is possibly 'undefined'. console.log(obj.last.toUpperCase());\n} // 解决方案一\nfunction printName(obj: { first: string; last?: string }) { if (obj.last !== undefined) { console.log(obj.last.toUpperCase()); }\n}\n// 解决方案二\nfunction printName(obj: { first: string; last?: string }) { console.log(obj.last?.toUpperCase());\n} [propName: string]可以定义多个不确定的属性\nlet c: { name: string; [propName: string]: any };\nc = { name: \"ths\", age: 18, sex: 20, isTrue: false }; 函数类型 let d: (a: number, b: number) => number;\nd = function (num1, num2): number { return num1 + num2;\n};"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E7%B1%BB%E5%9E%8B%E5%AE%88%E5%8D%AB.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "类型守卫",
-        "slug": "类型守卫",
-        "content": "类型守卫（Type Guards）是一种方式，用于在运行时检查和缩小变量的类型。当你在处理联合类型或交叉类型时，类型守卫特别有用，因为它们允许你在执行操作之前确定变量的确切类型。"
-      },
-      {
-        "header": "基本类型守卫",
-        "slug": "基本类型守卫",
-        "content": "基本类型守卫是通过使用类型谓词来实现的。类型谓词是一个表达式，它在编译时不会做任何改变，但在运行时会帮助 TypeScript 缩小变量的类型。isNumber 和 isString 函数都是类型谓词。它们返回一个布尔值，告诉 TypeScript 引擎 x 参数的类型 function isNumber(x: number | string): x is number { return typeof x === \"number\";\n} function isString(x: number | string): x is string { return typeof x === \"string\";\n}"
-      },
-      {
-        "header": "使用类型守卫",
-        "slug": "使用类型守卫",
-        "content": "let data: number | string = Math.random() > 0.5 ? \"Hello\" : 10; if (isNumber(data)) { console.log(data.toFixed(2)); // 这里的 data 被缩小为 number 类型\n} else if (isString(data)) { console.log(data.toUpperCase()); // 这里的 data 被缩小为 string 类型\n}"
-      },
-      {
-        "header": "用户自定义类型守卫",
-        "slug": "用户自定义类型守卫",
-        "content": "用户自定义类型守卫通常与接口或类型别名结合使用,在这个例子中，isBird 是一个类型谓词函数，它检查 animal 是否具有 fly 方法，从而判断它是否为 Bird 类型。 interface Bird { fly(): void; layEggs(): void;\n} interface Fish { swim(): void; layEggs(): void;\n} function getAnimal(): Bird | Fish { return Math.random() > 0.5 ? { fly, layEggs } : { swim, layEggs };\n} function isBird(animal: Bird | Fish): animal is Bird { return (animal as Bird).fly !== undefined;\n}"
-      },
-      {
-        "header": "类类型守卫",
-        "slug": "类类型守卫",
-        "content": "类类型守卫是通过检查对象是否为某个类的实例来实现的,isBird 使用 instanceof 操作符来检查 animal 是否为 Bird 的实例。 class Bird { fly() { console.log(\"Flying\"); }\n} class Fish { swim() { console.log(\"Swimming\"); }\n} function getAnimal() { return Math.random() > 0.5 ? new Bird() : new Fish();\n} function isBird(animal: Bird | Fish): animal is Bird { return animal instanceof Bird;\n}"
-      },
-      {
-        "header": "在类中使用类型守卫",
-        "slug": "在类中使用类型守卫",
-        "content": "类本身也可以实现类型守卫 class Bird { fly() { console.log(\"Flying\"); } isBird() { return true; }\n} class Fish { swim() { console.log(\"Swimming\"); } isBird() { return false; }\n} function isBird(animal: Bird | Fish): animal is Bird { return animal.isBird();\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "类型断言(慎用,避免破坏类型安全)",
-        "slug": "类型断言-慎用-避免破坏类型安全",
-        "content": "类型断言（Type Assertions）是一种告诉编译器你比它更了解某个变量的类型的机制。类型断言可以用来手动指定编译器可能不确定的变量的类型"
-      },
-      {
-        "header": "类型断言的基本语法",
-        "slug": "类型断言的基本语法",
-        "content": "const myCanvas = document.getElementById(\"main_canvas\") as HTMLCanvasElement;"
-      },
-      {
-        "header": "<>语法",
-        "slug": "语法",
-        "content": "const myCanvas = <HTMLCanvasElement>document.getElementById(\"main_canvas\");"
-      },
-      {
-        "header": "使用场景",
-        "slug": "使用场景",
-        "content": "类型断言通常用在以下场景： 当你知道编译器是错误的时候：有时候，你可能比编译器更了解某个函数的返回值。 当你想要绕过编译器的类型检查时：有时候，你可能想要执行一些不安全的类型操作。 与第三方库交互时：当使用 TypeScript 与 JavaScript 库时，你可能需要告诉编译器某个值的确切类型。"
-      },
-      {
-        "header": "示例",
-        "slug": "示例",
-        "content": "let someValue: any = \"this is a string\"; // 告诉 TypeScript 我们知道 someValue 是一个字符串\nlet strLength: number = (someValue as string).length;"
-      },
-      {
-        "header": "与接口一起使用",
-        "slug": "与接口一起使用",
-        "content": "我们通过类型断言来确定 pet 的具体类型，然后调用相应的方法 interface Bird { fly(): void; layEggs(): void;\n} interface Fish { swim(): void; layEggs(): void;\n} function getSmallPet(): Bird | Fish { // ...\n} const pet = getSmallPet();\nif (pet.swim) { (pet as Fish).swim();\n} else { (pet as Bird).fly();\n}"
-      },
-      {
-        "header": "断言一个变量为 any 类型",
-        "slug": "断言一个变量为-any-类型",
-        "content": "当你从 JavaScript 代码迁移到 TypeScript 时，或者当你处理一个大型代码库中的遗留代码时，你可能会遇到 any 类型。类型断言可以用来将 any 类型变量断言为更具体的类型,在这个例子中，我们将 any 类型的 value 断言为 string 类型，然后安全地访问其 length 属性。 let value: any = \"Hello\";\nlet length: number = (value as string).length;"
-      },
-      {
-        "header": "断言函数返回值类型",
-        "slug": "断言函数返回值类型",
-        "content": "我们断言 getContent 函数的返回值为 string 类型 function getContent(): any { // ...\n} let content: string = getContent() as string;"
-      },
-      {
-        "header": "非空断言运算符(后缀！)",
-        "slug": "非空断言运算符-后缀",
-        "content": "function liveDangerously(x?: number | null) { // No error console.log(x!.toFixed());\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "联合类型(|)",
-        "slug": "联合类型",
-        "content": ""
-      },
-      {
-        "header": "定义联合类型",
-        "slug": "定义联合类型",
-        "content": "type StringOrNumber = string | number;"
-      },
-      {
-        "header": "使用联合类型",
-        "slug": "使用联合类型",
-        "content": "当你在函数中使用联合类型时，你可以传递任意一种指定的类型 function printId(id: StringOrNumber): void { console.log(`Your ID is: ${id}`);\n} printId(123); // 传递一个数字\nprintId(\"abc\"); // 传递一个字符串 如果你有联合 string | number，则不能使用仅在 string 上可用的方法 function printId(id: number | string) { console.log(id.toUpperCase()); // Property 'toUpperCase' does not exist on type 'string | number'. // Property 'toUpperCase' does not exist on type 'number'.\n} // 解决方案一\nfunction printId(id: number | string) { if (typeof id === \"string\") { console.log(id.toUpperCase()); } else { console.log(id); }\n} // 解决方案二\nfunction welcomePeople(x: string[] | string) { if (Array.isArray(x)) { console.log(\"Hello, \" + x.join(\" and \")); } else { console.log(\"Welcome lone traveler \" + x); }\n} 有时你会有一个联合，所有成员都有共同点。例如，数组和字符串都有一个 slice 方法。如果联合中的每个成员都有一个共同的属性，则可以使用该属性而不用缩小类型 function getFirstThree(x: number[] | string) { return x.slice(0, 3);\n}"
-      },
-      {
-        "header": "类型保护",
-        "slug": "类型保护",
-        "content": "在使用联合类型时，你可能需要确定变量的具体类型，以便执行特定类型的操作。TypeScript 提供了类型保护的概念，允许你在运行时检查并缩小类型 function printId(id: StringOrNumber): void { if (typeof id === \"string\") { // 在这个分支中，id 被缩小为 string 类型 console.log(`Your string ID is: ${id.toUpperCase()}`); } else { // 在这个分支中，id 被缩小为 number 类型 console.log(`Your numeric ID is: ${id}`); }\n}"
-      },
-      {
-        "header": "例子",
-        "slug": "例子",
-        "content": "type UserResponse = string | { id: number }; function getUser(): UserResponse { // 这里只是示例，实际逻辑可能更复杂 return Math.random() > 0.5 ? \"Alice\" : { id: 123 };\n} const user = getUser();\nif (typeof user === \"string\") { console.log(\"User name:\", user);\n} else { console.log(\"User ID:\", user.id);\n}"
-      },
-      {
-        "header": "联合类型和类型别名",
-        "slug": "联合类型和类型别名",
-        "content": "联合类型经常与类型别名一起使用，以简化复杂类型的声明。例如，你可以为一个对象的多个可能形状创建一个联合类型 type User = { id: number; name: string; email?: string;\n}; type Admin = { id: number; name: string; role: string;\n}; type Person = User | Admin; function printPersonDetails(person: Person): void { if (\"role\" in person) { console.log(`Admin ${person.name}, Role: ${person.role}`); } else { console.log(`User ${person.name}`); }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E6%A8%A1%E5%9D%97/ts%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "ts 编译选项",
-        "slug": "ts-编译选项",
-        "content": ""
-      },
-      {
-        "header": "include 指定需要编译的文件",
-        "slug": "include-指定需要编译的文件",
-        "content": "include: [\"./src/**/*\"] // (src: src 目录下 \\*_: 任意目录 _: 任意文件)"
-      },
-      {
-        "header": "exclude 排除不需要编译的文件",
-        "slug": "exclude-排除不需要编译的文件",
-        "content": "// (默认值: [\"node_modules\", \"bower_components\", \"jspm_packages\"])\nexclude: [\"./src/assets.....自己写\"]"
-      },
-      {
-        "header": "files: [ ... 文件名 ]",
-        "slug": "files-文件名",
-        "content": "//只有文件少的时候, 用一个数组来统计编译的文件就行了\nfiles: [\"./src/index.ts\", \"./src/other.ts\"]"
-      },
-      {
-        "header": "compilerOptions 配置选项",
-        "slug": "compileroptions-配置选项",
-        "content": "\"compilerOptions\":{ \"target\": \"es5\", // 指定编译后的版本 \"module\": \"es6\", // 指定要使用的模块化的规范 commonjs es6 \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"], // 指定项目中用到的库 es6 promise... \"outDir\": \"./dist\", // 指定输出目录 \"outFile\": \"./dist/app.js\", // 将代码合并为一个文件 \"allowJs\": false, // 是否对js文件进行编译, 默认为false \"checkJs\": false, // 是否检查js语法符合规范, 默认为false \"removeComments\": true, // 是否移除注释, 默认为false \"noEmit\": false, // 不生成编译后所产生的js文件, 默认为false \"noEmitOnError\": false, // 报错时不生成编译文件, 默认为false \"awaysStrict\": false, // 设置编译后的文件是否使用严格模式, 默认为false \"noImplicitAny\": false, // 不允许隐式的any类型设置, 默认为false \"noImplicitThis\": false, // 不允许不明确类型的this, 默认为false \"strictNullChecks\": false, // 严格的检查空值, 默认为false \"strict\": false // 所有的检查的总开关, 如果设置为true, 所有的都打开了就不用写了\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/abstract%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "abstract 抽象类",
-        "slug": "abstract-抽象类",
-        "content": "abstract class Animal { // 抽象类: 专门用来给别人继承的, 没有其他作作用, 不能创建对象 name: string; constructor(name: string, age: number) { this.name = name; } abstract say(): void; // 抽象方法, 必须被字类重写\n}\nclass Dog extends Animal { // 抽象方法重写 say() { super.say(); }\n}\nconst dog = new Dog(\"小黑\");\ndog.say();"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/calss%E7%B1%BB.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "calss 类",
-        "slug": "calss-类",
-        "content": "class Person { name: string; // 只能创建对象在对象身上进行访问 static age: number; // 静态属性: 不用new对象就可以被类访问的属性 Person.age readonly sex: string; // readonly: 只读属性 say() { console.log(\"...\"); }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/extends%E7%BB%A7%E6%89%BF.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "extends 继承",
-        "slug": "extends-继承",
-        "content": "class Animal { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } say() { console.log(\"动物在叫!\"); }\n}\nclass Dog extends Animal { // 继承后字类将会有父类的所有属性和方法 run() { console.log(\"小狗边跑边叫!\"); }\n}\nclass Cat extends Animal { // 继承后字类将会有父类的所有属性和方法 say() { // 方法的重写: 子类会覆盖符类中的say方法 console.log(\"小猫喵喵喵!\"); }\n}\nnew dog() = new Dog(\"小黑\", 18);\ndog.run();"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/super%E5%85%B3%E9%94%AE%E5%AD%97.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "super 关键字",
-        "slug": "super-关键字",
-        "content": "class Animal { name: string; constructor(name: string, age: number) { this.name = name; } say() { console.log(\"动物在叫!\"); }\n}\nclass Dog extends Animal { // 继承后字类将会有父类的所有属性和方法 age: number; constructor(name: string, age: number) { // name是来自父类的 // age是来自子类的 // super: 调用父类的构造函数 super(name); this.age = age; } say() { // super: 其实就是父类 super.say()就是调用父类的say方法 super.say(); }\n}\nconst dog = new Dog(\"小黑\", 18);"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/%E5%B1%9E%E6%80%A7%E7%9A%84%E5%B0%81%E8%A3%85.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "属性的封装",
-        "slug": "属性的封装",
-        "content": "class Animal { public name: string; // 公共的, 都能访问 private age: number; // 私有的, 只能在当前类内部访问 producted: 只能在当前或其字类访问,不能在实例访问 constructor(name: string, age: number) { this.name = name; this.age = age; } getAge() { return this.age; } setAge(value: number) { this.age = value; }\n}\nconst animal = new Animal(\"小狗\", 18);\nanimal.getAge();\nanimal.setAge(20); 属性存取器的用法: 用来对赋值方法进行限制, 方法内可以做条件判断 class Animal { public name: string; private age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } get age() { // 属性存取器 return this.age; } set age(value: number) { if (value > 0) { // 增加条件, 年龄必须大于0 this.age = value; } }\n}\nconst animal = new Animal(\"小狗\", 18);\nconsole.log(animal.age); // 实际是调用了get age()方法, 用起来和属性一样;\nanimal.age = 30; // 实际是调用了set age()方法, 用起来和属性一样; 构造函数特殊写法 class C { constractor(public name: string, public age: number) { // 此时构造函数内就可以省略: this.name = name; this.age = age; }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8Cthis.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "构造函数和 this",
-        "slug": "构造函数和-this",
-        "content": "class Dog { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } bark() { console.log(\"汪汪汪!\"); }\n}\nconst dog = new Dog(\"小黑\", 18);"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/keyof%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97%E7%AC%A6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "keyof 类型运算符",
-        "slug": "keyof-类型运算符",
-        "content": "keyof 类型运算符用于获取一个类型的所有键的联合，这些键可以是类型中的属性名、索引签名的键，或者是类型的字符串字面量类型。使用 keyof 类型运算符可以提高代码的复用性和灵活性。"
-      },
-      {
-        "header": "基本用法",
-        "slug": "基本用法",
-        "content": "PointKeys 是一个类型，它包含了 Point 类型的所有键，即 \"x\" | \"y\" | \"z\"。 type Point = { x: number; y: number; z: number;\n}; type PointKeys = keyof Point;\n// \"x\" | \"y\" | \"z\""
-      },
-      {
-        "header": "结合索引签名",
-        "slug": "结合索引签名",
-        "content": "DictionaryKeys<T> 尝试获取 Dictionary<T> 类型的键，但由于 Dictionary 具有一个索引签名，所以 keyof 运算符返回的是索引签名的键的类型，通常是 string | number | symbol。 interface Dictionary<T> { [key: string]: T;\n} type DictionaryKeys<T> = keyof Dictionary<T>;\n// \"keyof\" does not work with index signatures,\n// so the type will be \"string\" | \"number\" | \"symbol\" (depending on the key type)"
-      },
-      {
-        "header": "字符串字面量类型",
-        "slug": "字符串字面量类型",
-        "content": "type Direction = \"up\" | \"down\" | \"left\" | \"right\"; type DirectionKeys = keyof typeof Direction;\n// \"up\" | \"down\" | \"left\" | \"right\""
-      },
-      {
-        "header": "在泛型中的应用",
-        "slug": "在泛型中的应用",
-        "content": "getProperty 是一个泛型函数，它接受一个对象 obj 和一个键 key，然后返回对象在该键上的值。K extends keyof T 确保 key 是 obj 的一个有效键。 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key];\n} const point: Point = { x: 1, y: 2, z: 3 }; const x = getProperty(point, \"x\"); // x: number\nconst y = getProperty(point, \"y\"); // y: number"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "keyof 类型运算符不能直接用于接口或类型别名中的索引签名，因为索引签名的键的类型是动态的。\n当使用 keyof 运算符时，如果类型的键是数字索引签名，那么返回的键类型将是 number 或 string，具体取决于索引签名的配置。\nkeyof 运算符可以与类型查询操作符 T[K] 结合使用，以获取特定键的类型。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/typeof%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97%E7%AC%A6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "typeof 类型运算符",
-        "slug": "typeof-类型运算符",
-        "content": "typeof 类型运算符用于获取一个变量或对象属性的类型。这种类型运算符对于创建与现有数据结构相同类型的新类型非常有用。"
-      },
-      {
-        "header": "基本用法",
-        "slug": "基本用法",
-        "content": "TypeOfX 是一个类型，它与变量 x 的类型相同，即 number。TypeOfPerson 是一个类型，它与 person 对象的类型相同。 let x = 10;\ntype TypeOfX = typeof x;\n// TypeOfX 类型为 number const person = { name: \"Alice\", age: 30,\n}; type TypeOfPerson = typeof person;\n// TypeOfPerson 类型为 { name: string; age: number; }"
-      },
-      {
-        "header": "在函数中使用",
-        "slug": "在函数中使用",
-        "content": "function createPoint(x: number, y: number) { return { x, y };\n} type TypeOfCreatePoint = typeof createPoint;\n// TypeOfCreatePoint 类型为 (x: number, y: number) => { x: number; y: number; }"
-      },
-      {
-        "header": "获取对象属性的类型",
-        "slug": "获取对象属性的类型",
-        "content": "const config = { host: \"localhost\", port: 8080,\n}; type TypeOfPort = typeof config.port;\n// TypeOfPort 类型为 number"
-      },
-      {
-        "header": "获取类实例的类型",
-        "slug": "获取类实例的类型",
-        "content": "class Animal { name: string; constructor(name: string) { this.name = name; }\n} const dog = new Animal(\"Buddy\"); type TypeOfDog = typeof dog;\n// TypeOfDog 类型为 Animal"
-      },
-      {
-        "header": "获取类静态属性的类型",
-        "slug": "获取类静态属性的类型",
-        "content": "class Calculator { static version: string = \"1.0\"; add(x: number, y: number): number { return x + y; }\n} type TypeOfVersion = typeof Calculator.version;\n// TypeOfVersion 类型为 string"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "typeof 类型运算符只能用于变量、对象属性、函数返回值、类实例和类静态属性。\ntypeof 不能用于接口或类型别名本身，因为它们是抽象的，没有具体的运行时表示。\n当使用 typeof 运算符时，如果操作数是一个联合类型，那么结果也将是一个联合类型。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "映射类型",
-        "slug": "映射类型",
-        "content": "映射类型（Mapped Types）是一种强大的类型构造功能，它允许你根据一个现有类型创建一个新的类型，并且可以为它的属性执行一个映射函数。这在处理具有相同类型属性的对象或数组时特别有用。"
-      },
-      {
-        "header": "基本语法",
-        "slug": "基本语法",
-        "content": "T 是一个类型，P 是 T 的属性键的联合。对于 T 的每个属性 P，映射类型会创建一个同名的属性，其类型为 T[P]。 type MappedType<T> = { [P in keyof T]?: T[P];\n};"
-      },
-      {
-        "header": "可选属性映射",
-        "slug": "可选属性映射",
-        "content": "Partial<T> 是一个映射类型，它将 T 的每个属性 P 转换为可选属性。 type Partial<T> = { [P in keyof T]?: T[P];\n}; type PartialPoint = Partial<{ x: number; y: number }>;\n// { x?: number; y?: number }"
-      },
-      {
-        "header": "只读属性映射",
-        "slug": "只读属性映射",
-        "content": "type Readonly<T> = { readonly [P in keyof T]: T[P];\n}; type ReadonlyPoint = Readonly<{ x: number; y: number }>;\n// { readonly x: number; readonly y: number }"
-      },
-      {
-        "header": "转换属性类型",
-        "slug": "转换属性类型",
-        "content": "将所有属性转换为数组类型。 type Arrayify<T> = { [P in keyof T]: T[P][];\n}; type ArrayifiedPoint = Arrayify<{ x: number; y: number }>;\n// { x: number[]; y: number[] }"
-      },
-      {
-        "header": "条件属性映射",
-        "slug": "条件属性映射",
-        "content": "RenameProps 是一个映射类型，它不仅映射了属性，还根据第二个泛型参数 S 重命名了属性。 type RenameProps<T, S> = { [P in keyof T as S[P]]: T[P];\n}; type RenamedPoint = RenameProps<{ x: number; y: number }, { x: \"X\"; y: \"Y\" }>;\n// { X: number; Y: number }"
-      },
-      {
-        "header": "使用 as 进行类型断言",
-        "slug": "使用-as-进行类型断言",
-        "content": "映射类型中的 as 关键字可以用来进行类型断言，这在处理类型转换时非常有用。 type BoxedValue<T> = { [P in keyof T]: { value: T[P] };\n}; type BoxedPoint = BoxedValue<{ x: number; y: number }>;\n// { x: { value: number }; y: { value: number } }"
-      },
-      {
-        "header": "注意事项",
-        "slug": "注意事项",
-        "content": "映射类型中的 in 语法用于遍历一个类型的属性键。\n映射类型可以有条件地使用 ? 来标记属性为可选。\nreadonly 可以用于使属性只读。\n映射类型可以与泛型结合使用，以创建更通用的类型构造函数。"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%9D%A1%E4%BB%B6%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "条件类型",
-        "slug": "条件类型",
-        "content": "条件类型（Conditional Types）是一种高级类型功能，它允许你基于表达式的值来选择不同的类型。条件类型在编译时评估，并根据条件表达式的结果选择一个类型。 // 条件类型的一般形式如下：\ntype MyType = T extends U ? X : Y;\n// 这里，T extends U ? X : Y 是一个条件类型表达式，它表示：\n// 如果类型 T 扩展（或符合）类型 U，则结果是类型 X。\n// 否则，结果是类型 Y"
-      },
-      {
-        "header": "基本用法",
-        "slug": "基本用法",
-        "content": "IsNumber<T> 是一个条件类型，它检查 T 是否为 number 类型。如果是，结果是 \"Yes\"；如果不是，结果是 \"No\"。 type IsNumber<T> = T extends number ? \"Yes\" : \"No\"; type IsNumberResult1 = IsNumber<42>; // \"Yes\"\ntype IsNumberResult2 = IsNumber<string>; // \"No\""
-      },
-      {
-        "header": "嵌套条件类型",
-        "slug": "嵌套条件类型",
-        "content": "type IsArray<T> = T extends any[] ? \"Array\" : \"Not Array\"; type IsNumberArray = IsArray<number[]>; // \"Array\"\ntype IsStringArray = IsArray<string[]>; // \"Array\"\ntype IsBooleanArray = IsArray<boolean[]>; // \"Array\"\ntype IsObjectArray = IsArray<{ a: number }[]>; // \"Array\"\ntype IsNumber = IsArray<number>; // \"Not Array\""
-      },
-      {
-        "header": "使用条件类型进行类型守卫",
-        "slug": "使用条件类型进行类型守卫",
-        "content": "type IsStringOrNumber<T> = T extends string ? \"String\" : T extends number ? \"Number\" : \"Other\"; type Result1 = IsStringOrNumber<string>; // \"String\"\ntype Result2 = IsStringOrNumber<number>; // \"Number\"\ntype Result3 = IsStringOrNumber<boolean>; // \"Other\""
-      },
-      {
-        "header": "条件类型的分配行为",
-        "slug": "条件类型的分配行为",
-        "content": "type Primitive = number | string | boolean; type IsPrimitiveType<T> = T extends Primitive ? T : never; type IsStringOrNumberOrBoolean = IsPrimitiveType<string | number | boolean>;\n// string | number | boolean"
-      },
-      {
-        "header": "使用条件类型简化类型定义",
-        "slug": "使用条件类型简化类型定义",
-        "content": "type OptionalKeys<T> = { [K in keyof T]?: T[K];\n}; type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [P in K]?: T[P] }; type Todo = { title: string; description?: string; completed: boolean;\n}; type TodoPreview = MakeOptional<Todo, \"description\">;\n// { title: string; completed: boolean; description?: string; }"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "模板字面类型",
-        "slug": "模板字面类型",
-        "content": "模板字面类型（Template Literal Types）是从字符串字面类型构建的，并且可以通过联合类型扩展成多个字符串。它们与 JavaScript 中的模板字面字符串具有相同的语法，但用于类型位置。当与具体的字面类型一起使用时，模板字面通过连接内容生成新的字符串字面类型\n。 定义一个类型，它通过连接一个已知的字符串和一个泛型参数来创建一个新的字符串字面类型: type World = \"world\";\ntype Greeting = `hello ${World}`;\n// Greeting 类型为 \"hello world\" 当在插值位置使用联合类型时，类型可以由每个联合成员表示的每个可能的字符串字面类型的集合: type EmailLocaleIDs = \"welcome_email\" | \"email_heading\";\ntype FooterLocaleIDs = \"footer_title\" | \"footer_sendoff\";\ntype AllLocaleIDs = `${EmailLocaleIDs | FooterLocaleIDs}_id`;\n// AllLocaleIDs 类型为 \"welcome_email_id\" | \"email_heading_id\"\n// z| \"footer_title_id\" | \"footer_sendoff_id\"\n模板字面类型可以用于创建复杂的类型关系，通过内联字符串插值在类型中。它们与映射类型结合使用时尤其强大，可以基于现有类型定义新类型或接口的变换。 可以使用模板字面类型来定义 API 端点的路径: interface Routes { home: void; about: void; contact: number;\n} type RouteNames = keyof Routes;\ntype Path = `/${RouteNames}`; const homePath: Path = \"/home\";\n// 正确\nconst loginPath: Path = \"/login\";\n// 错误：类型 '\"/login\"' 不能分配给类型 'Path'\n模板字面类型也可以用来确保函数参数之间的关系。 创建一个函数，它根据事件名称推断出事件处理函数的参数类型： type Event = { type: \"click\" | \"mouseover\";\n} & { timestamp: number;\n}; function handleEvent( eventType: `${\"click\" | \"mouseover\"}-event`, handler: (event: Event & { type: \"click\" | \"mouseover\" }) => void\n) { // 实现\n} handleEvent(\"click-event\", (event) => {});\n// 正确\nhandleEvent(\"keypress-event\", (event) => {});\n// 错误：参数 '\"keypress-event\"' 不能分配给参数 '\"click-event\" | \"mouseover-event\"'"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%B3%9B%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "泛型",
-        "slug": "泛型",
-        "content": "泛型是一种强大的工具，它允许你编写可重用的函数、接口和类，这些函数、接口和类可以操作多种类型的数据，而不会失去类型安全性。泛型在编译时提供类型检查，从而帮助你捕捉错误。"
-      },
-      {
-        "header": "泛型函数",
-        "slug": "泛型函数",
-        "content": "泛型函数可以接收任意类型的参数，并返回相同类型的结果。 function identity<T>(arg: T): T { return arg;\n} const result = identity<string>(\"hello\"); // type is string\nconst resultNumber = identity<number>(123); // type is number"
-      },
-      {
-        "header": "泛型接口",
-        "slug": "泛型接口",
-        "content": "泛型接口允许你定义操作多种类型的数据的结构，而不需要指定具体的类型。 interface GenericIdentity<T> { (arg: T): T;\n} const identityObject: GenericIdentity<number> = identity;"
-      },
-      {
-        "header": "泛型类",
-        "slug": "泛型类",
-        "content": "泛型类允许你定义可以操作多种类型的数据的类。 class GenericNumber<T> { zeroValue: T; add: (x: T, y: T) => T;\n} let myGenericNumber = new GenericNumber<number>();\nmyGenericNumber.zeroValue = 0;\nmyGenericNumber.add = function (x, y) { return x + y;\n};"
-      },
-      {
-        "header": "泛型约束",
-        "slug": "泛型约束",
-        "content": "你可以对泛型参数施加约束，以确保它们支持特定的操作或属性。 interface Lengthwise { length: number;\n} function loggingIdentity<T extends Lengthwise>(arg: T): T { // Now we know it has a .length property, so no more error console.log(arg.length); return arg;\n} loggingIdentity({ length: 10, value: 3 });"
-      },
-      {
-        "header": "泛型类型别名",
-        "slug": "泛型类型别名",
-        "content": "泛型类型别名为复杂的类型提供了一种简便的命名方式。 type GenericArray<T> = Array<T>; let myArray: GenericArray<number> = [1, 2, 3];"
-      },
-      {
-        "header": "泛型元组",
-        "slug": "泛型元组",
-        "content": "元组类型允许你定义已知元素数量和类型的数组，各元素的类型不必相同。 function tuple<T1, T2, T3>(item1: T1, item2: T2, item3: T3): [T1, T2, T3] { return [item1, item2, item3];\n} const x: [string, number, boolean] = tuple(\"Hello\", 10, true);"
-      },
-      {
-        "header": "泛型工具类型",
-        "slug": "泛型工具类型",
-        "content": "内置的泛型工具类型，如 Partial<T>、Readonly<T>、Pick<T, K> 等，这些类型可以方便地构造新的类型。 type Point = { x: number; y: number;\n}; type PartialPoint = Partial<Point>;\nconst p: PartialPoint = { x: 3 }; // OK"
-      },
-      {
-        "header": "Partial<T>",
-        "slug": "partial-t",
-        "content": "Partial<T> 类型构造函数用于生成一个类型，其所有属性都是原始类型的属性，但所有属性都是可选的。 type Point = { x: number; y: number;\n}; type PartialPoint = Partial<Point>;\n// { x?: number; y?: number; } const p: PartialPoint = { x: 3 }; // OK\nconst p2: PartialPoint = { y: 7 }; // OK\nconst p3: PartialPoint = {}; // OK"
-      },
-      {
-        "header": "Readonly<T>",
-        "slug": "readonly-t",
-        "content": "Readonly<T> 类型构造函数用于生成一个类型，其所有属性都是原始类型的属性，但所有属性都是只读的。 type Point = { x: number; y: number;\n}; type ReadonlyPoint = Readonly<Point>;\n// { readonly x: number; readonly y: number; } const p: ReadonlyPoint = { x: 3, y: 7 };\n// Error: Cannot assign to 'x' because it is a read-only property.\n// p.x = 4;"
-      },
-      {
-        "header": "Pick<T, K>",
-        "slug": "pick-t-k",
-        "content": "Pick<T, K> 类型构造函数用于生成一个类型，其属性是原始类型中 K 所指定的属性的子集。\nPickedPoint 类型表示一个对象，它只包含原始 Point 类型中的 x 和 y 属性 type Point = { x: number; y: number; z: number;\n}; type PickedPoint = Pick<Point, \"x\" | \"y\">;\n// { x: number; y: number; } const p: PickedPoint = { x: 3, y: 7 };"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E7%B4%A2%E5%BC%95%E8%AE%BF%E9%97%AE%E7%B1%BB%E5%9E%8B.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "索引访问类型",
-        "slug": "索引访问类型",
-        "content": "索引访问类型（Index Access Types）允许你通过索引来查询一个类型的属性类型。这通常与 keyof 类型查询运算符结合使用，以便在编译时获取特定属性的类型。"
-      },
-      {
-        "header": "基本用法",
-        "slug": "基本用法",
-        "content": "type Point = { x: number; y: number; z: number;\n}; type XType = Point[\"x\"]; // XType 类型为 number\ntype YType = Point[\"y\"]; // YType 类型为 number\ntype ZType = Point[\"z\"]; // ZType 类型为 number"
-      },
-      {
-        "header": "结合 keyof 使用",
-        "slug": "结合-keyof-使用",
-        "content": "type Point = { x: number; y: number; z: number;\n}; type Key = keyof Point;\n// XYType 类型为 number | number | number\ntype XYType = Point[Key];"
-      },
-      {
-        "header": "在函数中使用",
-        "slug": "在函数中使用",
-        "content": "function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key];\n} const point: Point = { x: 1, y: 2, z: 3 }; const x = getProperty(point, \"x\"); // x 类型为 number\nconst y = getProperty(point, \"y\"); // y 类型为 number"
-      },
-      {
-        "header": "映射类型",
-        "slug": "映射类型",
-        "content": "索引访问类型也常用于创建映射类型（Mapped Types），这允许你基于现有类型创建新类型，并对每个属性应用相同的转换。在这个例子中，OptionsFlags 是一个映射类型，它将 FeatureFlags 类型中的每个属性转换为 boolean 类型。 type OptionsFlags<T> = { [K in keyof T]: boolean;\n}; type FeatureFlags = { darkMode: boolean; notifications: boolean; betaProgram: boolean;\n}; type FeatureOptions = OptionsFlags<FeatureFlags>;\n// FeatureOptions 类型为 {\n// darkMode: boolean;\n// notifications: boolean;\n// betaProgram: boolean;\n// }"
-      }
-    ]
-  },
-  {
-    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E7%BC%A9%E5%B0%8F/%E7%B1%BB%E5%9E%8B%E7%BC%A9%E5%B0%8F.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "类型缩小(缩小类型范围)",
-        "slug": "类型缩小-缩小类型范围",
-        "content": "类型缩小（Type Narrowing）是指在运行时基于某些条件来减少一个变量可能的类型范围的过程。这通常在处理联合类型或交叉类型时非常有用，允许你根据不同的情况对变量进行更具体的操作。类型缩小是 TypeScript 编程中的一个重要概念，它允许你编写更精确和更安全的代码。通过使用类型缩小可以在不同的代码路径中对变量进行更具体的操作。"
-      },
-      {
-        "header": "使用类型谓词",
-        "slug": "使用类型谓词",
-        "content": "类型谓词是一种函数，它对参数的类型进行断言，并返回一个布尔值，表明该参数是否为特定的类型。这可以用来缩小类型。 function process(x: number | string) { if (isNumber(x)) { // 在这个块中，TypeScript 知道 x 是一个 number x.toFixed(2); // 正确 } else { // 在这个块中，TypeScript 知道 x 是一个 string x.toUpperCase(); // 正确 }\n}\nfunction isNumber(x: number | string): x is number { return typeof x === \"number\";\n}"
-      },
-      {
-        "header": "使用字面量类型",
-        "slug": "使用字面量类型",
-        "content": "当你知道变量的值可能是几个特定字面量之一时，可以使用字面量类型进行缩小。 type Event = \"click\" | \"scroll\" | \"mousemove\"; function handleEvent(event: Event) { if (event === \"click\") { // event 被缩小为 'click' } else if (event === \"scroll\") { // event 被缩小为 'scroll' } else if (event === \"mousemove\") { // event 被缩小为 'mousemove' }\n}"
-      },
-      {
-        "header": "使用类型守卫",
-        "slug": "使用类型守卫",
-        "content": "类型守卫是 TypeScript 的一个特性，允许你在运行时检查变量的类型。 function hasOwnProperty<T, U extends string>(obj: T, key: U): key is keyof T { return key in obj;\n} const obj = { name: \"Kimi\", age: 30 };\nif (hasOwnProperty(obj, \"name\")) { // obj 在这里被缩小，包含了 name 属性 console.log(obj.name); // 正确\n} else { // 'name' 不是 obj 的属性\n}"
-      },
-      {
-        "header": "使用逻辑运算符",
-        "slug": "使用逻辑运算符",
-        "content": "逻辑运算符，如 &&，可以用来基于条件缩小类型。 function isObjectWithKey<T, U extends PropertyKey>( obj: T, key: U\n): obj is T & Record<U, unknown> { return key in obj;\n} const result = isObjectWithKey(obj, \"name\");\nif (result) { // obj 在这里被缩小，包含了 name 属性 console.log(obj.name); // 正确\n}"
-      },
-      {
-        "header": "使用自定义类型守卫",
-        "slug": "使用自定义类型守卫",
-        "content": "function printInput(x: string | number) { if (isStringOrNumber(x)) { console.log(x.toUpperCase()); // x 被缩小为 string } else { console.log(x.toFixed(2)); // x 被缩小为 number }\n}\nfunction isStringOrNumber(x: string | number): x is string { return typeof x === \"string\";\n}"
-      },
-      {
-        "header": "in 运算符",
-        "slug": "in-运算符",
-        "content": "isBird 函数是一个类型谓词，它使用 in 运算符来检查 animal 是否有 fly 属性。如果 isBird 返回 true，那么在 if 块中，creature 被缩小为 Bird 类型。 type Bird = { fly: () => void; layEggs: () => void;\n}; type Fish = { swim: () => void; layEggs: () => void;\n}; type Animal = Bird | Fish; function isBird(animal: Animal): animal is Bird { return \"fly\" in animal;\n} const creature: Animal = { layEggs: () => {}, swim: () => {} }; if (isBird(creature)) { // 在这个块中，TypeScript 会将 creature 缩小为 Bird 类型 creature.fly();\n} else { // 在这个块中，creature 可能是 Bird 或 Fish\n} 映射类型也使用 in 运算符来动态地构造类型。OptionsFlags 是一个映射类型，它使用 in 运算符来遍历 T 类型的键，并为每个键创建一个相应的布尔属性。 type OptionsFlags<T> = { [K in keyof T]: boolean;\n}; type FeatureFlags = { darkMode: boolean; notifications: boolean; betaProgram: boolean;\n}; type FeatureOptions = OptionsFlags<FeatureFlags>;\n// FeatureOptions 类型为 {\n// darkMode: boolean;\n// notifications: boolean;\n// betaProgram: boolean;\n// }"
-      },
-      {
-        "header": "instanceof 运算符",
-        "slug": "instanceof-运算符",
-        "content": "feed 函数接受一个 Animal 类型的参数。使用 instanceof 运算符检查 pet 是否为 Dog 类的实例。如果是，我们可以安全地调用 bark 方法，因为 TypeScript 的类型检查器现在知道 pet 具体是 Dog 类型。 class Animal { eat() { console.log(\"Eating\"); }\n} class Dog extends Animal { bark() { console.log(\"Barking\"); }\n} function feed(pet: Animal) { if (pet instanceof Dog) { (pet as Dog).bark(); // 类型缩小，现在知道 pet 是 Dog 类型 } else { pet.eat(); // 所有 Animal 都会 eat }\n}"
-      },
-      {
-        "header": "其他方式",
-        "slug": "其他方式",
-        "content": "typeof 运算符\nArray.isArray()"
-      }
-    ]
-  },
-  {
-    "path": "/web/Vue/Vue2/Vue2%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Vue2 组件通信",
-        "slug": "vue2-组件通信",
-        "content": "在 Vue 2 中，组件之间的通信方式主要有以下几种： 使用自定义事件：通过在父组件中定义一个事件，子组件可以触发该事件并传递数据到父组件。父组件通过监听该事件，接收子组件传递的数据。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent @message=\"handleMessage\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, methods: { handleMessage(data) { console.log(\"Message received:\", data); }, }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <button @click=\"sendMessage\">Send Message</button>\n</template> <script> export default { methods: { sendMessage() { this.$emit(\"message\", \"Hello from child component!\"); }, }, };\n</script> 使用 props：父组件通过在子组件上绑定属性，将数据传递给子组件。子组件通过 props 选项接收这些数据。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent :message=\"parentMessage\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, data() { return { parentMessage: \"Hello from parent component!\", }; }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <div>{{ message }}</div>\n</template> <script> export default { props: { message: { type: String, required: true, }, }, };\n</script> 使用 v-bind 指令：在子组件上使用 v-bind 指令，将数据绑定到父组件的某个属性上。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent :data=\"parentData\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, data() { return { parentData: \"Hello from parent component!\", }; }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <div>{{ data }}</div>\n</template> <script> export default { props: { data: { type: String, required: true, }, }, };\n</script> $parent、$children、$root、$refs 使用 vuex 进行组件间数据的通信 引入第三方插件 pubsub 进行发布订阅 以上就是 Vue 2 中组件通信的几种方式。在实际项目中，可以根据需求选择合适的方式来实现组件之间的通信。"
-      }
-    ]
-  },
-  {
     "path": "/web/React/React%E6%8F%90%E5%8D%87/ContextAPI.html",
     "title": "",
     "pathLocale": "/",
@@ -7944,6 +6558,1392 @@ export const searchIndex = [
     ]
   },
   {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/Function.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Function",
+        "slug": "function",
+        "content": "全局类型 Function 是所有 JavaScript 函数值的类型。它包括了所有函数对象共有的属性，如 call、bind 和 apply。此外，Function 类型的值可以被调用，并且这些调用返回 any 类型 。 当你在函数中声明 this 参数时，你为该函数调用时的上下文对象提供了一个类型注解。这在对象的方法或回调函数中尤其有用，以确保函数调用时 this 的类型是正确的。Printer 接口定义了一个 print 方法，该方法声明了 this 参数为 Printer 类型。这确保了 print 方法中的 this 指的是 Printer 类型的对象。 interface Printer { print(this: Printer, message: string): void;\n} function setupPrinter(p: Printer) { const printer: Printer = { print: function (this: Printer, message: string) { console.log(message); }, }; window.onload = function (this: Printer) { this.print(\"The page has finished loading.\"); }.bind(printer);\n} const myPrinter: Printer = { print: function (this: Printer, message: string) { console.log(`Printing: ${message}`); },\n}; setupPrinter(myPrinter); 在回调函数中声明 this 参数时，你可以确保回调函数中的 this 与期望的类型一致。doSomething 函数接受一个回调函数 f，该回调函数声明了 this 参数为 Printer 类型。这确保了当 doSomething 调用 f 时，this 指向 Printer 类型的对象。 function doSomething(f: (this: Printer, message: string) => void) { return f.call(printer, \"Hello, World!\");\n} doSomething(myPrinter.print);"
+      },
+      {
+        "header": "注意",
+        "slug": "注意",
+        "content": "需要注意的是，箭头函数不绑定自己的 this，它们继承父执行上下文的 this。因此，当你在类的方法中使用箭头函数时，this 可能不会指向你期望的对象。为了避免这种情况，可以使用普通函数或使用 bind 来确保 this 的正确性。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/never.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "never",
+        "slug": "never",
+        "content": "永远不会有返回值, 空是有值的, 值为空, 所以不能用 never function a(): never { throw new error(\"这种是没有返回值...\");\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/unknown.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "unknown(未知类型, 类型安全的 any)",
+        "slug": "unknown-未知类型-类型安全的-any",
+        "content": "// any类型可以赋值给任意变量\nlet a: any;\nlet b = \"string\";\nb = a;\nb = true;\n// 所以不建议使用any, 而是用unknown;\n// unknown类型不可以赋值给任意变量\n// 解决办法:\nlet c: unknown;\nlet d: string;\nc = \"hello\";\nd = c as string; // 类型断言\n// 或者\nd = <string>c; // 类型断言"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/void.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "void",
+        "slug": "void",
+        "content": "函数没有返回值的时候用 function a(): void { return; // 或者 return undefined; // 或者 return null;\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E8%A1%A8%E8%BE%BE%E5%BC%8F.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "函数类型表达式",
+        "slug": "函数类型表达式",
+        "content": "函数类型表达式用于定义函数的类型。这包括函数的参数类型、返回值类型以及可选的 this 上下文类型。函数类型表达式可以是匿名的，也可以是具名的（类型别名）。"
+      },
+      {
+        "header": "基本函数类型表达式",
+        "slug": "基本函数类型表达式",
+        "content": "// 匿名函数类型表达式\nlet myFunction: (param: string) => number; // 具名函数类型表达式\ntype MyFunctionType = (param: string) => number;"
+      },
+      {
+        "header": "函数类型的组成部分",
+        "slug": "函数类型的组成部分",
+        "content": "参数类型：函数的每个参数都需要一个类型注解。\n返回类型：使用 => 后面跟着返回值类型来指定函数的返回类型。\n可选参数：使用 ? 指定可选参数。\n剩余参数：使用 ... 定义剩余参数。\nthis 类型：使用 this 参数来定义函数调用时上下文的类型。 // 带参数和返回类型的函数\nlet greet: (name: string) => string;\ngreet = function (name: string): string { return `Hello, ${name}!`;\n}; // 带可选参数的函数\nlet log: (message: string, important?: boolean) => void;\nlog = function (message: string, important: boolean = false): void { if (important) { console.error(message); } else { console.log(message); }\n}; // 带剩余参数的函数\nlet sum: (...numbers: number[]) => number;\nsum = function (...numbers: number[]): number { return numbers.reduce((acc, curr) => acc + curr, 0);\n}; // 带 `this` 类型的函数\ntype StringArray = Array<string>;\nlet join: (this: StringArray, separator: string) => string;\njoin = function (this: StringArray, separator: string): string { return this.join(separator);\n};"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "函数重载",
+        "slug": "函数重载",
+        "content": "函数重载（Function Overloading）是一种允许一个函数根据参数的类型和数量有不同的行为的机制。函数重载通过在相同的函数名下提供多个不同的函数签名来实现。"
+      },
+      {
+        "header": "函数重载的基本语法",
+        "slug": "函数重载的基本语法",
+        "content": "greet 函数被重载了两次，一次接受一个 string 类型的参数，另一次接受一个 number 类型的参数。实现签名包含了两个重载签名的逻辑。 function greet(person: string): void;\nfunction greet(person: number): void; function greet(person: string | number): void { if (typeof person === \"string\") { console.log(\"Hello, \" + person); } else { console.log(\"Hello, person number \" + person); }\n}"
+      },
+      {
+        "header": "重载签名和实现签名",
+        "slug": "重载签名和实现签名",
+        "content": ""
+      },
+      {
+        "header": "重载签名",
+        "slug": "重载签名",
+        "content": "定义了函数可以被调用的不同方式。它们指定了函数的参数列表和返回类型，但不包含函数的实现。"
+      },
+      {
+        "header": "重载签名的例子",
+        "slug": "重载签名的例子",
+        "content": "// 重载签名\nfunction processInput(input: string): void;\nfunction processInput(input: number): void;\nfunction processInput(input: boolean): void; // 实现签名\nfunction processInput(input: string | number | boolean): void { if (typeof input === \"string\") { console.log(\"Processing string input: \" + input); } else if (typeof input === \"number\") { console.log(\"Processing number input: \" + input); } else { console.log(\"Processing boolean input: \" + input); }\n}"
+      },
+      {
+        "header": "实现签名",
+        "slug": "实现签名",
+        "content": "是函数的实际实现，它包含了函数的逻辑。实现签名必须与重载签名匹配，但可以包含更多的逻辑。"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "重载签名必须在实现签名之前声明。\n重载签名的参数类型必须不同，否则 TypeScript 编译器无法区分它们。\n实现签名的参数类型应该是重载签名参数类型的联合。\n函数的实现应该能够处理所有重载签名定义的情况。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%89%A9%E4%BD%99%E5%BD%A2%E5%8F%82.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "剩余形参",
+        "slug": "剩余形参",
+        "content": "剩余参数（Rest Parameters）是一种函数参数的高级用法，它允许你将一个不确定数量的参数表示为一个数组。这在处理函数调用时非常有用，特别是当你需要传递任意数量的参数时。"
+      },
+      {
+        "header": "剩余形参",
+        "slug": "剩余形参-1",
+        "content": "剩余形参使用三个点 ... 开头，它出现在函数参数列表的最后，用于收集所有剩余的参数。sum 函数使用剩余形参 ...numbers 来收集所有传递给它的数字，并使用 reduce 方法计算总和。 function sum(...numbers: number[]): number { return numbers.reduce((acc, curr) => acc + curr, 0);\n} console.log(sum(1, 2, 3, 4, 5)); // 输出: 15"
+      },
+      {
+        "header": "剩余实参",
+        "slug": "剩余实参",
+        "content": "剩余实参（Rest Arguments）是 JavaScript 的一个特性，它允许你将函数调用时的实参表示为一个数组。这在 TypeScript 中也可以使用，但它不是类型系统的一部分，而是 JavaScript 的一部分。我们使用剩余实参 ...numbers 来将数组 numbers 作为单独的参数传递给 sum 函数。 function sum(...args: number[]) { return args.reduce((acc, curr) => acc + curr, 0);\n} const numbers = [1, 2, 3, 4, 5];\nconsole.log(sum(...numbers)); // 输出: 15"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%84.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "参数解构",
+        "slug": "参数解构",
+        "content": "参数解构（Parameter Destructuring）是一种方便的功能，允许你在函数调用时直接解构传递给函数的参数。这意味着你可以在函数体内直接访问对象或数组的特定属性或元素，而不需要显式地从参数中提取它们。"
+      },
+      {
+        "header": "对象参数解构",
+        "slug": "对象参数解构",
+        "content": "当你的函数接受一个对象作为参数时，你可以在函数定义时直接解构这个对象。greetUser 函数在参数定义时解构了 User 对象，并且为 email 提供了一个默认值。 interface User { name: string; age: number; email?: string; // 可选属性\n} function greet(user: User) { console.log(`Hello, ${user.name}!`);\n} // 使用解构\nfunction greetUser({ name, age, email = \"no email provided\" }: User) { console.log(`Hello, ${name}! You are ${age} years old.`); if (email) { console.log(`Your email is ${email}.`); } else { console.log(\"No email provided.\"); }\n} const user = { name: \"Alice\", age: 30, email: \"alice@example.com\" };\ngreetUser(user);"
+      },
+      {
+        "header": "数组参数解构",
+        "slug": "数组参数解构",
+        "content": "类似地，如果函数接受一个数组作为参数，你也可以解构这个数组 function sum(a: number, b: number, c: number): number { return a + b + c;\n} // 使用解构\nfunction sumValues([a, b, c]: [number, number, number]): number { return a + b + c;\n} const numbers = [1, 2, 3];\nconsole.log(sumValues(numbers)); // 输出: 6"
+      },
+      {
+        "header": "默认参数值",
+        "slug": "默认参数值",
+        "content": "function initConfig({ width = 800, height = 600, color = \"white\",\n}: { width?: number; height?: number; color?: string;\n}) { console.log(`Config: width=${width}, height=${height}, color=${color}`);\n} initConfig({ width: 1024 }); // 使用部分参数和默认值"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "可选参数",
+        "slug": "可选参数",
+        "content": "可选参数是指在函数调用时不是必须的参数。你可以通过在参数类型后面添加一个问号 ? 来标记一个参数为可选的。这意味着在调用函数时，可以省略这个参数，如果省略了，它将默认为 undefined。"
+      },
+      {
+        "header": "可选参数的基本用法",
+        "slug": "可选参数的基本用法",
+        "content": "function greet(name: string, greeting?: string) { console.log(greeting ? greeting : \"Hello\", name);\n} greet(\"World\"); // 输出: Hello World\ngreet(\"World\", \"Hi\"); // 输出: Hi World"
+      },
+      {
+        "header": "在回调函数中的可选参数",
+        "slug": "在回调函数中的可选参数",
+        "content": "当你在处理回调函数时，你可能也想参数是可选的。但是，需要特别注意的是，你不能在函数类型中直接在回调的参数中标记为可选，除非你打算在调用回调时不传递该参数。 // 错误示例\nfunction myForEach(arr: any[], callback: (arg: any, index?: number) => void) { for (let i = 0; i < arr.length; i++) { callback(arr[i], i); }\n} 正确的做法是，确保在调用回调时，提供的所有参数都是必需的，或者在函数体内做好处理可选参数的逻辑。 // 正确示例\nfunction myForEach(arr: any[], callback: (arg: any, index?: number) => void) { for (let i = 0; i < arr.length; i++) { // 可能不想提供索引，只调用 callback 与一个参数 if (callback.length === 1) { callback(arr[i]); } else { callback(arr[i], i); } }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E5%9C%A8%E5%87%BD%E6%95%B0%E4%B8%AD%E5%A3%B0%E6%98%8Ethis.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "在函数中声明 this",
+        "slug": "在函数中声明-this",
+        "content": "可以在函数中声明 this 参数，以指定调用该函数时上下文对象的类型。这通常在对象的方法或回调函数中使用，以确保函数调用时 this 的类型正确。通过在函数中声明 this 参数，你可以提高代码的类型安全性，并减少因 this 引起的错误。"
+      },
+      {
+        "header": "在对象方法中声明 this",
+        "slug": "在对象方法中声明-this",
+        "content": "在对象的方法中使用 this 时，你可以声明 this 参数来指定对象本身的类型。greet 方法声明了 this: User，这告诉 TypeScript this 指的是 User 类型的对象。 interface User { name: string; age: number; greet(this: User): void;\n} const user: User = { name: \"Alice\", age: 30, greet: function (this: User): void { console.log( `Hello, my name is ${this.name} and I am ${this.age} years old.` ); },\n}; user.greet(); // 输出: Hello, my name is Alice and I am 30 years old."
+      },
+      {
+        "header": "在回调函数中声明 this",
+        "slug": "在回调函数中声明-this",
+        "content": "可以声明 this 参数，以确保回调函数中的 this 与期望的类型一致。setupPrinter 函数中的回调函数声明了 this: Printer，确保在回调函数中 this 指向 Printer 类型的对象。 interface Printer { print(this: Printer, message: string): void;\n} function setupPrinter(p: Printer) { const printer: Printer = { print: function (this: Printer, message: string) { console.log(message); }, }; window.onload = function (this: Printer) { this.print(\"The page has finished loading.\"); }.bind(printer);\n} const myPrinter: Printer = { print: function (this: Printer, message: string) { console.log(`Printing: ${message}`); },\n}; setupPrinter(myPrinter);"
+      },
+      {
+        "header": "使用箭头函数和 this 参数",
+        "slug": "使用箭头函数和-this-参数",
+        "content": "箭头函数不绑定自己的 this，它继承了父执行上下文的 this。因此，当你在类的方法中使用箭头函数时，this 可能不会指向你期望的对象。greet 方法是一个箭头函数，它不绑定自己的 this，因此 this.name 在执行时是 undefined。 class User { name: string; greet: () => void; constructor(name: string) { this.name = name; this.greet = () => { console.log(`Hello, my name is ${this.name}`); }; }\n} const user = new User(\"Alice\");\nuser.greet(); // 输出: Hello, my name is undefined"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "声明 this 参数不会改变函数的行为，它只是为编译器提供了类型信息。\n在箭头函数中，this 是在函数创建时绑定的，而不是在调用时绑定的，因此箭头函数中通常不需要声明 this 参数。\n在使用 bind 或其他函数调用方法（如 call 或 apply）时，需要确保 this 参数的类型正确。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E6%9E%84%E9%80%A0%E7%AD%BE%E5%90%8D.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "构造签名",
+        "slug": "构造签名",
+        "content": "构造签名（Construct Signatures）是接口的一部分，用于描述一个构造函数的参数列表和返回类型。这允许接口能够描述一个类或者一个函数构造器的形态。"
+      },
+      {
+        "header": "基本语法",
+        "slug": "基本语法",
+        "content": "构造签名通常与 new 关键字一起使用，表示创建一个新对象的构造函数。这个接口 Constructable 描述了一个构造函数，它接受一个 string 参数，并返回一个 Object 类型的新实例。 interface Constructable { new (arg: string): Object;\n}"
+      },
+      {
+        "header": "实现构造签名",
+        "slug": "实现构造签名",
+        "content": "class MyClass implements Constructable { constructor(arg: string) { // ... }\n} const myInstance = new MyClass(\"Hello, World!\");"
+      },
+      {
+        "header": "带有多个参数的构造签名",
+        "slug": "带有多个参数的构造签名",
+        "content": "interface Constructable { new (arg1: string, arg2: number): Object;\n}"
+      },
+      {
+        "header": "带有可选参数的构造签名",
+        "slug": "带有可选参数的构造签名",
+        "content": "interface Constructable { new (arg1: string, arg2?: number): Object;\n}"
+      },
+      {
+        "header": "带有剩余参数的构造签名",
+        "slug": "带有剩余参数的构造签名",
+        "content": "interface Constructable { new (arg1: string, ...args: number[]): Object;\n}"
+      },
+      {
+        "header": "泛型构造签名",
+        "slug": "泛型构造签名",
+        "content": "interface Constructable { new <T>(arg: T): Object;\n}"
+      },
+      {
+        "header": "多个构造签名",
+        "slug": "多个构造签名",
+        "content": "interface Constructable { new (config: { a: number }): Object; new (config: { b: string }): Object;\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E8%B0%83%E7%94%A8%E7%AD%BE%E5%90%8D.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "调用签名",
+        "slug": "调用签名",
+        "content": "调用签名（Call Signatures）是接口中用于描述函数类型的一种方式。它们定义了函数的参数列表和返回类型。调用签名使得接口可以作为一种通用的函数类型，用于任何符合调用签名描述的函数。"
+      },
+      {
+        "header": "基本语法",
+        "slug": "基本语法",
+        "content": "接口可以包含一个或多个调用签名。GreetFunction 接口定义了一个调用签名，它指定了函数必须接受一个 string 类型的参数并且没有返回值（void）。 interface GreetFunction { (name: string): void;\n} // 实现这个接口的任何函数都必须接受一个 string 参数并返回 void\nconst greet: GreetFunction = function (name: string): void { console.log(`Hello, ${name}!`);\n};"
+      },
+      {
+        "header": "带有可选参数的调用签名",
+        "slug": "带有可选参数的调用签名",
+        "content": "interface GreetFunction { (name: string, optionalGreeting?: string): void;\n} const greet: GreetFunction = function ( name: string, optionalGreeting?: string\n): void { const greeting = optionalGreeting || \"Hello\"; console.log(`${greeting}, ${name}!`);\n};"
+      },
+      {
+        "header": "带有剩余参数的调用签名",
+        "slug": "带有剩余参数的调用签名",
+        "content": "interface GreetFunction { (name: string, ...greetings: string[]): void;\n} const greet: GreetFunction = function ( name: string, ...greetings: string[]\n): void { console.log(`Hello, ${name}!`); greetings.forEach((greeting) => console.log(greeting));\n};"
+      },
+      {
+        "header": "带有 this 类型的调用签名",
+        "slug": "带有-this-类型的调用签名",
+        "content": "interface GreetThis { (this: { name: string }): string;\n} const greet: GreetThis = function (): string { return `Hello, ${this.name}!`;\n}; const user = { name: \"Alice\", greet: greet,\n}; console.log(user.greet.call(user)); // \"Hello, Alice!\""
+      },
+      {
+        "header": "泛型调用签名",
+        "slug": "泛型调用签名",
+        "content": "interface GenericGreet { <T>(value: T): T;\n} const genericGreet: GenericGreet = function <T>(value: T): T { return value;\n};"
+      },
+      {
+        "header": "多个调用签名",
+        "slug": "多个调用签名",
+        "content": "接口可以有多个调用签名，但它们必须有不同的参数列表。 interface GreetFunction { (name: string): void; (name: string, greeting: string): string;\n} const greet: GreetFunction = function ( name: string, greeting?: string\n): string | void { if (greeting) { return `${greeting}, ${name}!`; } else { console.log(`Hello, ${name}!`); }\n};"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "调用签名不能有同名参数。\n调用签名的参数类型和返回类型必须完全匹配。\n调用签名可以与其他属性或方法共存于同一个接口中。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E4%BA%A4%E5%8F%89%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "交叉类型(&)",
+        "slug": "交叉类型",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\n// C = { name: string; age: number; }"
+      },
+      {
+        "header": "使用场景",
+        "slug": "使用场景",
+        "content": "扩展接口：当你想要为接口添加额外的属性或方法时，交叉类型可以帮助你模块化和重用代码。 组合函数签名：你可以使用交叉类型来组合多个函数签名，这样函数可以接受不同的参数或者返回多个类型。 实现混入（Mixins）：在 TypeScript 中，混入是一种设计模式，它允许将多个类的功能组合到一个类中。交叉类型是实现混入的一种方式。 增强对象类型：当你需要确保一个变量满足多个类型的所有属性时，交叉类型非常有用。"
+      },
+      {
+        "header": "交叉类型与联合类型",
+        "slug": "交叉类型与联合类型",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A | B;\n// C = { name: string; } | { age: number; }\nconst c1: C = { name: \"张三\" };\nconst c2: C = { age: 18 };"
+      },
+      {
+        "header": "交叉类型与接口",
+        "slug": "交叉类型与接口",
+        "content": "interface A { name: string;\n}\ninterface B { age: number;\n}\ninterface C extends A, B { // C = { name: string; age: number; }\n}"
+      },
+      {
+        "header": "交叉类型与函数",
+        "slug": "交叉类型与函数",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst fn = (a: A, b: B): C => { return { ...a, ...b };\n};\nconst result = fn({ name: \"张三\" }, { age: 18 });\nconsole.log(result);"
+      },
+      {
+        "header": "交叉类型与类",
+        "slug": "交叉类型与类",
+        "content": "class A { name: string; constructor(name: string) { this.name = name; }\n}\nclass B { age: number; constructor(age: number) { this.age = age; }\n}\nclass C extends A, B { constructor(name: string, age: number) { super(name); super(age); }\n}\nconst c = new C('张三', 18);\nconsole.log(c);"
+      },
+      {
+        "header": "交叉类型与枚举",
+        "slug": "交叉类型与枚举",
+        "content": "enum A { a = 1, b = 2,\n}\nenum B { c = 3, d = 4,\n}\nenum C { e = 5, f = 6,\n}\ntype D = A & B & C;\n// D = { a: 1; b: 2; c: 3; d: 4; e: 5; f: 6; }"
+      },
+      {
+        "header": "交叉类型与类型别名",
+        "slug": "交叉类型与类型别名",
+        "content": "type A = { name: string }; // A = { name: string; }\ntype B = { age: number }; // B = { age: number; }\ntype C = A & B; // C = { name: string; age: number; }"
+      },
+      {
+        "header": "交叉类型与泛型",
+        "slug": "交叉类型与泛型",
+        "content": "type A<T> = T & { name: string }; // A = <T>(T & { name: string; })\nconst a: A<number> = { name: \"张三\", age: 18 };"
+      },
+      {
+        "header": "交叉类型与类型断言",
+        "slug": "交叉类型与类型断言",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型守卫",
+        "slug": "交叉类型与类型守卫",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (c.name) { console.log(c.name);\n}\nif (c.age) { console.log(c.age);\n}"
+      },
+      {
+        "header": "交叉类型与类型推断",
+        "slug": "交叉类型与类型推断",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B; // C = { name: string; age: number; }\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c.name;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型检查",
+        "slug": "交叉类型与类型检查",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (typeof c.name === \"string\") { console.log(c.name);\n}\nif (typeof c.age === \"number\") { console.log(c.age);\n}"
+      },
+      {
+        "header": "交叉类型与类型转换",
+        "slug": "交叉类型与类型转换",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型合并",
+        "slug": "交叉类型与类型合并",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E5%B1%9E%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "属性修饰符",
+        "slug": "属性修饰符",
+        "content": "对象类型的属性可以被赋予不同的修饰符，以定义它们的特性，如是否可选、是否只读等。"
+      },
+      {
+        "header": "可选属性",
+        "slug": "可选属性",
+        "content": "interface Person { name: string; age?: number; // 可选属性，不需要在所有对象中都提供\n} const person1: Person = { name: \"Alice\", // age 属性被省略，将被赋值为 undefined\n}; const person2: Person = { name: \"Bob\", age: 30, // 提供了 age 属性\n};"
+      },
+      {
+        "header": "必需属性",
+        "slug": "必需属性",
+        "content": "interface Person { name: string; // 必需属性 age: number; // 必需属性\n} const person: Person = { name: \"Alice\", age: 30,\n};"
+      },
+      {
+        "header": "只读属性",
+        "slug": "只读属性",
+        "content": "interface Point { readonly x: number; readonly y: number;\n} const point: Point = { x: 10, y: 20,\n};\n// Error: Cannot assign to 'x' because it is a read-only property.\n// point.x = 5;"
+      },
+      {
+        "header": "属性修饰符的组合",
+        "slug": "属性修饰符的组合",
+        "content": "interface Person { name: string; age?: number; // 可选属性 readonly id: number; // 只读属性\n} const person: Person = { name: \"Alice\", id: 1, // age 属性是可选的，可以省略\n};\n// Error: Cannot assign to 'id' because it is a read-only property.\n// person.id = 2;"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E6%89%A9%E5%B1%95%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "扩展类型",
+        "slug": "扩展类型",
+        "content": "对象类型的扩展可以通过接口（interface）和类型别名（type）来实现。这两种方式都允许你基于现有的类型定义新的类型，从而增加新的属性或方法。"
+      },
+      {
+        "header": "使用 interface 扩展类型",
+        "slug": "使用-interface-扩展类型",
+        "content": "接口可以通过 extends 关键字来扩展一个或多个接口，从而继承它们的属性。 interface Animal { name: string;\n} interface Bear extends Animal { honey: boolean;\n} const bear: Bear = { name: \" Winnie\", honey: true,\n};"
+      },
+      {
+        "header": "使用 type 扩展类型",
+        "slug": "使用-type-扩展类型",
+        "content": "类型别名 type 可以使用交叉类型（&）来组合多个类型。 type Animal = { name: string;\n}; type Bear = Animal & { honey: boolean;\n}; const bear: Bear = { name: \" Winnie\", honey: true,\n};"
+      },
+      {
+        "header": "扩展现有类型",
+        "slug": "扩展现有类型",
+        "content": "如果你想为现有的类型（如数组）添加新的属性，可以使用声明合并。例如，为数组添加一个 last 属性。 interface Array<T> { last: T;\n} let nums: number[] = [1, 2, 3];\nconsole.log(nums.last); // 3"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E6%BA%A2%E5%87%BA%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "溢出属性检查",
+        "slug": "溢出属性检查",
+        "content": "对象类型的溢出属性检查（Excess Property Checks）是一种类型安全特性，它会在对象字面量被赋值给变量或者作为参数传递给函数时，检查对象字面量是否包含目标类型未定义的属性。如果对象字面量有目标类型中不存在的属性，编译器将会报错。 例如，如果有一个接口 SquareConfig，它定义了 color 和 width 属性，然后你尝试创建一个对象字面量并将其赋值给一个 SquareConfig 类型的变量，但对象字面量中包含了一个 SquareConfig 未定义的属性，如下所示： interface SquareConfig { color?: string; width?: number;\n} function createSquare(config: SquareConfig): { color: string; area: number } { return { color: config.color || \"red\", area: config.width ? config.width * config.width : 20, };\n}\n// 错误：属性 'colour' 不存在于类型 'SquareConfig'。\nlet mySquare = createSquare({ colour: \"red\", width: 100 }); 在这个例子中，对象字面量 { colour: \"red\", width: 100 } 包含了一个 SquareConfig 接口中未定义的属性 colour，所以 TypeScript 编译器会报错，指出 'colour' does not exist in type 'SquareConfig'\n。"
+      },
+      {
+        "header": "要解决这个问题，你可以做以下几件事情之一：",
+        "slug": "要解决这个问题-你可以做以下几件事情之一",
+        "content": "修正属性名，确保对象字面量中的属性名称与目标类型中的属性名称相匹配。\n如果确实需要传递额外的属性，可以修改目标类型的定义，以包含这些额外的属性。\n使用类型断言，将对象字面量断言为任意类型，来绕过溢出属性检查（但这种做法会失去类型安全）。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/any.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "any(建议尽量避免)",
+        "slug": "any-建议尽量避免",
+        "content": "// 隐式的any类型\nlet a;\na = 10;\na = \"str\";\na = true;\n// 隐式的定义变量并声明类型\nlet b = 10;"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/array.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "array",
+        "slug": "array",
+        "content": "let arr1: string[];\nlet arr2: Array<number>;\nlet arr3: Array<any>;"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/BigInt.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "BigInt",
+        "slug": "bigint",
+        "content": "BigInt 是一种特殊的数据类型，用于表示大于 2^53 - 1 的整数，这个值是 JavaScript 中可以用 Number 表示的最大整数。BigInt 可以表示任意大的整数，非常适合用于处理大整数运算，如加密算法、大数据处理等场景。"
+      },
+      {
+        "header": "创建 BigInt",
+        "slug": "创建-bigint",
+        "content": "可以通过在整数后面添加 n 后缀，或者使用 BigInt() 函数创建 BigInt。 // 使用 n 后缀\nconst bigNumber1 = 123456789012345678901234567890n;\n// 使用 BigInt 函数\nconst bigNumber2 = BigInt(\"123456789012345678901234567890\");"
+      },
+      {
+        "header": "BigInt 运算",
+        "slug": "bigint-运算",
+        "content": "BigInt 支持标准的算术运算符，如 +, -, *, / 等 const sum = bigNumber1 + bigNumber2;\nconst difference = bigNumber1 - bigNumber2;\nconst product = bigNumber1 * bigNumber2;\nconst quotient = bigNumber1 / bigNumber2;"
+      },
+      {
+        "header": "类型检查",
+        "slug": "类型检查",
+        "content": "使用 typeof 检查 BigInt 类型时，返回值为 \"bigint\"。 typeof 10n === \"bigint\"; // true\ntypeof BigInt(10) === \"bigint\"; // true"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "BigInt 不能与 Number 类型混合运算，必须显式转换。 BigInt 不支持 Math 库中的函数。 转换 BigInt 为 Number 可能会导致精度丢失。 const theBiggestInt = 9007199254740991n;\nconst alsoHuge = BigInt(9007199254740991);\nconst hugeString = BigInt(\"9007199254740991\");\nconsole.log(theBiggestInt === alsoHuge); // true\nconsole.log(theBiggestInt === hugeString); // true const previousMaxSafe = BigInt(Number.MAX_SAFE_INTEGER);\nconst maxPlusOne = previousMaxSafe + 1n;\nconst multi = previousMaxSafe * 2n;\nconst subtr = multi - 10n;\nconst mod = multi % 10n;\nconst bigN = 2n ** 54n;"
+      },
+      {
+        "header": "限制与建议",
+        "slug": "限制与建议",
+        "content": "精度问题：在处理非常大的数值时，使用 BigInt 可以避免 Number 类型的精度问题。 性能考虑：BigInt 操作通常比 Number 操作慢，因为它们需要自定义实现且缺乏本地硬件支持。 环境支持：确保你的运行环境支持 BigInt，例如，较老的浏览器或 Node.js 版本可能不支持。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/enum.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "enmu(枚举: 把所有的可能的情况都列出来)",
+        "slug": "enmu-枚举-把所有的可能的情况都列出来",
+        "content": "枚举（Enums）是一种特殊的类型，它为一组数值赋予了更加友好的名字。枚举可以被用来定义命名的常数集合，这使得代码更加易读和易于维护。"
+      },
+      {
+        "header": "普通枚举",
+        "slug": "普通枚举",
+        "content": "enmu Sex{ Male, // 不写值的话, 自动转成0 Female = 1 // 赋值为1\n}\nlet i: { name: string, sex: Sex };\ni = { name: 'ths', sex: Sex.Male // 自动转成0了\n}"
+      },
+      {
+        "header": "带字符串值的枚举",
+        "slug": "带字符串值的枚举",
+        "content": "enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n} console.log(Color.Red); // \"FF0000\"\nconsole.log(Color[Color.Red]); // 0"
+      },
+      {
+        "header": "带数字值的枚举",
+        "slug": "带数字值的枚举",
+        "content": "enum Color { Red = 1, Green = 2, Blue = 3,\n} console.log(Color.Red); // 1\nconsole.log(Color.Green); // 2\nconsole.log(Color.Blue); // 3"
+      },
+      {
+        "header": "常数成员和计算成员",
+        "slug": "常数成员和计算成员",
+        "content": "enum Color { Red, Green, Blue = Color.Red * 2, DarkRed = Color.Red + 10,\n} console.log(Color.Blue); // 2\nconsole.log(Color.DarkRed); // 12"
+      },
+      {
+        "header": "反向映射",
+        "slug": "反向映射",
+        "content": "enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n}\nconsole.log(Color[\"FF0000\"]); // Color.Red"
+      },
+      {
+        "header": "枚举作为类型",
+        "slug": "枚举作为类型",
+        "content": "let c: Color = Color.Green;"
+      },
+      {
+        "header": "字符串枚举",
+        "slug": "字符串枚举",
+        "content": "enum Status { Pending = \"PENDING\", Approved = \"APPROVED\", Rejected = \"REJECTED\",\n} function printStatus(status: Status) { console.log(status);\n} printStatus(Status.Approved); // \"APPROVED\""
+      },
+      {
+        "header": "数字枚举",
+        "slug": "数字枚举",
+        "content": "enum NumberEnum { One, Two, Three,\n} console.log(NumberEnum.One); // 0\nconsole.log(NumberEnum.Two); // 1\nconsole.log(NumberEnum.Three); // 2"
+      },
+      {
+        "header": "外部枚举",
+        "slug": "外部枚举",
+        "content": "// app.ts\nimport { Color } from \"./colors\";\n// colors.ts\nexport enum Color { Red = \"FF0000\", Green = \"00FF00\", Blue = \"0000FF\",\n}\nconsole.log(Color.Red); // \"FF0000\""
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/interface%E5%92%8Ctype%E5%8C%BA%E5%88%AB.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "interface 和 type 区别",
+        "slug": "interface-和-type-区别",
+        "content": "类型别名和接口非常相似，在很多情况下你可以在它们之间自由选择。interface 的几乎所有功能都在 type 中可用，主要区别在于无法重新打开类型以添加 ​​ 新属性，而接口始终可扩展。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/interface%E6%8E%A5%E5%8F%A3.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "interface 接口",
+        "slug": "interface-接口",
+        "content": "接口（Interfaces）是一种强大的方式，用于定义对象的结构，它是一种对类型而不是对值的描述。接口可以被理解为对象的蓝图，它规定了对象必须具有的结构和类型，但不实现它们。接口主要用于类型检查和确保对象符合预期的形状"
+      },
+      {
+        "header": "基本语法",
+        "slug": "基本语法",
+        "content": "Person 接口，它要求任何实现这个接口的对象都必须有 name（字符串类型）和 age（数字类型）两个属性 interface Person { name: string; // 接口中所有的属性不能赋值 age: number; say(): void; // 不能有方法体, 接口只定义对象的结构而没有实际的值, 类似抽象方法\n}\ninterface Person{ // 接口可以重名 sex: string;\n} let p1: Person = { name: 'ths', age: 18, say(): void //或者 say(){ console.log('11111') }; // 再或者 say:()=>{ console.log('11111') }\n}"
+      },
+      {
+        "header": "实现接口",
+        "slug": "实现接口",
+        "content": "User 类实现了 Person 接口，这意味着 User 类的实例必须包含 name 和 age 属性 /* 定义类时, 可以用类去实现一个接口, 用到关键字 implements\n接口其实对类进行了限制，与抽象类很像，区别在于抽象类中可以有抽象方法也可以有其他的，\n接口内只能有抽象方法\n另外的区别在于使用抽象类时使用extends, 接口使用implements*/\nclass User implements Person { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; }\n}"
+      },
+      {
+        "header": "只读属性(readonly)",
+        "slug": "只读属性-readonly",
+        "content": "接口也可以定义只读属性，这些属性必须在初始化时赋值，以后不能修改 interface Point { readonly x: number; readonly y: number;\n}"
+      },
+      {
+        "header": "函数类型",
+        "slug": "函数类型",
+        "content": "接口不仅可以用于对象类型，还可以用来定义函数类型 interface SearchFunction { (source: string, subString: string): boolean;\n}"
+      },
+      {
+        "header": "扩展接口",
+        "slug": "扩展接口",
+        "content": "interface Person { name: string; age: number;\n} interface Logger { log(message: string): void;\n} interface PersonLogger extends Person, Logger { logName(): void;\n} class ConcretePersonLogger implements PersonLogger { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } log(message: string): void { console.log(message); } logName(): void { console.log(this.name); }\n}"
+      },
+      {
+        "header": "索引签名",
+        "slug": "索引签名",
+        "content": "interface StringArray { [index: number]: string;\n} let myArray: StringArray;\nmyArray = [\"Bob\", \"Fred\"]; let myStr: string = myArray[0];"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/tuple.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "tuple",
+        "slug": "tuple",
+        "content": "元组, 元组就是长度固定的数组, 最好不要太长, 太长不如用数组了 let tarr: [string, number];\ntarr = [\"str\", 123];"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/type(%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D).html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "type(类型别名)",
+        "slug": "type-类型别名",
+        "content": "类型别名允许你为复杂的类型定义创建简洁的名称，从而简化代码 type UserID = number; // 类型别名\nfunction getUserByID(id: UserID): User { // 实现根据 ID 获取用户 console.log(\"Fetching user with ID:\", id); return {} as User; // 模拟返回用户\n}\ntype User = { id: number; name: string; roles: string[]; isActive: boolean; metadata?: { createdAt: Date; updatedAt?: Date; };\n}; let user: User = { id: 1, name: \"Alice\", roles: [\"admin\"], isActive: true, metadata: { createdAt: new Date(), },\n};"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E4%BA%A4%E5%8F%89%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "交叉类型(&)",
+        "slug": "交叉类型",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\n// C = { name: string; age: number; }"
+      },
+      {
+        "header": "使用场景",
+        "slug": "使用场景",
+        "content": "扩展接口：当你想要为接口添加额外的属性或方法时，交叉类型可以帮助你模块化和重用代码。 组合函数签名：你可以使用交叉类型来组合多个函数签名，这样函数可以接受不同的参数或者返回多个类型。 实现混入（Mixins）：在 TypeScript 中，混入是一种设计模式，它允许将多个类的功能组合到一个类中。交叉类型是实现混入的一种方式。 增强对象类型：当你需要确保一个变量满足多个类型的所有属性时，交叉类型非常有用。"
+      },
+      {
+        "header": "交叉类型与联合类型",
+        "slug": "交叉类型与联合类型",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A | B;\n// C = { name: string; } | { age: number; }\nconst c1: C = { name: \"张三\" };\nconst c2: C = { age: 18 };"
+      },
+      {
+        "header": "交叉类型与接口",
+        "slug": "交叉类型与接口",
+        "content": "interface A { name: string;\n}\ninterface B { age: number;\n}\ninterface C extends A, B { // C = { name: string; age: number; }\n}"
+      },
+      {
+        "header": "交叉类型与函数",
+        "slug": "交叉类型与函数",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst fn = (a: A, b: B): C => { return { ...a, ...b };\n};\nconst result = fn({ name: \"张三\" }, { age: 18 });\nconsole.log(result);"
+      },
+      {
+        "header": "交叉类型与类",
+        "slug": "交叉类型与类",
+        "content": "class A { name: string; constructor(name: string) { this.name = name; }\n}\nclass B { age: number; constructor(age: number) { this.age = age; }\n}\nclass C extends A, B { constructor(name: string, age: number) { super(name); super(age); }\n}\nconst c = new C('张三', 18);\nconsole.log(c);"
+      },
+      {
+        "header": "交叉类型与枚举",
+        "slug": "交叉类型与枚举",
+        "content": "enum A { a = 1, b = 2,\n}\nenum B { c = 3, d = 4,\n}\nenum C { e = 5, f = 6,\n}\ntype D = A & B & C;\n// D = { a: 1; b: 2; c: 3; d: 4; e: 5; f: 6; }"
+      },
+      {
+        "header": "交叉类型与类型别名",
+        "slug": "交叉类型与类型别名",
+        "content": "type A = { name: string }; // A = { name: string; }\ntype B = { age: number }; // B = { age: number; }\ntype C = A & B; // C = { name: string; age: number; }"
+      },
+      {
+        "header": "交叉类型与泛型",
+        "slug": "交叉类型与泛型",
+        "content": "type A<T> = T & { name: string }; // A = <T>(T & { name: string; })\nconst a: A<number> = { name: \"张三\", age: 18 };"
+      },
+      {
+        "header": "交叉类型与类型断言",
+        "slug": "交叉类型与类型断言",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型守卫",
+        "slug": "交叉类型与类型守卫",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (c.name) { console.log(c.name);\n}\nif (c.age) { console.log(c.age);\n}"
+      },
+      {
+        "header": "交叉类型与类型推断",
+        "slug": "交叉类型与类型推断",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B; // C = { name: string; age: number; }\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c.name;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型检查",
+        "slug": "交叉类型与类型检查",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nif (typeof c.name === \"string\") { console.log(c.name);\n}\nif (typeof c.age === \"number\") { console.log(c.age);\n}"
+      },
+      {
+        "header": "交叉类型与类型转换",
+        "slug": "交叉类型与类型转换",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      },
+      {
+        "header": "交叉类型与类型合并",
+        "slug": "交叉类型与类型合并",
+        "content": "type A = { name: string };\ntype B = { age: number };\ntype C = A & B;\nconst c: C = { name: \"张三\", age: 18 };\nconst d = c as A;\nconsole.log(d);"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%87%BD%E6%95%B0.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "函数",
+        "slug": "函数",
+        "content": "// 参数类型注解\nfunction greet(name: string) { console.log(\"Hello, \" + name.toUpperCase() + \"!!\");\n}\ngreet(\"12\"); // 返回值类型注解\nasync function getFavoriteNumber(): Promise<number> { return 26;\n} // 匿名函数(ts根据上下文推断)\nconst names = [\"Alice\", \"Bob\", \"Eve\"];\nnames.forEach(function (s) { console.log(s.toUpperCase());\n});\nnames.forEach((s) => { console.log(s.toUpperCase());\n});"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%A3%B0%E6%98%8E%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "声明类型",
+        "slug": "声明类型",
+        "content": "类型\n例子\n描述 number\n1, 2, 3, 4\n任意数字 string\n'hello'\n任意字符串 boolean\ntrue, false\n布尔值 true 或 false 字面量\n其本身\n限制变量的取值只能是字面量 any\nany\n任意类型 unkown\nunknown\n未知类型，类型安全的 any void\nvoid\n没有值，或者 undefined array\n[1, 2, 3]\n任意数字数组 tuple\n[1, 'a']\n固定长度数组 enum\nenum{A,B}\n枚举类型 object\n{name:'孙悟空'}\n任意对象 null\nnull\n只能是 null never\nnever\n永不发生"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%AD%97%E9%9D%A2%E9%87%8F.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "字面量",
+        "slug": "字面量",
+        "content": "字面量类型是指直接给出具体值的类型。它们通常用于那些只能有有限个具体值的变量。字面量类型可以是字符串字面量类型、数字字面量类型或者其他原始数据类型的字面量。"
+      },
+      {
+        "header": "使用场景",
+        "slug": "使用场景",
+        "content": "字面量类型在以下场景中非常有用： 限制变量的值：确保变量只能是某些特定的值。\n类型守卫：与类型谓词结合使用，进行类型检查。\n函数重载：用于区分函数的重载版本。\n枚举类型的替代：在某些情况下，字面量类型可以作为枚举类型的替代。"
+      },
+      {
+        "header": "字符串字面量类型",
+        "slug": "字符串字面量类型",
+        "content": "Easing 是一个字符串字面量类型，它只能取 \"ease-in\"、\"ease-out\" 或 \"ease-in-out\" 这三个值。 type Easing = \"ease-in\" | \"ease-out\" | \"ease-in-out\"; function animate(element: Element, easing: Easing) { if (easing === \"ease-in\") { // ... } else if (easing === \"ease-out\") { // ... } else if (easing === \"ease-in-out\") { // ... } else { // Error: Type 'never' is not assignable to type 'Easing' const error: never = easing; }\n}"
+      },
+      {
+        "header": "数字数面量类型",
+        "slug": "数字数面量类型",
+        "content": "StatusCode 是一个数字字面量类型，它只能取 200、301、404 或 500 这几个值。 type StatusCode = 200 | 301 | 404 | 500; function handleResponse(status: StatusCode) { if (status === 200) { console.log(\"OK\"); } else if (status === 301) { console.log(\"Moved Permanently\"); } else if (status === 404) { console.log(\"Not Found\"); } else if (status === 500) { console.log(\"Internal Server Error\"); } else { // Error: Type 'never' is not assignable to type 'StatusCode' const error: never = status; }\n}"
+      },
+      {
+        "header": "布尔字面量类型(通常用于类型守卫)",
+        "slug": "布尔字面量类型-通常用于类型守卫",
+        "content": "isStringOrNumber 是一个类型谓词函数，它返回一个布尔值来告诉 TypeScript value 是一个字符串或数字。 function isStringOrNumber(value: string | number): value is string | number { return typeof value === \"string\" || typeof value === \"number\";\n} if (isStringOrNumber(\"Hello\")) { console.log(\"It's a string!\");\n}"
+      },
+      {
+        "header": "模板字面量类型",
+        "slug": "模板字面量类型",
+        "content": "模板字面量类型用于指定字符串必须是特定的格式\nName 是一个模板字面量类型，它只能是 \"Hello, ${string}!\" 或 \"Goodbye, ${string}!\" 格式的字符串。 type Name = `Hello, ${string}!` | `Goodbye, ${string}!`; function greet(name: Name) { console.log(name);\n} greet(`Hello, Alice!`); // OK\ngreet(`Goodbye, Bob!`); // OK\ngreet(`Hi, Charlie!`); // Error"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E5%AF%B9%E8%B1%A1.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "对象",
+        "slug": "对象",
+        "content": "// ;分割\nfunction printCoord(pt: { x: number; y: number }) { console.log(\"The coordinate's x value is \" + pt.x); console.log(\"The coordinate's y value is \" + pt.y);\n}\nprintCoord({ x: 3, y: 7 }); // 可选属性(?)\nfunction printName(obj: { first: string; last?: string }) { // ...\n}\nprintName({ first: \"Bob\" });\nprintName({ first: \"Alice\", last: \"Alisson\" }); 在 JavaScript 中，如果你访问一个不存在的属性，你将获得值 undefined 而不是运行时错误。因此，当你从可选属性中读取数据时，你必须在使用它之前检查 undefined。 function printName(obj: { first: string; last?: string }) { // 报错：'obj.last' is possibly 'undefined'. console.log(obj.last.toUpperCase());\n} // 解决方案一\nfunction printName(obj: { first: string; last?: string }) { if (obj.last !== undefined) { console.log(obj.last.toUpperCase()); }\n}\n// 解决方案二\nfunction printName(obj: { first: string; last?: string }) { console.log(obj.last?.toUpperCase());\n} [propName: string]可以定义多个不确定的属性\nlet c: { name: string; [propName: string]: any };\nc = { name: \"ths\", age: 18, sex: 20, isTrue: false }; 函数类型 let d: (a: number, b: number) => number;\nd = function (num1, num2): number { return num1 + num2;\n};"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E7%B1%BB%E5%9E%8B%E5%AE%88%E5%8D%AB.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "类型守卫",
+        "slug": "类型守卫",
+        "content": "类型守卫（Type Guards）是一种方式，用于在运行时检查和缩小变量的类型。当你在处理联合类型或交叉类型时，类型守卫特别有用，因为它们允许你在执行操作之前确定变量的确切类型。"
+      },
+      {
+        "header": "基本类型守卫",
+        "slug": "基本类型守卫",
+        "content": "基本类型守卫是通过使用类型谓词来实现的。类型谓词是一个表达式，它在编译时不会做任何改变，但在运行时会帮助 TypeScript 缩小变量的类型。isNumber 和 isString 函数都是类型谓词。它们返回一个布尔值，告诉 TypeScript 引擎 x 参数的类型 function isNumber(x: number | string): x is number { return typeof x === \"number\";\n} function isString(x: number | string): x is string { return typeof x === \"string\";\n}"
+      },
+      {
+        "header": "使用类型守卫",
+        "slug": "使用类型守卫",
+        "content": "let data: number | string = Math.random() > 0.5 ? \"Hello\" : 10; if (isNumber(data)) { console.log(data.toFixed(2)); // 这里的 data 被缩小为 number 类型\n} else if (isString(data)) { console.log(data.toUpperCase()); // 这里的 data 被缩小为 string 类型\n}"
+      },
+      {
+        "header": "用户自定义类型守卫",
+        "slug": "用户自定义类型守卫",
+        "content": "用户自定义类型守卫通常与接口或类型别名结合使用,在这个例子中，isBird 是一个类型谓词函数，它检查 animal 是否具有 fly 方法，从而判断它是否为 Bird 类型。 interface Bird { fly(): void; layEggs(): void;\n} interface Fish { swim(): void; layEggs(): void;\n} function getAnimal(): Bird | Fish { return Math.random() > 0.5 ? { fly, layEggs } : { swim, layEggs };\n} function isBird(animal: Bird | Fish): animal is Bird { return (animal as Bird).fly !== undefined;\n}"
+      },
+      {
+        "header": "类类型守卫",
+        "slug": "类类型守卫",
+        "content": "类类型守卫是通过检查对象是否为某个类的实例来实现的,isBird 使用 instanceof 操作符来检查 animal 是否为 Bird 的实例。 class Bird { fly() { console.log(\"Flying\"); }\n} class Fish { swim() { console.log(\"Swimming\"); }\n} function getAnimal() { return Math.random() > 0.5 ? new Bird() : new Fish();\n} function isBird(animal: Bird | Fish): animal is Bird { return animal instanceof Bird;\n}"
+      },
+      {
+        "header": "在类中使用类型守卫",
+        "slug": "在类中使用类型守卫",
+        "content": "类本身也可以实现类型守卫 class Bird { fly() { console.log(\"Flying\"); } isBird() { return true; }\n} class Fish { swim() { console.log(\"Swimming\"); } isBird() { return false; }\n} function isBird(animal: Bird | Fish): animal is Bird { return animal.isBird();\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "类型断言(慎用,避免破坏类型安全)",
+        "slug": "类型断言-慎用-避免破坏类型安全",
+        "content": "类型断言（Type Assertions）是一种告诉编译器你比它更了解某个变量的类型的机制。类型断言可以用来手动指定编译器可能不确定的变量的类型"
+      },
+      {
+        "header": "类型断言的基本语法",
+        "slug": "类型断言的基本语法",
+        "content": "const myCanvas = document.getElementById(\"main_canvas\") as HTMLCanvasElement;"
+      },
+      {
+        "header": "<>语法",
+        "slug": "语法",
+        "content": "const myCanvas = <HTMLCanvasElement>document.getElementById(\"main_canvas\");"
+      },
+      {
+        "header": "使用场景",
+        "slug": "使用场景",
+        "content": "类型断言通常用在以下场景： 当你知道编译器是错误的时候：有时候，你可能比编译器更了解某个函数的返回值。 当你想要绕过编译器的类型检查时：有时候，你可能想要执行一些不安全的类型操作。 与第三方库交互时：当使用 TypeScript 与 JavaScript 库时，你可能需要告诉编译器某个值的确切类型。"
+      },
+      {
+        "header": "示例",
+        "slug": "示例",
+        "content": "let someValue: any = \"this is a string\"; // 告诉 TypeScript 我们知道 someValue 是一个字符串\nlet strLength: number = (someValue as string).length;"
+      },
+      {
+        "header": "与接口一起使用",
+        "slug": "与接口一起使用",
+        "content": "我们通过类型断言来确定 pet 的具体类型，然后调用相应的方法 interface Bird { fly(): void; layEggs(): void;\n} interface Fish { swim(): void; layEggs(): void;\n} function getSmallPet(): Bird | Fish { // ...\n} const pet = getSmallPet();\nif (pet.swim) { (pet as Fish).swim();\n} else { (pet as Bird).fly();\n}"
+      },
+      {
+        "header": "断言一个变量为 any 类型",
+        "slug": "断言一个变量为-any-类型",
+        "content": "当你从 JavaScript 代码迁移到 TypeScript 时，或者当你处理一个大型代码库中的遗留代码时，你可能会遇到 any 类型。类型断言可以用来将 any 类型变量断言为更具体的类型,在这个例子中，我们将 any 类型的 value 断言为 string 类型，然后安全地访问其 length 属性。 let value: any = \"Hello\";\nlet length: number = (value as string).length;"
+      },
+      {
+        "header": "断言函数返回值类型",
+        "slug": "断言函数返回值类型",
+        "content": "我们断言 getContent 函数的返回值为 string 类型 function getContent(): any { // ...\n} let content: string = getContent() as string;"
+      },
+      {
+        "header": "非空断言运算符(后缀！)",
+        "slug": "非空断言运算符-后缀",
+        "content": "function liveDangerously(x?: number | null) { // No error console.log(x!.toFixed());\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B/%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "联合类型(|)",
+        "slug": "联合类型",
+        "content": ""
+      },
+      {
+        "header": "定义联合类型",
+        "slug": "定义联合类型",
+        "content": "type StringOrNumber = string | number;"
+      },
+      {
+        "header": "使用联合类型",
+        "slug": "使用联合类型",
+        "content": "当你在函数中使用联合类型时，你可以传递任意一种指定的类型 function printId(id: StringOrNumber): void { console.log(`Your ID is: ${id}`);\n} printId(123); // 传递一个数字\nprintId(\"abc\"); // 传递一个字符串 如果你有联合 string | number，则不能使用仅在 string 上可用的方法 function printId(id: number | string) { console.log(id.toUpperCase()); // Property 'toUpperCase' does not exist on type 'string | number'. // Property 'toUpperCase' does not exist on type 'number'.\n} // 解决方案一\nfunction printId(id: number | string) { if (typeof id === \"string\") { console.log(id.toUpperCase()); } else { console.log(id); }\n} // 解决方案二\nfunction welcomePeople(x: string[] | string) { if (Array.isArray(x)) { console.log(\"Hello, \" + x.join(\" and \")); } else { console.log(\"Welcome lone traveler \" + x); }\n} 有时你会有一个联合，所有成员都有共同点。例如，数组和字符串都有一个 slice 方法。如果联合中的每个成员都有一个共同的属性，则可以使用该属性而不用缩小类型 function getFirstThree(x: number[] | string) { return x.slice(0, 3);\n}"
+      },
+      {
+        "header": "类型保护",
+        "slug": "类型保护",
+        "content": "在使用联合类型时，你可能需要确定变量的具体类型，以便执行特定类型的操作。TypeScript 提供了类型保护的概念，允许你在运行时检查并缩小类型 function printId(id: StringOrNumber): void { if (typeof id === \"string\") { // 在这个分支中，id 被缩小为 string 类型 console.log(`Your string ID is: ${id.toUpperCase()}`); } else { // 在这个分支中，id 被缩小为 number 类型 console.log(`Your numeric ID is: ${id}`); }\n}"
+      },
+      {
+        "header": "例子",
+        "slug": "例子",
+        "content": "type UserResponse = string | { id: number }; function getUser(): UserResponse { // 这里只是示例，实际逻辑可能更复杂 return Math.random() > 0.5 ? \"Alice\" : { id: 123 };\n} const user = getUser();\nif (typeof user === \"string\") { console.log(\"User name:\", user);\n} else { console.log(\"User ID:\", user.id);\n}"
+      },
+      {
+        "header": "联合类型和类型别名",
+        "slug": "联合类型和类型别名",
+        "content": "联合类型经常与类型别名一起使用，以简化复杂类型的声明。例如，你可以为一个对象的多个可能形状创建一个联合类型 type User = { id: number; name: string; email?: string;\n}; type Admin = { id: number; name: string; role: string;\n}; type Person = User | Admin; function printPersonDetails(person: Person): void { if (\"role\" in person) { console.log(`Admin ${person.name}, Role: ${person.role}`); } else { console.log(`User ${person.name}`); }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E6%A8%A1%E5%9D%97/ts%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "ts 编译选项",
+        "slug": "ts-编译选项",
+        "content": ""
+      },
+      {
+        "header": "include 指定需要编译的文件",
+        "slug": "include-指定需要编译的文件",
+        "content": "include: [\"./src/**/*\"] // (src: src 目录下 \\*_: 任意目录 _: 任意文件)"
+      },
+      {
+        "header": "exclude 排除不需要编译的文件",
+        "slug": "exclude-排除不需要编译的文件",
+        "content": "// (默认值: [\"node_modules\", \"bower_components\", \"jspm_packages\"])\nexclude: [\"./src/assets.....自己写\"]"
+      },
+      {
+        "header": "files: [ ... 文件名 ]",
+        "slug": "files-文件名",
+        "content": "//只有文件少的时候, 用一个数组来统计编译的文件就行了\nfiles: [\"./src/index.ts\", \"./src/other.ts\"]"
+      },
+      {
+        "header": "compilerOptions 配置选项",
+        "slug": "compileroptions-配置选项",
+        "content": "\"compilerOptions\":{ \"target\": \"es5\", // 指定编译后的版本 \"module\": \"es6\", // 指定要使用的模块化的规范 commonjs es6 \"lib\": [\"dom\", \"dom.iterable\", \"esnext\"], // 指定项目中用到的库 es6 promise... \"outDir\": \"./dist\", // 指定输出目录 \"outFile\": \"./dist/app.js\", // 将代码合并为一个文件 \"allowJs\": false, // 是否对js文件进行编译, 默认为false \"checkJs\": false, // 是否检查js语法符合规范, 默认为false \"removeComments\": true, // 是否移除注释, 默认为false \"noEmit\": false, // 不生成编译后所产生的js文件, 默认为false \"noEmitOnError\": false, // 报错时不生成编译文件, 默认为false \"awaysStrict\": false, // 设置编译后的文件是否使用严格模式, 默认为false \"noImplicitAny\": false, // 不允许隐式的any类型设置, 默认为false \"noImplicitThis\": false, // 不允许不明确类型的this, 默认为false \"strictNullChecks\": false, // 严格的检查空值, 默认为false \"strict\": false // 所有的检查的总开关, 如果设置为true, 所有的都打开了就不用写了\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/abstract%E6%8A%BD%E8%B1%A1%E7%B1%BB.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "abstract 抽象类",
+        "slug": "abstract-抽象类",
+        "content": "abstract class Animal { // 抽象类: 专门用来给别人继承的, 没有其他作作用, 不能创建对象 name: string; constructor(name: string, age: number) { this.name = name; } abstract say(): void; // 抽象方法, 必须被字类重写\n}\nclass Dog extends Animal { // 抽象方法重写 say() { super.say(); }\n}\nconst dog = new Dog(\"小黑\");\ndog.say();"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/calss%E7%B1%BB.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "calss 类",
+        "slug": "calss-类",
+        "content": "class Person { name: string; // 只能创建对象在对象身上进行访问 static age: number; // 静态属性: 不用new对象就可以被类访问的属性 Person.age readonly sex: string; // readonly: 只读属性 say() { console.log(\"...\"); }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/extends%E7%BB%A7%E6%89%BF.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "extends 继承",
+        "slug": "extends-继承",
+        "content": "class Animal { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } say() { console.log(\"动物在叫!\"); }\n}\nclass Dog extends Animal { // 继承后字类将会有父类的所有属性和方法 run() { console.log(\"小狗边跑边叫!\"); }\n}\nclass Cat extends Animal { // 继承后字类将会有父类的所有属性和方法 say() { // 方法的重写: 子类会覆盖符类中的say方法 console.log(\"小猫喵喵喵!\"); }\n}\nnew dog() = new Dog(\"小黑\", 18);\ndog.run();"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/super%E5%85%B3%E9%94%AE%E5%AD%97.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "super 关键字",
+        "slug": "super-关键字",
+        "content": "class Animal { name: string; constructor(name: string, age: number) { this.name = name; } say() { console.log(\"动物在叫!\"); }\n}\nclass Dog extends Animal { // 继承后字类将会有父类的所有属性和方法 age: number; constructor(name: string, age: number) { // name是来自父类的 // age是来自子类的 // super: 调用父类的构造函数 super(name); this.age = age; } say() { // super: 其实就是父类 super.say()就是调用父类的say方法 super.say(); }\n}\nconst dog = new Dog(\"小黑\", 18);"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/%E5%B1%9E%E6%80%A7%E7%9A%84%E5%B0%81%E8%A3%85.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "属性的封装",
+        "slug": "属性的封装",
+        "content": "class Animal { public name: string; // 公共的, 都能访问 private age: number; // 私有的, 只能在当前类内部访问 producted: 只能在当前或其字类访问,不能在实例访问 constructor(name: string, age: number) { this.name = name; this.age = age; } getAge() { return this.age; } setAge(value: number) { this.age = value; }\n}\nconst animal = new Animal(\"小狗\", 18);\nanimal.getAge();\nanimal.setAge(20); 属性存取器的用法: 用来对赋值方法进行限制, 方法内可以做条件判断 class Animal { public name: string; private age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } get age() { // 属性存取器 return this.age; } set age(value: number) { if (value > 0) { // 增加条件, 年龄必须大于0 this.age = value; } }\n}\nconst animal = new Animal(\"小狗\", 18);\nconsole.log(animal.age); // 实际是调用了get age()方法, 用起来和属性一样;\nanimal.age = 30; // 实际是调用了set age()方法, 用起来和属性一样; 构造函数特殊写法 class C { constractor(public name: string, public age: number) { // 此时构造函数内就可以省略: this.name = name; this.age = age; }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%92%8Cthis.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "构造函数和 this",
+        "slug": "构造函数和-this",
+        "content": "class Dog { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } bark() { console.log(\"汪汪汪!\"); }\n}\nconst dog = new Dog(\"小黑\", 18);"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/keyof%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97%E7%AC%A6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "keyof 类型运算符",
+        "slug": "keyof-类型运算符",
+        "content": "keyof 类型运算符用于获取一个类型的所有键的联合，这些键可以是类型中的属性名、索引签名的键，或者是类型的字符串字面量类型。使用 keyof 类型运算符可以提高代码的复用性和灵活性。"
+      },
+      {
+        "header": "基本用法",
+        "slug": "基本用法",
+        "content": "PointKeys 是一个类型，它包含了 Point 类型的所有键，即 \"x\" | \"y\" | \"z\"。 type Point = { x: number; y: number; z: number;\n}; type PointKeys = keyof Point;\n// \"x\" | \"y\" | \"z\""
+      },
+      {
+        "header": "结合索引签名",
+        "slug": "结合索引签名",
+        "content": "DictionaryKeys<T> 尝试获取 Dictionary<T> 类型的键，但由于 Dictionary 具有一个索引签名，所以 keyof 运算符返回的是索引签名的键的类型，通常是 string | number | symbol。 interface Dictionary<T> { [key: string]: T;\n} type DictionaryKeys<T> = keyof Dictionary<T>;\n// \"keyof\" does not work with index signatures,\n// so the type will be \"string\" | \"number\" | \"symbol\" (depending on the key type)"
+      },
+      {
+        "header": "字符串字面量类型",
+        "slug": "字符串字面量类型",
+        "content": "type Direction = \"up\" | \"down\" | \"left\" | \"right\"; type DirectionKeys = keyof typeof Direction;\n// \"up\" | \"down\" | \"left\" | \"right\""
+      },
+      {
+        "header": "在泛型中的应用",
+        "slug": "在泛型中的应用",
+        "content": "getProperty 是一个泛型函数，它接受一个对象 obj 和一个键 key，然后返回对象在该键上的值。K extends keyof T 确保 key 是 obj 的一个有效键。 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key];\n} const point: Point = { x: 1, y: 2, z: 3 }; const x = getProperty(point, \"x\"); // x: number\nconst y = getProperty(point, \"y\"); // y: number"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "keyof 类型运算符不能直接用于接口或类型别名中的索引签名，因为索引签名的键的类型是动态的。\n当使用 keyof 运算符时，如果类型的键是数字索引签名，那么返回的键类型将是 number 或 string，具体取决于索引签名的配置。\nkeyof 运算符可以与类型查询操作符 T[K] 结合使用，以获取特定键的类型。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/typeof%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97%E7%AC%A6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "typeof 类型运算符",
+        "slug": "typeof-类型运算符",
+        "content": "typeof 类型运算符用于获取一个变量或对象属性的类型。这种类型运算符对于创建与现有数据结构相同类型的新类型非常有用。"
+      },
+      {
+        "header": "基本用法",
+        "slug": "基本用法",
+        "content": "TypeOfX 是一个类型，它与变量 x 的类型相同，即 number。TypeOfPerson 是一个类型，它与 person 对象的类型相同。 let x = 10;\ntype TypeOfX = typeof x;\n// TypeOfX 类型为 number const person = { name: \"Alice\", age: 30,\n}; type TypeOfPerson = typeof person;\n// TypeOfPerson 类型为 { name: string; age: number; }"
+      },
+      {
+        "header": "在函数中使用",
+        "slug": "在函数中使用",
+        "content": "function createPoint(x: number, y: number) { return { x, y };\n} type TypeOfCreatePoint = typeof createPoint;\n// TypeOfCreatePoint 类型为 (x: number, y: number) => { x: number; y: number; }"
+      },
+      {
+        "header": "获取对象属性的类型",
+        "slug": "获取对象属性的类型",
+        "content": "const config = { host: \"localhost\", port: 8080,\n}; type TypeOfPort = typeof config.port;\n// TypeOfPort 类型为 number"
+      },
+      {
+        "header": "获取类实例的类型",
+        "slug": "获取类实例的类型",
+        "content": "class Animal { name: string; constructor(name: string) { this.name = name; }\n} const dog = new Animal(\"Buddy\"); type TypeOfDog = typeof dog;\n// TypeOfDog 类型为 Animal"
+      },
+      {
+        "header": "获取类静态属性的类型",
+        "slug": "获取类静态属性的类型",
+        "content": "class Calculator { static version: string = \"1.0\"; add(x: number, y: number): number { return x + y; }\n} type TypeOfVersion = typeof Calculator.version;\n// TypeOfVersion 类型为 string"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "typeof 类型运算符只能用于变量、对象属性、函数返回值、类实例和类静态属性。\ntypeof 不能用于接口或类型别名本身，因为它们是抽象的，没有具体的运行时表示。\n当使用 typeof 运算符时，如果操作数是一个联合类型，那么结果也将是一个联合类型。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "映射类型",
+        "slug": "映射类型",
+        "content": "映射类型（Mapped Types）是一种强大的类型构造功能，它允许你根据一个现有类型创建一个新的类型，并且可以为它的属性执行一个映射函数。这在处理具有相同类型属性的对象或数组时特别有用。"
+      },
+      {
+        "header": "基本语法",
+        "slug": "基本语法",
+        "content": "T 是一个类型，P 是 T 的属性键的联合。对于 T 的每个属性 P，映射类型会创建一个同名的属性，其类型为 T[P]。 type MappedType<T> = { [P in keyof T]?: T[P];\n};"
+      },
+      {
+        "header": "可选属性映射",
+        "slug": "可选属性映射",
+        "content": "Partial<T> 是一个映射类型，它将 T 的每个属性 P 转换为可选属性。 type Partial<T> = { [P in keyof T]?: T[P];\n}; type PartialPoint = Partial<{ x: number; y: number }>;\n// { x?: number; y?: number }"
+      },
+      {
+        "header": "只读属性映射",
+        "slug": "只读属性映射",
+        "content": "type Readonly<T> = { readonly [P in keyof T]: T[P];\n}; type ReadonlyPoint = Readonly<{ x: number; y: number }>;\n// { readonly x: number; readonly y: number }"
+      },
+      {
+        "header": "转换属性类型",
+        "slug": "转换属性类型",
+        "content": "将所有属性转换为数组类型。 type Arrayify<T> = { [P in keyof T]: T[P][];\n}; type ArrayifiedPoint = Arrayify<{ x: number; y: number }>;\n// { x: number[]; y: number[] }"
+      },
+      {
+        "header": "条件属性映射",
+        "slug": "条件属性映射",
+        "content": "RenameProps 是一个映射类型，它不仅映射了属性，还根据第二个泛型参数 S 重命名了属性。 type RenameProps<T, S> = { [P in keyof T as S[P]]: T[P];\n}; type RenamedPoint = RenameProps<{ x: number; y: number }, { x: \"X\"; y: \"Y\" }>;\n// { X: number; Y: number }"
+      },
+      {
+        "header": "使用 as 进行类型断言",
+        "slug": "使用-as-进行类型断言",
+        "content": "映射类型中的 as 关键字可以用来进行类型断言，这在处理类型转换时非常有用。 type BoxedValue<T> = { [P in keyof T]: { value: T[P] };\n}; type BoxedPoint = BoxedValue<{ x: number; y: number }>;\n// { x: { value: number }; y: { value: number } }"
+      },
+      {
+        "header": "注意事项",
+        "slug": "注意事项",
+        "content": "映射类型中的 in 语法用于遍历一个类型的属性键。\n映射类型可以有条件地使用 ? 来标记属性为可选。\nreadonly 可以用于使属性只读。\n映射类型可以与泛型结合使用，以创建更通用的类型构造函数。"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%9D%A1%E4%BB%B6%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "条件类型",
+        "slug": "条件类型",
+        "content": "条件类型（Conditional Types）是一种高级类型功能，它允许你基于表达式的值来选择不同的类型。条件类型在编译时评估，并根据条件表达式的结果选择一个类型。 // 条件类型的一般形式如下：\ntype MyType = T extends U ? X : Y;\n// 这里，T extends U ? X : Y 是一个条件类型表达式，它表示：\n// 如果类型 T 扩展（或符合）类型 U，则结果是类型 X。\n// 否则，结果是类型 Y"
+      },
+      {
+        "header": "基本用法",
+        "slug": "基本用法",
+        "content": "IsNumber<T> 是一个条件类型，它检查 T 是否为 number 类型。如果是，结果是 \"Yes\"；如果不是，结果是 \"No\"。 type IsNumber<T> = T extends number ? \"Yes\" : \"No\"; type IsNumberResult1 = IsNumber<42>; // \"Yes\"\ntype IsNumberResult2 = IsNumber<string>; // \"No\""
+      },
+      {
+        "header": "嵌套条件类型",
+        "slug": "嵌套条件类型",
+        "content": "type IsArray<T> = T extends any[] ? \"Array\" : \"Not Array\"; type IsNumberArray = IsArray<number[]>; // \"Array\"\ntype IsStringArray = IsArray<string[]>; // \"Array\"\ntype IsBooleanArray = IsArray<boolean[]>; // \"Array\"\ntype IsObjectArray = IsArray<{ a: number }[]>; // \"Array\"\ntype IsNumber = IsArray<number>; // \"Not Array\""
+      },
+      {
+        "header": "使用条件类型进行类型守卫",
+        "slug": "使用条件类型进行类型守卫",
+        "content": "type IsStringOrNumber<T> = T extends string ? \"String\" : T extends number ? \"Number\" : \"Other\"; type Result1 = IsStringOrNumber<string>; // \"String\"\ntype Result2 = IsStringOrNumber<number>; // \"Number\"\ntype Result3 = IsStringOrNumber<boolean>; // \"Other\""
+      },
+      {
+        "header": "条件类型的分配行为",
+        "slug": "条件类型的分配行为",
+        "content": "type Primitive = number | string | boolean; type IsPrimitiveType<T> = T extends Primitive ? T : never; type IsStringOrNumberOrBoolean = IsPrimitiveType<string | number | boolean>;\n// string | number | boolean"
+      },
+      {
+        "header": "使用条件类型简化类型定义",
+        "slug": "使用条件类型简化类型定义",
+        "content": "type OptionalKeys<T> = { [K in keyof T]?: T[K];\n}; type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [P in K]?: T[P] }; type Todo = { title: string; description?: string; completed: boolean;\n}; type TodoPreview = MakeOptional<Todo, \"description\">;\n// { title: string; completed: boolean; description?: string; }"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "模板字面类型",
+        "slug": "模板字面类型",
+        "content": "模板字面类型（Template Literal Types）是从字符串字面类型构建的，并且可以通过联合类型扩展成多个字符串。它们与 JavaScript 中的模板字面字符串具有相同的语法，但用于类型位置。当与具体的字面类型一起使用时，模板字面通过连接内容生成新的字符串字面类型\n。 定义一个类型，它通过连接一个已知的字符串和一个泛型参数来创建一个新的字符串字面类型: type World = \"world\";\ntype Greeting = `hello ${World}`;\n// Greeting 类型为 \"hello world\" 当在插值位置使用联合类型时，类型可以由每个联合成员表示的每个可能的字符串字面类型的集合: type EmailLocaleIDs = \"welcome_email\" | \"email_heading\";\ntype FooterLocaleIDs = \"footer_title\" | \"footer_sendoff\";\ntype AllLocaleIDs = `${EmailLocaleIDs | FooterLocaleIDs}_id`;\n// AllLocaleIDs 类型为 \"welcome_email_id\" | \"email_heading_id\"\n// z| \"footer_title_id\" | \"footer_sendoff_id\"\n模板字面类型可以用于创建复杂的类型关系，通过内联字符串插值在类型中。它们与映射类型结合使用时尤其强大，可以基于现有类型定义新类型或接口的变换。 可以使用模板字面类型来定义 API 端点的路径: interface Routes { home: void; about: void; contact: number;\n} type RouteNames = keyof Routes;\ntype Path = `/${RouteNames}`; const homePath: Path = \"/home\";\n// 正确\nconst loginPath: Path = \"/login\";\n// 错误：类型 '\"/login\"' 不能分配给类型 'Path'\n模板字面类型也可以用来确保函数参数之间的关系。 创建一个函数，它根据事件名称推断出事件处理函数的参数类型： type Event = { type: \"click\" | \"mouseover\";\n} & { timestamp: number;\n}; function handleEvent( eventType: `${\"click\" | \"mouseover\"}-event`, handler: (event: Event & { type: \"click\" | \"mouseover\" }) => void\n) { // 实现\n} handleEvent(\"click-event\", (event) => {});\n// 正确\nhandleEvent(\"keypress-event\", (event) => {});\n// 错误：参数 '\"keypress-event\"' 不能分配给参数 '\"click-event\" | \"mouseover-event\"'"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E6%B3%9B%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "泛型",
+        "slug": "泛型",
+        "content": "泛型是一种强大的工具，它允许你编写可重用的函数、接口和类，这些函数、接口和类可以操作多种类型的数据，而不会失去类型安全性。泛型在编译时提供类型检查，从而帮助你捕捉错误。"
+      },
+      {
+        "header": "泛型函数",
+        "slug": "泛型函数",
+        "content": "泛型函数可以接收任意类型的参数，并返回相同类型的结果。 function identity<T>(arg: T): T { return arg;\n} const result = identity<string>(\"hello\"); // type is string\nconst resultNumber = identity<number>(123); // type is number"
+      },
+      {
+        "header": "泛型接口",
+        "slug": "泛型接口",
+        "content": "泛型接口允许你定义操作多种类型的数据的结构，而不需要指定具体的类型。 interface GenericIdentity<T> { (arg: T): T;\n} const identityObject: GenericIdentity<number> = identity;"
+      },
+      {
+        "header": "泛型类",
+        "slug": "泛型类",
+        "content": "泛型类允许你定义可以操作多种类型的数据的类。 class GenericNumber<T> { zeroValue: T; add: (x: T, y: T) => T;\n} let myGenericNumber = new GenericNumber<number>();\nmyGenericNumber.zeroValue = 0;\nmyGenericNumber.add = function (x, y) { return x + y;\n};"
+      },
+      {
+        "header": "泛型约束",
+        "slug": "泛型约束",
+        "content": "你可以对泛型参数施加约束，以确保它们支持特定的操作或属性。 interface Lengthwise { length: number;\n} function loggingIdentity<T extends Lengthwise>(arg: T): T { // Now we know it has a .length property, so no more error console.log(arg.length); return arg;\n} loggingIdentity({ length: 10, value: 3 });"
+      },
+      {
+        "header": "泛型类型别名",
+        "slug": "泛型类型别名",
+        "content": "泛型类型别名为复杂的类型提供了一种简便的命名方式。 type GenericArray<T> = Array<T>; let myArray: GenericArray<number> = [1, 2, 3];"
+      },
+      {
+        "header": "泛型元组",
+        "slug": "泛型元组",
+        "content": "元组类型允许你定义已知元素数量和类型的数组，各元素的类型不必相同。 function tuple<T1, T2, T3>(item1: T1, item2: T2, item3: T3): [T1, T2, T3] { return [item1, item2, item3];\n} const x: [string, number, boolean] = tuple(\"Hello\", 10, true);"
+      },
+      {
+        "header": "泛型工具类型",
+        "slug": "泛型工具类型",
+        "content": "内置的泛型工具类型，如 Partial<T>、Readonly<T>、Pick<T, K> 等，这些类型可以方便地构造新的类型。 type Point = { x: number; y: number;\n}; type PartialPoint = Partial<Point>;\nconst p: PartialPoint = { x: 3 }; // OK"
+      },
+      {
+        "header": "Partial<T>",
+        "slug": "partial-t",
+        "content": "Partial<T> 类型构造函数用于生成一个类型，其所有属性都是原始类型的属性，但所有属性都是可选的。 type Point = { x: number; y: number;\n}; type PartialPoint = Partial<Point>;\n// { x?: number; y?: number; } const p: PartialPoint = { x: 3 }; // OK\nconst p2: PartialPoint = { y: 7 }; // OK\nconst p3: PartialPoint = {}; // OK"
+      },
+      {
+        "header": "Readonly<T>",
+        "slug": "readonly-t",
+        "content": "Readonly<T> 类型构造函数用于生成一个类型，其所有属性都是原始类型的属性，但所有属性都是只读的。 type Point = { x: number; y: number;\n}; type ReadonlyPoint = Readonly<Point>;\n// { readonly x: number; readonly y: number; } const p: ReadonlyPoint = { x: 3, y: 7 };\n// Error: Cannot assign to 'x' because it is a read-only property.\n// p.x = 4;"
+      },
+      {
+        "header": "Pick<T, K>",
+        "slug": "pick-t-k",
+        "content": "Pick<T, K> 类型构造函数用于生成一个类型，其属性是原始类型中 K 所指定的属性的子集。\nPickedPoint 类型表示一个对象，它只包含原始 Point 类型中的 x 和 y 属性 type Point = { x: number; y: number; z: number;\n}; type PickedPoint = Pick<Point, \"x\" | \"y\">;\n// { x: number; y: number; } const p: PickedPoint = { x: 3, y: 7 };"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/%E7%B4%A2%E5%BC%95%E8%AE%BF%E9%97%AE%E7%B1%BB%E5%9E%8B.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "索引访问类型",
+        "slug": "索引访问类型",
+        "content": "索引访问类型（Index Access Types）允许你通过索引来查询一个类型的属性类型。这通常与 keyof 类型查询运算符结合使用，以便在编译时获取特定属性的类型。"
+      },
+      {
+        "header": "基本用法",
+        "slug": "基本用法",
+        "content": "type Point = { x: number; y: number; z: number;\n}; type XType = Point[\"x\"]; // XType 类型为 number\ntype YType = Point[\"y\"]; // YType 类型为 number\ntype ZType = Point[\"z\"]; // ZType 类型为 number"
+      },
+      {
+        "header": "结合 keyof 使用",
+        "slug": "结合-keyof-使用",
+        "content": "type Point = { x: number; y: number; z: number;\n}; type Key = keyof Point;\n// XYType 类型为 number | number | number\ntype XYType = Point[Key];"
+      },
+      {
+        "header": "在函数中使用",
+        "slug": "在函数中使用",
+        "content": "function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] { return obj[key];\n} const point: Point = { x: 1, y: 2, z: 3 }; const x = getProperty(point, \"x\"); // x 类型为 number\nconst y = getProperty(point, \"y\"); // y 类型为 number"
+      },
+      {
+        "header": "映射类型",
+        "slug": "映射类型",
+        "content": "索引访问类型也常用于创建映射类型（Mapped Types），这允许你基于现有类型创建新类型，并对每个属性应用相同的转换。在这个例子中，OptionsFlags 是一个映射类型，它将 FeatureFlags 类型中的每个属性转换为 boolean 类型。 type OptionsFlags<T> = { [K in keyof T]: boolean;\n}; type FeatureFlags = { darkMode: boolean; notifications: boolean; betaProgram: boolean;\n}; type FeatureOptions = OptionsFlags<FeatureFlags>;\n// FeatureOptions 类型为 {\n// darkMode: boolean;\n// notifications: boolean;\n// betaProgram: boolean;\n// }"
+      }
+    ]
+  },
+  {
+    "path": "/web/Ts/%E7%B1%BB%E5%9E%8B%E7%BC%A9%E5%B0%8F/%E7%B1%BB%E5%9E%8B%E7%BC%A9%E5%B0%8F.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "类型缩小(缩小类型范围)",
+        "slug": "类型缩小-缩小类型范围",
+        "content": "类型缩小（Type Narrowing）是指在运行时基于某些条件来减少一个变量可能的类型范围的过程。这通常在处理联合类型或交叉类型时非常有用，允许你根据不同的情况对变量进行更具体的操作。类型缩小是 TypeScript 编程中的一个重要概念，它允许你编写更精确和更安全的代码。通过使用类型缩小可以在不同的代码路径中对变量进行更具体的操作。"
+      },
+      {
+        "header": "使用类型谓词",
+        "slug": "使用类型谓词",
+        "content": "类型谓词是一种函数，它对参数的类型进行断言，并返回一个布尔值，表明该参数是否为特定的类型。这可以用来缩小类型。 function process(x: number | string) { if (isNumber(x)) { // 在这个块中，TypeScript 知道 x 是一个 number x.toFixed(2); // 正确 } else { // 在这个块中，TypeScript 知道 x 是一个 string x.toUpperCase(); // 正确 }\n}\nfunction isNumber(x: number | string): x is number { return typeof x === \"number\";\n}"
+      },
+      {
+        "header": "使用字面量类型",
+        "slug": "使用字面量类型",
+        "content": "当你知道变量的值可能是几个特定字面量之一时，可以使用字面量类型进行缩小。 type Event = \"click\" | \"scroll\" | \"mousemove\"; function handleEvent(event: Event) { if (event === \"click\") { // event 被缩小为 'click' } else if (event === \"scroll\") { // event 被缩小为 'scroll' } else if (event === \"mousemove\") { // event 被缩小为 'mousemove' }\n}"
+      },
+      {
+        "header": "使用类型守卫",
+        "slug": "使用类型守卫",
+        "content": "类型守卫是 TypeScript 的一个特性，允许你在运行时检查变量的类型。 function hasOwnProperty<T, U extends string>(obj: T, key: U): key is keyof T { return key in obj;\n} const obj = { name: \"Kimi\", age: 30 };\nif (hasOwnProperty(obj, \"name\")) { // obj 在这里被缩小，包含了 name 属性 console.log(obj.name); // 正确\n} else { // 'name' 不是 obj 的属性\n}"
+      },
+      {
+        "header": "使用逻辑运算符",
+        "slug": "使用逻辑运算符",
+        "content": "逻辑运算符，如 &&，可以用来基于条件缩小类型。 function isObjectWithKey<T, U extends PropertyKey>( obj: T, key: U\n): obj is T & Record<U, unknown> { return key in obj;\n} const result = isObjectWithKey(obj, \"name\");\nif (result) { // obj 在这里被缩小，包含了 name 属性 console.log(obj.name); // 正确\n}"
+      },
+      {
+        "header": "使用自定义类型守卫",
+        "slug": "使用自定义类型守卫",
+        "content": "function printInput(x: string | number) { if (isStringOrNumber(x)) { console.log(x.toUpperCase()); // x 被缩小为 string } else { console.log(x.toFixed(2)); // x 被缩小为 number }\n}\nfunction isStringOrNumber(x: string | number): x is string { return typeof x === \"string\";\n}"
+      },
+      {
+        "header": "in 运算符",
+        "slug": "in-运算符",
+        "content": "isBird 函数是一个类型谓词，它使用 in 运算符来检查 animal 是否有 fly 属性。如果 isBird 返回 true，那么在 if 块中，creature 被缩小为 Bird 类型。 type Bird = { fly: () => void; layEggs: () => void;\n}; type Fish = { swim: () => void; layEggs: () => void;\n}; type Animal = Bird | Fish; function isBird(animal: Animal): animal is Bird { return \"fly\" in animal;\n} const creature: Animal = { layEggs: () => {}, swim: () => {} }; if (isBird(creature)) { // 在这个块中，TypeScript 会将 creature 缩小为 Bird 类型 creature.fly();\n} else { // 在这个块中，creature 可能是 Bird 或 Fish\n} 映射类型也使用 in 运算符来动态地构造类型。OptionsFlags 是一个映射类型，它使用 in 运算符来遍历 T 类型的键，并为每个键创建一个相应的布尔属性。 type OptionsFlags<T> = { [K in keyof T]: boolean;\n}; type FeatureFlags = { darkMode: boolean; notifications: boolean; betaProgram: boolean;\n}; type FeatureOptions = OptionsFlags<FeatureFlags>;\n// FeatureOptions 类型为 {\n// darkMode: boolean;\n// notifications: boolean;\n// betaProgram: boolean;\n// }"
+      },
+      {
+        "header": "instanceof 运算符",
+        "slug": "instanceof-运算符",
+        "content": "feed 函数接受一个 Animal 类型的参数。使用 instanceof 运算符检查 pet 是否为 Dog 类的实例。如果是，我们可以安全地调用 bark 方法，因为 TypeScript 的类型检查器现在知道 pet 具体是 Dog 类型。 class Animal { eat() { console.log(\"Eating\"); }\n} class Dog extends Animal { bark() { console.log(\"Barking\"); }\n} function feed(pet: Animal) { if (pet instanceof Dog) { (pet as Dog).bark(); // 类型缩小，现在知道 pet 是 Dog 类型 } else { pet.eat(); // 所有 Animal 都会 eat }\n}"
+      },
+      {
+        "header": "其他方式",
+        "slug": "其他方式",
+        "content": "typeof 运算符\nArray.isArray()"
+      }
+    ]
+  },
+  {
+    "path": "/web/Vue/Vue2/Vue2%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Vue2 组件通信",
+        "slug": "vue2-组件通信",
+        "content": "在 Vue 2 中，组件之间的通信方式主要有以下几种： 使用自定义事件：通过在父组件中定义一个事件，子组件可以触发该事件并传递数据到父组件。父组件通过监听该事件，接收子组件传递的数据。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent @message=\"handleMessage\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, methods: { handleMessage(data) { console.log(\"Message received:\", data); }, }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <button @click=\"sendMessage\">Send Message</button>\n</template> <script> export default { methods: { sendMessage() { this.$emit(\"message\", \"Hello from child component!\"); }, }, };\n</script> 使用 props：父组件通过在子组件上绑定属性，将数据传递给子组件。子组件通过 props 选项接收这些数据。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent :message=\"parentMessage\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, data() { return { parentMessage: \"Hello from parent component!\", }; }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <div>{{ message }}</div>\n</template> <script> export default { props: { message: { type: String, required: true, }, }, };\n</script> 使用 v-bind 指令：在子组件上使用 v-bind 指令，将数据绑定到父组件的某个属性上。 例如：\n<!-- ParentComponent.vue -->\n<template> <div> <ChildComponent :data=\"parentData\" /> </div>\n</template> <script> import ChildComponent from \"./ChildComponent.vue\"; export default { components: { ChildComponent, }, data() { return { parentData: \"Hello from parent component!\", }; }, };\n</script>\n<!-- ChildComponent.vue -->\n<template> <div>{{ data }}</div>\n</template> <script> export default { props: { data: { type: String, required: true, }, }, };\n</script> $parent、$children、$root、$refs 使用 vuex 进行组件间数据的通信 引入第三方插件 pubsub 进行发布订阅 以上就是 Vue 2 中组件通信的几种方式。在实际项目中，可以根据需求选择合适的方式来实现组件之间的通信。"
+      }
+    ]
+  },
+  {
     "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/IO%E6%B5%81/IO%E6%B5%81%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86.html",
     "title": "",
     "pathLocale": "/",
@@ -8015,45 +8015,6 @@ export const searchIndex = [
       {
         "header": "总结",
         "slug": "总结",
-        "content": ""
-      }
-    ]
-  },
-  {
-    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Collection%E6%8E%A5%E5%8F%A3.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Collection 接口",
-        "slug": "collection-接口",
-        "content": "单列集合；需要导包，在 java.util 下；Collection 接口，不是类，是单列集合的顶层"
-      },
-      {
-        "header": "常见的成员方法",
-        "slug": "常见的成员方法",
-        "content": "方法\n作用 boolean add(Object e)\n添加元素 boolean addAll(Collection c)\n添加集合 boolean remove(Object o)\n删除元素 boolean removeIf(Predicate filter)\n按照条件删除元素 void clear()\n清空集合 int size()\n获取集合长度 boolean contains(Object o)\n是否包含 boolean isEmpty\n是否为空 Object[] toArray()\n集合转数组 Iterator<E> iterator()\n获取迭代器对象"
-      },
-      {
-        "header": "集合的遍历",
-        "slug": "集合的遍历",
-        "content": "转数组循环遍历 Collection c = new ArrayList();\nObject[] obj = c.toArray();\nfor(int i = 0; i < obj.length; i++){ System.out.println(obj[i]);\n} 迭代器遍历 Collection c = new ArrayList();\nIterator it = c.iterator();\nwhile (it.hasNext()) { Object obj = it.next(); System.out.println(obj);\n} 增强 for 循环(for each 遍历) 增强 for 循环底层也是迭代器遍历，只是简化写法\n增强 for 循环也可以用来遍历数组\n格式：for(数据类型 变量名 : 数组名/集合名){...} Collection c = new ArrayList();\nfor (Object obj : c) { System.out.println(obj);\n}"
-      },
-      {
-        "header": "方法的应用",
-        "slug": "方法的应用",
-        "content": "package com.wuziqi.gobang.controller; import java.util.ArrayList;\nimport java.util.Collection;\nimport java.util.Iterator;\nimport java.util.function.Predicate; public class DemoCollection { public static void main(String[] args) { // 多态格式的，Collection是类，所以只能创建子对象 Collection c = new ArrayList(); System.out.println(c); // 结果为[]: 说明底层重写了toString方法 // boolean add(Object e)：集合中添加一个元素 c.add(\"aaa\"); c.add(\"bbb\"); // Collection只能添加引用类型，这块不报错说明底层自动转成Integer类型了 c.add(111); System.out.println(c); // [aaa, bbb, 111] // boolean addAll(Collection c)：集合中添加一个集合 Collection c1 = new ArrayList(); c1.addAll(c); System.out.println(c1); // [aaa, bbb, 111] // boolean remove(Object o)：删除某一元素 c1.remove(\"aaa\"); System.out.println(c1); // [bbb, 111] // boolean removeIf(Predicate filter)：根据条件删除 // Object是泛型，当然可以换成String等 c.removeIf(new Predicate<Object>() { @Override public boolean test(Object t) { // Object和上边对应 // return true; // 满足条件，要把该元素删除掉 // reutrn false; // 不满足，不能删掉元素 return t instanceof Integer; } }); // c.removeIf((o) -> o.equals(111)); // 与上边的重写方法一样效果 System.out.println(c); // [aaa, bbb] // boolean isEmpty()：是否为空 System.out.println(c.isEmpty()); // false // int Size()：获取长度 System.out.println(c.size()); // 2 // boolean contains(Object o)：是否包含 System.out.println(c); // [aaa, bbb] c.add(111); System.out.println(c.contains(\"ddd\")); // false System.out.println(c.contains(111)); // true // void clear()：清空集合 c.clear(); System.out.println(c); // [] System.out.println(c.isEmpty()); // true // Object[] toArray()：转成数组进行遍历 System.out.println(c1); // [bbb, 111] Object[] objs = c1.toArray(); for (int i = 0; i < objs.length; i++){ System.out.println(objs[i]); // bbb 111 } // Iterator<E> iterator()：通过迭代器对象遍历 c1.add(new Pigs(\"小明\", 18)); // 结果：[bbb, 111, com.wuziqi.gobang.controller.Pigs@23fc625e] // 给Pigs加上toString()方法后 // 打印结果：[bbb, 111, Pigs{name='小明', age=18}] System.out.println(c1); /** * Iterator是接口 * 有两个子方法 * hasNext()：判断是否还有元素 * next()：获取下一个元素 * */ Iterator it = c1.iterator(); // 需要导包，也是多态格式 while (it.hasNext()){ System.out.println(it.next()); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环(for each遍历) for (Object obj : c1){ System.out.println(obj); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环遍历数组 int arr[] = {1,2,3,4,5,6,7,8,9}; for (Object obj : arr){ System.out.println(obj); // 1,2,3,4,5,6,7,8,9 } }\n}\nclass Pigs{ private String name; private int age; Pigs(String name, int age){ this.name = name; this.age = age; } @Override public String toString() { return \"Pigs{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}"
-      }
-    ]
-  },
-  {
-    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Iterator%E8%BF%AD%E4%BB%A3%E5%99%A8.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "Iterator 迭代器",
-        "slug": "iterator-迭代器",
         "content": ""
       }
     ]
@@ -8222,6 +8183,45 @@ export const searchIndex = [
         "header": "方法的应用",
         "slug": "方法的应用",
         "content": "package com.wuziqi.gobang.Map; import java.util.Comparator;\nimport java.util.Set;\nimport java.util.TreeMap;\nimport java.util.Map.Entry; public class DemoTreeMap { public static void main(String[] args) { TreeMap<String, Student> tm = new TreeMap<String, Student>(); tm.put(\"9527\", new Student(\"Tom\", 18)); tm.put(\"9530\", new Student(\"Jerry\", 18)); tm.put(\"9526\", new Student(\"Rose\", 18)); tm.put(\"9531\", new Student(\"Nose\", 18)); tm.put(\"9525\", new Student(\"Fore\", 18)); Set<String> keys = tm.keySet(); for (String key : keys) { System.out.println(key + \":\" + tm.get(key)); // 结果：根据键值，进行了排序 // 9525:Student{name='Fore', age=18} // 9526:Student{name='Rose', age=18} // 9527:Student{name='Tom', age=18} // 9530:Student{name='Jerry', age=18} // 9531:Student{name='Nose', age=18} } TreeMap<Student, String> tm2 = new TreeMap<Student, String>( new Comparator<Student>() { @Override public int compare(Student o1, Student o2) { int i = o1.getAge() - o2.getAge(); int ii = i == 0 ? o1.getName().compareTo(o2.getName()) : i; return ii; } } ); tm2.put(new Student(\"Tom\", 18),\"9527\"); tm2.put(new Student(\"Jerry\", 17), \"9530\"); tm2.put(new Student(\"Rose\", 16), \"9526\"); tm2.put(new Student(\"Nose\", 20), \"9531\"); tm2.put(new Student(\"Tom\", 18), \"9525\"); Set<Entry<Student, String>> sets = tm2.entrySet(); for (Entry<Student, String> entry : sets) { System.out.println(entry.getKey() + \":\" + entry.getValue()); // 结果： // Student{name='Rose', age=16}:9526 // Student{name='Jerry', age=17}:9530 // Student{name='Tom', age=18}:9525 // Student{name='Nose', age=20}:9531 } }\n}\nclass Student { private String name; private int age; public Student(String name, int age) { this.name = name; this.age = age; } public String getName() { return name; } public void setName(String name) { this.name = name; } public int getAge() { return age; } public void setAge(int age) { this.age = age; } @Override public String toString() { return \"Student{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}\n//class Student implements Comparable<Student>{\n// private String name;\n// private int age;\n//\n// public Student(String name, int age) {\n// this.name = name;\n// this.age = age;\n// }\n//\n// public String getName() {\n// return name;\n// }\n//\n// public void setName(String name) {\n// this.name = name;\n// }\n//\n// public int getAge() {\n// return age;\n// }\n//\n// public void setAge(int age) {\n// this.age = age;\n// }\n//\n// @Override\n// public String toString() {\n// return \"Student{\" +\n// \"name='\" + name + '\\'' +\n// \", age=\" + age +\n// '}';\n// }\n// @Override\n// public int compareTo(Student o) {\n// int i = this.age - o.age;\n// int ii = i == 0 ? this.name.compareTo(o.name) : i;\n// return ii;\n// }\n//}"
+      }
+    ]
+  },
+  {
+    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Collection%E6%8E%A5%E5%8F%A3.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Collection 接口",
+        "slug": "collection-接口",
+        "content": "单列集合；需要导包，在 java.util 下；Collection 接口，不是类，是单列集合的顶层"
+      },
+      {
+        "header": "常见的成员方法",
+        "slug": "常见的成员方法",
+        "content": "方法\n作用 boolean add(Object e)\n添加元素 boolean addAll(Collection c)\n添加集合 boolean remove(Object o)\n删除元素 boolean removeIf(Predicate filter)\n按照条件删除元素 void clear()\n清空集合 int size()\n获取集合长度 boolean contains(Object o)\n是否包含 boolean isEmpty\n是否为空 Object[] toArray()\n集合转数组 Iterator<E> iterator()\n获取迭代器对象"
+      },
+      {
+        "header": "集合的遍历",
+        "slug": "集合的遍历",
+        "content": "转数组循环遍历 Collection c = new ArrayList();\nObject[] obj = c.toArray();\nfor(int i = 0; i < obj.length; i++){ System.out.println(obj[i]);\n} 迭代器遍历 Collection c = new ArrayList();\nIterator it = c.iterator();\nwhile (it.hasNext()) { Object obj = it.next(); System.out.println(obj);\n} 增强 for 循环(for each 遍历) 增强 for 循环底层也是迭代器遍历，只是简化写法\n增强 for 循环也可以用来遍历数组\n格式：for(数据类型 变量名 : 数组名/集合名){...} Collection c = new ArrayList();\nfor (Object obj : c) { System.out.println(obj);\n}"
+      },
+      {
+        "header": "方法的应用",
+        "slug": "方法的应用",
+        "content": "package com.wuziqi.gobang.controller; import java.util.ArrayList;\nimport java.util.Collection;\nimport java.util.Iterator;\nimport java.util.function.Predicate; public class DemoCollection { public static void main(String[] args) { // 多态格式的，Collection是类，所以只能创建子对象 Collection c = new ArrayList(); System.out.println(c); // 结果为[]: 说明底层重写了toString方法 // boolean add(Object e)：集合中添加一个元素 c.add(\"aaa\"); c.add(\"bbb\"); // Collection只能添加引用类型，这块不报错说明底层自动转成Integer类型了 c.add(111); System.out.println(c); // [aaa, bbb, 111] // boolean addAll(Collection c)：集合中添加一个集合 Collection c1 = new ArrayList(); c1.addAll(c); System.out.println(c1); // [aaa, bbb, 111] // boolean remove(Object o)：删除某一元素 c1.remove(\"aaa\"); System.out.println(c1); // [bbb, 111] // boolean removeIf(Predicate filter)：根据条件删除 // Object是泛型，当然可以换成String等 c.removeIf(new Predicate<Object>() { @Override public boolean test(Object t) { // Object和上边对应 // return true; // 满足条件，要把该元素删除掉 // reutrn false; // 不满足，不能删掉元素 return t instanceof Integer; } }); // c.removeIf((o) -> o.equals(111)); // 与上边的重写方法一样效果 System.out.println(c); // [aaa, bbb] // boolean isEmpty()：是否为空 System.out.println(c.isEmpty()); // false // int Size()：获取长度 System.out.println(c.size()); // 2 // boolean contains(Object o)：是否包含 System.out.println(c); // [aaa, bbb] c.add(111); System.out.println(c.contains(\"ddd\")); // false System.out.println(c.contains(111)); // true // void clear()：清空集合 c.clear(); System.out.println(c); // [] System.out.println(c.isEmpty()); // true // Object[] toArray()：转成数组进行遍历 System.out.println(c1); // [bbb, 111] Object[] objs = c1.toArray(); for (int i = 0; i < objs.length; i++){ System.out.println(objs[i]); // bbb 111 } // Iterator<E> iterator()：通过迭代器对象遍历 c1.add(new Pigs(\"小明\", 18)); // 结果：[bbb, 111, com.wuziqi.gobang.controller.Pigs@23fc625e] // 给Pigs加上toString()方法后 // 打印结果：[bbb, 111, Pigs{name='小明', age=18}] System.out.println(c1); /** * Iterator是接口 * 有两个子方法 * hasNext()：判断是否还有元素 * next()：获取下一个元素 * */ Iterator it = c1.iterator(); // 需要导包，也是多态格式 while (it.hasNext()){ System.out.println(it.next()); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环(for each遍历) for (Object obj : c1){ System.out.println(obj); // 打印结果：bbb 111 Pigs{name='小明', age=18} } // 增强for循环遍历数组 int arr[] = {1,2,3,4,5,6,7,8,9}; for (Object obj : arr){ System.out.println(obj); // 1,2,3,4,5,6,7,8,9 } }\n}\nclass Pigs{ private String name; private int age; Pigs(String name, int age){ this.name = name; this.age = age; } @Override public String toString() { return \"Pigs{\" + \"name='\" + name + '\\'' + \", age=\" + age + '}'; }\n}"
+      }
+    ]
+  },
+  {
+    "path": "/admin/Java/Java%E5%B8%B8%E7%94%A8Api/%E5%8D%95%E5%88%97%E9%9B%86%E5%90%88Collection/Iterator%E8%BF%AD%E4%BB%A3%E5%99%A8.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "Iterator 迭代器",
+        "slug": "iterator-迭代器",
+        "content": ""
       }
     ]
   },
@@ -11121,6 +11121,709 @@ export const searchIndex = [
     ]
   },
   {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "函数组件",
+        "slug": "函数组件",
+        "content": "函数组件是 React 16.8 版本引入 Hooks API 后的主要编程范式"
+      },
+      {
+        "header": "1. 定义函数组件",
+        "slug": "_1-定义函数组件",
+        "content": "函数组件是一个使用 JavaScript 函数定义的 React 组件。它接收一个 props 参数，并返回一个 React 元素。 const MyComponent = (props) => { return <div>{props.message}</div>;\n};"
+      },
+      {
+        "header": "2. 使用 Props",
+        "slug": "_2-使用-props",
+        "content": "函数组件可以通过 props 接收父组件传递的数据，并在组件内部使用。也可以通过解构赋值的方式从 props 中获取数据。 const MyComponent = ({ message }) => { return <div>{message}</div>;\n};"
+      },
+      {
+        "header": "3. 使用 Hooks",
+        "slug": "_3-使用-hooks",
+        "content": "Hooks 是 React 16.8 版本引入的新特性，它允许你在函数组件内部使用状态和其他 React 特性。"
+      },
+      {
+        "header": "4. 性能优化",
+        "slug": "_4-性能优化",
+        "content": "函数组件默认是记忆化的，但可以通过 React.memo 进行进一步优化。 const MyComponent = React.memo(function MyComponent(props) { // 仅当 props 发生变化时才重新渲染\n});"
+      },
+      {
+        "header": "5. 错误处理",
+        "slug": "_5-错误处理",
+        "content": "函数组件可以使用 try/catch 语句来捕获和处理错误。也可以使用 Error Boundaries 来捕获函数组件中的错误。 class ErrorBoundary extends React.Component { constructor(props) { super(props); this.state = { hasError: false }; } static getDerivedStateFromError(error) { return { hasError: true }; } componentDidCatch(error, errorInfo) { // 你同样可以将错误日志上报给服务器 console.log(error, errorInfo); } render() { if (this.state.hasError) { // 你可以渲染任何自定义的退路 UI return <h1>Something went wrong.</h1>; } return this.props.children; }\n}"
+      },
+      {
+        "header": "6. 条件渲染",
+        "slug": "_6-条件渲染",
+        "content": "在函数组件中，你可以使用 JavaScript 的逻辑来实现条件渲染。例如，你可以使用 if 语句或三元运算符来根据条件渲染不同的元素。 const MyComponent = ({ isLoading, data }) => { if (isLoading) { return <div>Loading...</div>; } if (!data) { return <div>No data available</div>; } return <div>{data}</div>;\n};"
+      },
+      {
+        "header": "7.列表渲染",
+        "slug": "_7-列表渲染",
+        "content": "const MyComponent = ({ items }) => { return ( <ul> {items.map((item) => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n};"
+      },
+      {
+        "header": "8. Fragment 和高阶组件",
+        "slug": "_8-fragment-和高阶组件",
+        "content": "使用 Fragment 来分组元素，而不添加额外的 DOM 节点。 import React, { Fragment } from 'react'; const MyComponent = () => { return ( <Fragment> <ChildA /> <ChildB /> </Fragment> );\n};"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%B1%BB%E7%BB%84%E4%BB%B6.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "类组件",
+        "slug": "类组件",
+        "content": ""
+      },
+      {
+        "header": "类组件技术点和概念",
+        "slug": "类组件技术点和概念",
+        "content": "类组件在 React 中是通过 ES6 类定义的，它们提供了更多的功能，如生命周期方法和状态管理。"
+      },
+      {
+        "header": "1. 定义类组件",
+        "slug": "_1-定义类组件",
+        "content": "类组件是通过继承React.Component来定义的。\nimport React, { Component } from 'react'; class MyComponent extends Component { render() { return <div>Hello, {this.props.name}</div>; }\n}"
+      },
+      {
+        "header": "2. 构造函数",
+        "slug": "_2-构造函数",
+        "content": "在构造函数中，可以初始化 state 和绑定方法。\nclass MyComponent extends Component { constructor(props) { super(props); this.state = { count: 0 }; this.handleClick = this.handleClick.bind(this); } handleClick() { this.setState({ count: this.state.count + 1 }); } render() { return ( <div> <p>You clicked {this.state.count} times</p> <button onClick={this.handleClick}>Click me</button> </div> ); }\n}"
+      },
+      {
+        "header": "3. render 方法",
+        "slug": "_3-render-方法",
+        "content": "render方法是类组件中唯一必须实现的方法，它返回要渲染的 React 元素。\nrender() { return <div>{this.props.message}</div>;\n}"
+      },
+      {
+        "header": "4. 生命周期方法",
+        "slug": "_4-生命周期方法",
+        "content": "类组件有多个生命周期方法，可以用来执行副作用操作或响应组件状态和 props 的变化。"
+      },
+      {
+        "header": "4.1 componentDidMount",
+        "slug": "_4-1-componentdidmount",
+        "content": "在组件挂载后执行，通常用于执行 DOM 操作或数据获取。\ncomponentDidMount() { console.log('Component is mounted');\n}"
+      },
+      {
+        "header": "4.2 componentDidUpdate",
+        "slug": "_4-2-componentdidupdate",
+        "content": "在组件更新后执行，可以用来处理 DOM 或执行副作用。\ncomponentDidUpdate(prevProps, prevState) { if (this.props.message !== prevProps.message) { console.log('Message has changed'); }\n}"
+      },
+      {
+        "header": "4.3 componentWillUnmount",
+        "slug": "_4-3-componentwillunmount",
+        "content": "在组件卸载前执行，通常用于清理操作，如取消网络请求或清除定时器。\ncomponentWillUnmount() { console.log('Component will unmount');\n}"
+      },
+      {
+        "header": "5. 状态管理",
+        "slug": "_5-状态管理",
+        "content": "类组件通过this.state来管理内部状态。\nthis.state = { count: 0 }; // 更新状态\nthis.setState({ count: this.state.count + 1 });"
+      },
+      {
+        "header": "6. 默认 Props 和 PropTypes",
+        "slug": "_6-默认-props-和-proptypes",
+        "content": "可以使用defaultProps和PropTypes来设置默认 props 和进行 props 类型检查。\nMyComponent.propTypes = { message: PropTypes.string.isRequired\n}; MyComponent.defaultProps = { message: 'Hello World'\n};"
+      },
+      {
+        "header": "7. 性能优化",
+        "slug": "_7-性能优化",
+        "content": "可以使用shouldComponentUpdate来进行性能优化，避免不必要的渲染。\nshouldComponentUpdate(nextProps, nextState) { return this.props.message !== nextProps.message;\n}"
+      },
+      {
+        "header": "8. Context",
+        "slug": "_8-context",
+        "content": "类组件可以使用contextType来消费 context。\nstatic contextType = MyContext; render() { const value = this.context; return <div>{value}</div>;\n}"
+      },
+      {
+        "header": "9. Refs",
+        "slug": "_9-refs",
+        "content": "类组件可以使用React.createRef来创建 refs，并可以通过this.ref.current来访问 DOM 元素或组件实例。\nconstructor(props) { super(props); this.myRef = React.createRef();\n} render() { return <div ref={this.myRef}>Hello</div>;\n}"
+      },
+      {
+        "header": "10. 错误处理",
+        "slug": "_10-错误处理",
+        "content": "类组件可以使用静态方法getDerivedStateFromError和componentDidCatch来捕获和处理错误。\nstatic getDerivedStateFromError(error) { return { hasError: true };\n} componentDidCatch(error, info) { // 错误处理逻辑\n}"
+      },
+      {
+        "header": "11. 条件渲染和列表渲染",
+        "slug": "_11-条件渲染和列表渲染",
+        "content": "与函数组件类似，类组件也可以进行条件渲染和列表渲染。\nrender() { const { items } = this.props; return ( <ul> {items.map(item => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n}"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E5%90%88.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "组件的组合",
+        "slug": "组件的组合",
+        "content": "组件组合是 React 中的核心概念之一，它允许你将复杂的 UI 分解成独立可复用的组件。"
+      },
+      {
+        "header": "1. 组合基础",
+        "slug": "_1-组合基础",
+        "content": "在 React 中，组件可以嵌套组合，子组件可以接收来自父组件的 props。\nfunction Welcome(props) { return <h1>Hello, {props.name}</h1>;\n} function App() { return <Welcome name=\"Kimi\" />;\n}"
+      },
+      {
+        "header": "2. Props 传递",
+        "slug": "_2-props-传递",
+        "content": "父组件可以通过 props 向子组件传递数据。\nfunction Avatar(props) { return ( <img src={props.user.avatarUrl} alt={props.user.name} /> );\n} function UserInfo(props) { return ( <div> <Avatar user={props.user} /> <h2>{props.user.name}</h2> </div> );\n}"
+      },
+      {
+        "header": "3. 子组件组合",
+        "slug": "_3-子组件组合",
+        "content": "子组件可以进一步组合更小的组件。\nfunction Comment(props) { return ( <div className=\"Comment\"> <Avatar user={props.author} /> <div className=\"Comment-content\"> <div className=\"username\">{props.author.name}</div> <div className=\"text\">{props.text}</div> </div> </div> );\n}"
+      },
+      {
+        "header": "4. 条件渲染",
+        "slug": "_4-条件渲染",
+        "content": "组件可以根据条件渲染不同的子组件。\nfunction App() { const [isLoggedIn, setIsLoggedIn] = useState(false); function handleLoginClick() { setIsLoggedIn(true); } return ( <div> {isLoggedIn ? <Dashboard /> : <Login />} <button onClick={handleLoginClick}>Log in</button> </div> );\n}"
+      },
+      {
+        "header": "5. 列表渲染",
+        "slug": "_5-列表渲染",
+        "content": "父组件可以使用 JavaScript 的map方法渲染子组件列表。\nfunction NumberList(props) { const numbers = props.numbers; return ( <ul> {numbers.map((number) => ( <ListItem key={number.id} value={number} /> ))} </ul> );\n}"
+      },
+      {
+        "header": "6. Fragments",
+        "slug": "_6-fragments",
+        "content": "使用React.Fragment可以组合多个子组件而不添加额外的 DOM 元素。\nimport React, { Fragment } from 'react'; function Dialog({ children, title }) { return ( <Fragment> <h1>{title}</h1> <p>{children}</p> </Fragment> );\n}"
+      },
+      {
+        "header": "7. 高阶组件（HOC）",
+        "slug": "_7-高阶组件-hoc",
+        "content": "高阶组件是一个函数，它接受一个组件并返回一个新的组件。\nfunction withExtraInfo(WrappedComponent) { return class extends React.Component { render() { const extraInfo = someFunctionToCollectExtraInfo(); return ( <WrappedComponent {...this.props} extraInfo={extraInfo} /> ); } };\n}"
+      },
+      {
+        "header": "8. Context API",
+        "slug": "_8-context-api",
+        "content": "Context 允许你在组件树中传递值，而不必在每个层级手动传递 props。\nconst MyContext = React.createContext(defaultValue); function App() { return ( <MyContext.Provider value={/* some value */}> <ChildComponent /> </MyContext.Provider> );\n} function ChildComponent() { return ( <MyContext.Consumer> {value => /* 渲染一些东西 */} </MyContext.Consumer> );\n}"
+      },
+      {
+        "header": "9. 组件的封装和复用",
+        "slug": "_9-组件的封装和复用",
+        "content": "你应该构建可复用的组件，这样你可以在不同的项目中使用它们。\nfunction Button({ onClick, children }) { return <button onClick={onClick}>{children}</button>;\n} function App() { return <Button onClick={() => alert('Clicked!')}>Click me</Button>;\n}"
+      },
+      {
+        "header": "10. 组件的拆分",
+        "slug": "_10-组件的拆分",
+        "content": "将大组件拆分为更小的子组件，可以提高代码的可维护性和可读性。\n// 大组件\nfunction Post({ user, content }) { return ( <article> <UserInfo user={user} /> <Content content={content} /> </article> );\n} // 小组件\nfunction UserInfo({ user }) { // ...\n} function Content({ content }) { // ...\n}"
+      },
+      {
+        "header": "11. 组件之间的通信",
+        "slug": "_11-组件之间的通信",
+        "content": "组件之间可以通过 props、state 提升、Context 或状态管理库（如 Redux）进行通信。"
+      },
+      {
+        "header": "12. 组件的性能优化",
+        "slug": "_12-组件的性能优化",
+        "content": "通过避免不必要的渲染和使用React.memo、useMemo、useCallback等进行性能优化。\n组件组合是 React 中最重要的概念之一，它使得构建大型应用程序变得简单和可维护。通过合理地组合组件，你可以创建出既强大又灵活的用户界面。"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useContext.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useContext",
+        "slug": "usecontext",
+        "content": "useContext 是 React 提供的 Hook，用于在函数组件中方便地访问 context。处理跨组件状态共享的强大工具，正确使用它可以简化组件间的通信并提高代码的可维护性。"
+      },
+      {
+        "header": "1. 创建 Context",
+        "slug": "_1-创建-context",
+        "content": "首先，需要使用 React.createContext 创建一个 Context 对象。\nconst MyContext = React.createContext(defaultValue);"
+      },
+      {
+        "header": "2. 提供 Context 值",
+        "slug": "_2-提供-context-值",
+        "content": "使用 Context.Provider 组件来包裹组件树，以向树内的组件提供 Context 值。\n<MyContext.Provider value={/* 一些值 */}> <YourComponent />\n</MyContext.Provider>"
+      },
+      {
+        "header": "3. 消费 Context",
+        "slug": "_3-消费-context",
+        "content": "在函数组件中，使用 useContext 来消费 Context。\nimport { useContext } from 'react'; function YourComponent() { const value = useContext(MyContext); // ...\n}"
+      },
+      {
+        "header": "4. 渲染属性模式",
+        "slug": "_4-渲染属性模式",
+        "content": "useContext 的设计初衷是替代“渲染属性”模式（render props）。"
+      },
+      {
+        "header": "5. 没有中间组件",
+        "slug": "_5-没有中间组件",
+        "content": "useContext 允许你直接访问 Context 值，而不需要通过每一层组件手动传递 props。"
+      },
+      {
+        "header": "6. 依赖项",
+        "slug": "_6-依赖项",
+        "content": "useContext 会将其依赖的 Context 作为依赖项，因此当 Context 值变化时，组件会重新渲染。"
+      },
+      {
+        "header": "7. 默认值",
+        "slug": "_7-默认值",
+        "content": "自 React v16.3 起，Context API 支持默认值。如果在组件树中未找到 Provider，就会使用这个默认值。\nconst theme = useContext(MyContext);\n如果没有 MyContext.Provider 包裹组件，theme 将会是 undefined。"
+      },
+      {
+        "header": "8. 在自定义 Hook 中使用",
+        "slug": "_8-在自定义-hook-中使用",
+        "content": "可以在自定义 Hook 中使用 useContext 来访问 Context，这样可以在多个组件间复用 Context 逻辑。\nfunction useMyContext() { return useContext(MyContext);\n} function ComponentA() { const value = useMyContext(); // ...\n} function ComponentB() { const value = useMyContext(); // ...\n}"
+      },
+      {
+        "header": "9. 注意事项",
+        "slug": "_9-注意事项",
+        "content": "useContext 钩子会将其依赖的 Context 作为依赖项，因此当 Context 值变化时，组件会重新渲染。如果需要优化性能，可以考虑使用 React.memo 或 useMemo。\n如果在函数组件中使用 useContext，该组件将会在每次渲染时重新创建，除非它被 React.memo 包裹。"
+      },
+      {
+        "header": "10. Context 的更新",
+        "slug": "_10-context-的更新",
+        "content": "当 Provider 的 value 属性改变时，所有消费该 Context 的组件都会重新渲染。如果需要避免不必要的渲染，可以使用 useMemo 或 useReducer 来创建一个稳定的 value。"
+      },
+      {
+        "header": "11. 与 useReducer 结合",
+        "slug": "_11-与-usereducer-结合",
+        "content": "有时，管理 Context 的复杂状态可能需要一个 reducer 函数。这种情况下，可以将 useReducer 与 Context 结合使用。\nconst MyContext = React.createContext(); function MyProvider({ children }) { const [state, dispatch] = useReducer(reducer, initialState); return ( <MyContext.Provider value={{ state, dispatch }}> {children} </MyContext.Provider> );\n}"
+      },
+      {
+        "header": "12. 跨组件共享状态",
+        "slug": "_12-跨组件共享状态",
+        "content": "useContext 允许你跨多个组件层级共享状态，而不必使用 props 链式传递。"
+      },
+      {
+        "header": "13. Context 的嵌套",
+        "slug": "_13-context-的嵌套",
+        "content": "可以嵌套多个 Provider，以便在组件树的不同部分提供不同的 Context 值。"
+      },
+      {
+        "header": "14. 避免过度使用",
+        "slug": "_14-避免过度使用",
+        "content": "虽然 useContext 非常有用，但应避免过度使用，因为它可能导致难以追踪的渲染性能问题。"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useEffect.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useEffect",
+        "slug": "useeffect",
+        "content": "useEffect 是 React 中一个非常强大的 Hook，它允许你在函数组件中执行副作用操作，如数据获取、订阅或手动更改 DOM。正确使用它可以帮助你管理组件的生命周期和状态变化。"
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用",
+        "content": "useEffect 用于在组件渲染后执行副作用操作。它接受一个函数和一个依赖数组。\nimport { useEffect } from 'react'; function Example() { useEffect(() => { console.log('Component is rendered'); return () => { console.log('Cleanup'); }; }, []); // 空依赖数组表示这个effect只在挂载和卸载时运行\n}"
+      },
+      {
+        "header": "2. 清理函数",
+        "slug": "_2-清理函数",
+        "content": "useEffect 可以返回一个清理函数，用于执行清理操作，如取消网络请求、移除事件监听器等。\nuseEffect(() => { const subscription = props.source.subscribe(); return () => { subscription.unsubscribe(); };\n}, [props.source]); // props.source是依赖项"
+      },
+      {
+        "header": "3. 依赖数组",
+        "slug": "_3-依赖数组",
+        "content": "useEffect 的第二个参数是一个依赖数组，它决定了 effect 何时运行。如果依赖项改变，effect 会重新运行。\nuseEffect(() => { console.log('Effect runs when count changes');\n}, [count]); // 当count变化时，effect重新运行"
+      },
+      {
+        "header": "4. 副作用的模拟",
+        "slug": "_4-副作用的模拟",
+        "content": "在类组件中，useEffect 相当于componentDidMount、componentDidUpdate和componentWillUnmount的组合。"
+      },
+      {
+        "header": "5. 模拟componentDidMount和componentDidUpdate",
+        "slug": "_5-模拟componentdidmount和componentdidupdate",
+        "content": "通过添加依赖项，你可以模拟componentDidUpdate行为。\nuseEffect(() => { console.log('Mount or update when count changes');\n}, [count]); // 类似于componentDidUpdate"
+      },
+      {
+        "header": "6. 模拟componentWillUnmount",
+        "slug": "_6-模拟componentwillunmount",
+        "content": "通过返回一个清理函数，你可以模拟componentWillUnmount行为。\nuseEffect(() => { console.log('Cleanup when unmounting'); return () => { console.log('Component will unmount'); };\n}, []); // 类似于componentWillUnmount"
+      },
+      {
+        "header": "7. 副作用的依赖性",
+        "slug": "_7-副作用的依赖性",
+        "content": "确保将所有外部变量和 props 作为依赖项，以确保 effect 在依赖项变化时正确运行。"
+      },
+      {
+        "header": "8. 条件 Effect",
+        "slug": "_8-条件-effect",
+        "content": "你可以通过条件渲染或条件执行 effect 函数来控制 effect 的执行。\nuseEffect(() => { if (show) { console.log('Effect runs when show is true'); }\n}, [show]);"
+      },
+      {
+        "header": "9. 多个 Effect",
+        "slug": "_9-多个-effect",
+        "content": "你可以在组件中使用多个useEffect调用，以处理不同的副作用逻辑。\nuseEffect(() => { // 第一个effect\n}, [dependency1]); useEffect(() => { // 第二个effect\n}, [dependency2]);"
+      },
+      {
+        "header": "10. 性能优化",
+        "slug": "_10-性能优化",
+        "content": "如果你在 effect 中进行高开销操作，如数据获取或大规模计算，考虑使用useMemo或useCallback进行优化。"
+      },
+      {
+        "header": "11. 避免不必要的渲染",
+        "slug": "_11-避免不必要的渲染",
+        "content": "通过正确使用依赖数组，你可以避免不必要的组件渲染。"
+      },
+      {
+        "header": "12. 副作用的纯粹性",
+        "slug": "_12-副作用的纯粹性",
+        "content": "尽量保持 effect 函数的纯粹性，避免在 effect 内部产生副作用，除非是必须的。"
+      },
+      {
+        "header": "13. 使用useLayoutEffect",
+        "slug": "_13-使用uselayouteffect",
+        "content": "在必要时，可以使用useLayoutEffect来执行同步的副作用操作，如 DOM 测量。\nimport { useLayoutEffect } from 'react'; useLayoutEffect(() => { // Synchronous re-rendering\n});"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useMemo%E5%92%8CuseCallback.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useMemo 和 useCallback",
+        "slug": "usememo-和-usecallback",
+        "content": "useMemo 和 useCallback 是 React 提供的两个 Hook，用于优化性能，它们通过记忆化来避免不必要的计算和渲染。以下是这两个 Hook 的关键技术点和概念："
+      },
+      {
+        "header": "useMemo",
+        "slug": "usememo",
+        "content": ""
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用",
+        "content": "useMemo 用于对高开销的计算进行记忆化，以优化性能。\nimport { useMemo } from 'react'; function expensiveCalculation(x, y) { // 假设这是一个复杂的计算 return x * y;\n} function MyComponent({ x, y }) { const result = useMemo(() => expensiveCalculation(x, y), [x, y]); return <div>Result: {result}</div>;\n}"
+      },
+      {
+        "header": "2. 依赖数组",
+        "slug": "_2-依赖数组",
+        "content": "useMemo 接受一个函数和一个依赖数组，只有当依赖项改变时，才会重新计算。"
+      },
+      {
+        "header": "3. 避免不必要的计算",
+        "slug": "_3-避免不必要的计算",
+        "content": "useMemo 可以避免在每次渲染时都进行高开销的计算。"
+      },
+      {
+        "header": "4. 惰性计算",
+        "slug": "_4-惰性计算",
+        "content": "useMemo 可以用于惰性计算，即只有在需要时才进行计算。"
+      },
+      {
+        "header": "5. 与useMemo结合使用",
+        "slug": "_5-与usememo结合使用",
+        "content": "useMemo 可以与 useCallback 结合使用，以确保传递给子组件的回调函数的稳定性。"
+      },
+      {
+        "header": "useCallback",
+        "slug": "usecallback",
+        "content": ""
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用-1",
+        "content": "useCallback 用于返回一个记忆化的回调函数，这个函数只有在依赖项改变时才会重新创建。\nimport { useCallback } from 'react'; function MyComponent({ doSomething }) { const handleDoSomething = useCallback(() => { doSomething(); }, [doSomething]); return <button onClick={handleDoSomething}>Do Something</button>;\n}"
+      },
+      {
+        "header": "2. 依赖数组",
+        "slug": "_2-依赖数组-1",
+        "content": "useCallback 接受一个函数和一个依赖数组，只有当依赖项改变时，才会重新创建函数。"
+      },
+      {
+        "header": "3. 避免不必要的渲染",
+        "slug": "_3-避免不必要的渲染",
+        "content": "useCallback 可以避免子组件因为父组件的重新渲染而不必要的重新渲染。"
+      },
+      {
+        "header": "4. 稳定性",
+        "slug": "_4-稳定性",
+        "content": "useCallback 可以确保回调函数的引用稳定性，这对于传递给子组件或使用在useEffect中非常有用。"
+      },
+      {
+        "header": "5. 自定义 Hook",
+        "slug": "_5-自定义-hook",
+        "content": "useCallback 可以用于创建自定义 Hook，以在多个组件间复用回调逻辑。"
+      },
+      {
+        "header": "6. 与useMemo的区别",
+        "slug": "_6-与usememo的区别",
+        "content": "useMemo 用于优化高开销的计算。\nuseCallback 用于优化回调函数的创建。"
+      },
+      {
+        "header": "7. 性能注意事项",
+        "slug": "_7-性能注意事项",
+        "content": "过度使用 useMemo 和 useCallback 可能会导致性能下降，因为它们会增加代码的复杂性。\n应该在真的有性能瓶颈时才使用这两个 Hook。"
+      },
+      {
+        "header": "8. 与React.memo结合使用",
+        "slug": "_8-与react-memo结合使用",
+        "content": "useMemo 和 useCallback 可以与 React.memo 结合使用，以避免组件的不必要的渲染。"
+      },
+      {
+        "header": "9. 惰性初始化",
+        "slug": "_9-惰性初始化",
+        "content": "useMemo 和 useCallback 可以用于惰性初始化对象或函数。"
+      },
+      {
+        "header": "10. 避免深比较",
+        "slug": "_10-避免深比较",
+        "content": "在依赖数组中，应避免进行深比较，因为这可能会导致性能问题。"
+      },
+      {
+        "header": "11. 避免在渲染阶段使用",
+        "slug": "_11-避免在渲染阶段使用",
+        "content": "useMemo 和 useCallback 应该谨慎使用，以避免在渲染阶段进行复杂的计算或创建函数。"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useReducer.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useReducer",
+        "slug": "usereducer",
+        "content": "useReducer 是 React 提供的另一个 Hook，它让你可以在函数组件中使用 reducer 函数来管理复杂状态。"
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用",
+        "content": "useReducer 让你向组件传递一个 reducer 函数，这个函数会根据 action 来返回新的状态。\nimport { useReducer } from 'react'; function reducer(state, action) { switch (action.type) { case 'increment': return { count: state.count + 1 }; case 'decrement': return { count: state.count - 1 }; default: throw new Error(); }\n} function Counter() { const [state, dispatch] = useReducer(reducer, { count: 0 }); return ( <> Count: {state.count} <button onClick={() => dispatch({ type: 'increment' })}>+</button> <button onClick={() => dispatch({ type: 'decrement' })}>-</button> </> );\n}"
+      },
+      {
+        "header": "2. 初始化状态",
+        "slug": "_2-初始化状态",
+        "content": "useReducer 的第二个参数是初始状态。与 useState 不同，它不是在渲染后才定义，而是在组件创建时就定义。"
+      },
+      {
+        "header": "3. 调度动作",
+        "slug": "_3-调度动作",
+        "content": "useReducer 返回一个数组，其中第二个元素是一个 dispatch 函数，用来分派 action。"
+      },
+      {
+        "header": "4. Reducer 函数",
+        "slug": "_4-reducer-函数",
+        "content": "Reducer 是一个纯函数，它接受当前状态和一个动作对象，返回新的状态对象。"
+      },
+      {
+        "header": "5. 动作对象",
+        "slug": "_5-动作对象",
+        "content": "Action 是一个包含类型属性的对象，表示要执行什么操作。"
+      },
+      {
+        "header": "6. 状态更新逻辑",
+        "slug": "_6-状态更新逻辑",
+        "content": "Reducer 通常包含多个 case，每个 case 对应一种动作，返回对应动作的新状态。"
+      },
+      {
+        "header": "7. 状态不可变性",
+        "slug": "_7-状态不可变性",
+        "content": "与 Redux 类似，useReducer 要求状态更新时返回一个新对象，而不是修改原状态。"
+      },
+      {
+        "header": "8. 性能优化",
+        "slug": "_8-性能优化",
+        "content": "由于状态不可变性，useReducer 可以用于性能优化，如避免不必要的渲染。"
+      },
+      {
+        "header": "9. 自定义 Hook",
+        "slug": "_9-自定义-hook",
+        "content": "useReducer 可以与 useContext 结合使用，创建复杂的状态逻辑和全局状态管理。"
+      },
+      {
+        "header": "10. 与useState比较",
+        "slug": "_10-与usestate比较",
+        "content": "useState 适合管理简单状态。\nuseReducer 适合管理复杂状态逻辑，如多子值状态。"
+      },
+      {
+        "header": "11. 异步操作",
+        "slug": "_11-异步操作",
+        "content": "虽然 useReducer 本身不处理异步操作，但可以与 useEffect 结合使用执行异步操作。\nimport { useReducer, useEffect } from 'react'; function reducer(state, action) { // ...\n} function MyComponent() { const [state, dispatch] = useReducer(reducer, { /* 初始状态 */ }); useEffect(() => { // 异步操作 }, [state.value]); // 当state.value变化时执行 // ...\n}"
+      },
+      {
+        "header": "12. 初始状态作为函数",
+        "slug": "_12-初始状态作为函数",
+        "content": "如果初始状态需要根据 props 计算，可以传递一个函数给 useReducer。\nconst initialReducerState = { count: 0 };\nfunction reducer(state, action) { // ...\n} function Counter({ initialCount }) { const [state, dispatch] = useReducer( reducer, (initialCount) => ({ count: initialCount }), initialCount ); // ...\n}"
+      },
+      {
+        "header": "13. 调试",
+        "slug": "_13-调试",
+        "content": "使用 useReducer 的调试模式可以更容易地跟踪动作和状态的变化。"
+      },
+      {
+        "header": "14. 动作组合",
+        "slug": "_14-动作组合",
+        "content": "可以在 reducer 中组合多个动作，以处理复杂的状态转换。"
+      },
+      {
+        "header": "15. 状态提升",
+        "slug": "_15-状态提升",
+        "content": "对于深层嵌套组件的状态管理，可以考虑将状态提升到共同的父组件中。"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useRef.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useRef",
+        "slug": "useref",
+        "content": "useRef 是 React 提供的 Hook，用于在函数组件中访问 DOM 元素、管理内部状态或保存任何可变值。"
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用",
+        "content": "useRef 创建一个可变的 ref 对象，它在整个组件生命周期内持续存在。\nimport { useRef } from 'react'; function MyComponent() { const myRef = useRef(null); return <div ref={myRef}>Hello</div>;\n}"
+      },
+      {
+        "header": "2. 访问 DOM 元素",
+        "slug": "_2-访问-dom-元素",
+        "content": "useRef 常用于直接访问 DOM 元素，如获取输入字段或按钮。\nfunction TextInput() { const inputRef = useRef(null); function focusInput() { inputRef.current.focus(); } return ( <> <input ref={inputRef} type=\"text\" /> <button onClick={focusInput}>Focus the input</button> </> );\n}"
+      },
+      {
+        "header": "3. 初始值",
+        "slug": "_3-初始值",
+        "content": "useRef 可以接受一个初始值，该值将在组件挂载时被设置。\nconst ref = useRef(initialValue);"
+      },
+      {
+        "header": "4. 保存可变值",
+        "slug": "_4-保存可变值",
+        "content": "useRef 可以用来保存任何可变值，这个值在组件的整个生命周期内持续存在。\nfunction Timer() { const intervalRef = useRef(); function startTimer() { intervalRef.current = setInterval(() => { console.log('Tick'); }, 1000); } function stopTimer() { clearInterval(intervalRef.current); } useEffect(() => { startTimer(); return stopTimer; }, []); return null;\n}"
+      },
+      {
+        "header": "5. 传递回调函数",
+        "slug": "_5-传递回调函数",
+        "content": "useRef 可以用于保存回调函数，确保回调函数的稳定性。\nfunction MyComponent() { const handleButtonClick = useRef(() => { console.log('Button clicked'); }); return <button onClick={handleButtonClick.current}>Click me</button>;\n}"
+      },
+      {
+        "header": "6. 组合使用",
+        "slug": "_6-组合使用",
+        "content": "useRef 可以与 useEffect 组合使用，以处理副作用。\nimport { useRef, useEffect } from 'react'; function MyComponent() { const myRef = useRef(null); useEffect(() => { console.log('Ref current:', myRef.current); }, []); return <div ref={myRef}>Hello</div>;\n}"
+      },
+      {
+        "header": "7. 清除 Ref",
+        "slug": "_7-清除-ref",
+        "content": "虽然 useRef 创建的 ref 对象在组件卸载后仍然存在，但可以通过手动设置 null 来清除。\nfunction MyComponent() { const myRef = useRef(null); useEffect(() => { return () => { myRef.current = null; }; }, []); return <div ref={myRef}>Hello</div>;\n}"
+      },
+      {
+        "header": "8. 多个 Ref",
+        "slug": "_8-多个-ref",
+        "content": "可以在一个组件中使用多个 ref，只要每个 ref 都有唯一的引用。"
+      },
+      {
+        "header": "9. 与类组件的区别",
+        "slug": "_9-与类组件的区别",
+        "content": "在类组件中，通常使用React.createRef创建 ref，而在函数组件中使用useRef。"
+      },
+      {
+        "header": "10. Refs 与 Context",
+        "slug": "_10-refs-与-context",
+        "content": "useRef 可以与 useContext 结合使用，以在组件树中传递 DOM 元素引用。"
+      },
+      {
+        "header": "11. Refs 与 forwardRef",
+        "slug": "_11-refs-与-forwardref",
+        "content": "useRef 可以与 forwardRef 结合使用，以将 ref 传递给子组件。\nimport React, { forwardRef } from 'react'; const FancyButton = forwardRef((props, ref) => ( <button ref={ref} className=\"FancyButton\"> {props.children} </button>\n)); function App() { const buttonRef = useRef(); return <FancyButton ref={buttonRef}>Click me!</FancyButton>;\n}"
+      },
+      {
+        "header": "12. Refs 与 useImperativeHandle",
+        "slug": "_12-refs-与-useimperativehandle",
+        "content": "当使用 forwardRef 时，useImperativeHandle 可以用于控制子组件暴露给父组件的实例值。"
+      },
+      {
+        "header": "13. 调试",
+        "slug": "_13-调试",
+        "content": "useRef 可以用于调试目的，如保存组件的特定状态或日志信息。"
+      }
+    ]
+  },
+  {
+    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useState.html",
+    "title": "",
+    "pathLocale": "/",
+    "contents": [
+      {
+        "header": "useState",
+        "slug": "usestate",
+        "content": "useState 是最基本的 Hook，它允许你在函数组件中添加局部状态。useState 接受一个参数作为初始状态，并返回一个数组，其中第一个元素是当前状态，第二个元素是一个函数，用于更新状态。"
+      },
+      {
+        "header": "1. 基本使用",
+        "slug": "_1-基本使用",
+        "content": "useState允许你在函数组件中创建一个状态变量和一个更新该状态的函数。\nimport { useState } from 'react'; function Example() { const [count, setCount] = useState(0); // 初始状态为0 return ( <div> <p>You clicked {count} times</p> <button onClick={() => setCount(count + 1)}>Click me</button> </div> );\n}"
+      },
+      {
+        "header": "2. 初始状态",
+        "slug": "_2-初始状态",
+        "content": "你可以传递一个参数给useState作为初始状态值。如果没有提供参数，初始状态将是undefined。\nconst [state, setState] = useState(initialState);"
+      },
+      {
+        "header": "3. 更新状态",
+        "slug": "_3-更新状态",
+        "content": "useState返回一个数组，其第二个元素是一个函数，用来更新状态。状态更新可能是异步的。\nsetCount((prevCount) => prevCount + 1);"
+      },
+      {
+        "header": "4. 函数作为参数",
+        "slug": "_4-函数作为参数",
+        "content": "你可以传递一个函数给setState，该函数接收上一个状态作为参数，并返回一个新状态。\nsetCount((prevCount) => prevCount + 1);"
+      },
+      {
+        "header": "5. 多状态变量",
+        "slug": "_5-多状态变量",
+        "content": "如果你有多个状态需要管理，可以多次调用useState。\nconst [age, setAge] = useState(42);\nconst [fruit, setFruit] = useState('banana');\nconst [todos, setTodos] = useState([]);"
+      },
+      {
+        "header": "6. 状态惰性初始化",
+        "slug": "_6-状态惰性初始化",
+        "content": "你可以惰性地初始化状态，即在首次渲染时根据 props 或上下文计算初始状态。\nconst [state, setState] = useState(() => { const initialState = someExpensiveComputation(props); return initialState;\n});"
+      },
+      {
+        "header": "7. 使用状态进行数据提交",
+        "slug": "_7-使用状态进行数据提交",
+        "content": "你可以使用状态来处理表单数据，并在提交时使用其值。\nfunction Form() { const [input, setInput] = useState(''); function handleSubmit(event) { event.preventDefault(); console.log(input); } return ( <form onSubmit={handleSubmit}> <input value={input} onChange={(e) => setInput(e.target.value)} /> <button type=\"submit\">Submit</button> </form> );\n}"
+      },
+      {
+        "header": "8. 状态与副作用",
+        "slug": "_8-状态与副作用",
+        "content": "你可以结合useState和useEffect来处理与状态相关的副作用。\nimport { useState, useEffect } from 'react'; function Example() { const [count, setCount] = useState(0); useEffect(() => { document.title = `You clicked ${count} times`; }); return ( <div> <p>You clicked {count} times</p> <button onClick={() => setCount(count + 1)}>Click me</button> </div> );\n}"
+      },
+      {
+        "header": "9. 自定义 Hook",
+        "slug": "_9-自定义-hook",
+        "content": "你可以使用useState来创建自定义 Hook，以在多个组件间复用状态逻辑。\nfunction useFriendStatus(friendID) { const [isOnline, setIsOnline] = useState(null); useEffect(() => { function handleStatusChange(status) { setIsOnline(status.isOnline); } ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange); return () => { ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange); }; }, [friendID]); return isOnline;\n}"
+      },
+      {
+        "header": "10. 状态的不可变性",
+        "slug": "_10-状态的不可变性",
+        "content": "在更新状态时，不要直接修改状态对象，而是应该返回一个新对象。\nconst [user, setUser] = useState({ name: 'Kimi' }); // 正确\nsetUser((prevUser) => ({ ...prevUser, name: 'New Name' })); // 错误\nsetUser((user) => ({ ...user, name: 'New Name' }));"
+      },
+      {
+        "header": "11. 状态的依赖性",
+        "slug": "_11-状态的依赖性",
+        "content": "如果你在useEffect中使用状态，请确保将状态作为依赖项，以避免遗漏更新。\nuseEffect(() => { console.log(count);\n}, [count]); // 将count作为依赖项"
+      }
+    ]
+  },
+  {
     "path": "/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E6%B3%9B%E5%9E%8B%E5%87%BD%E6%95%B0/%E6%8C%87%E5%AE%9A%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0.html",
     "title": "",
     "pathLocale": "/",
@@ -12059,709 +12762,6 @@ export const searchIndex = [
         "header": "自定义事件",
         "slug": "自定义事件",
         "content": "使用 自定义事件：在 Vue 3 中，不管是放在标签身上、组件标签身上都是原生 DOM 事件。可以通过自定义事件向父组件传值。\n<!-- Parent.vue --> <template> <div> <h1>事件</h1> <!-- 原生DOM事件 --> <pre @click=\"handler\"> 大江东去浪淘尽,千古分流人物 </pre> <button @click=\"handler1(1, 2, 3, $event)\">点击我传递多个参数</button> <hr /> <!-- vue2框架当中:这种写法自定义事件,可以通过.native修饰符变为原生DOM事件 vue3框架下面写法其实即为原生DOM事件 vue3:原生的DOM事件不管是放在标签身上、组件标签身上都是原生DOM事件 --> <Event1 @click=\"handler2\"></Event1> <hr /> <!-- 绑定自定义事件xxx:实现子组件给父组件传递数据 --> <Event2 @xxx=\"handler3\" @click=\"handler4\"></Event2> </div>\n</template> <script setup lang=\"ts\">\n//引入子组件\nimport Event1 from \"./Event1.vue\";\n//引入子组件\nimport Event2 from \"./Event2.vue\";\n//事件回调--1\nconst handler = (event) => { //event即为事件对象 console.log(event);\n};\n//事件回调--2\nconst handler1 = (a, b, c, $event) => { console.log(a, b, c, $event);\n};\n//事件回调---3\nconst handler2 = () => { console.log(123);\n};\n//事件回调---4\nconst handler3 = (param1, param2) => { console.log(param1, param2);\n};\n//事件回调--5\nconst handler4 = (param1, param2) => { console.log(param1, param2);\n};\n</script> <!-- Event1.vue -->\n<template> <div class=\"son\"> <p>我是子组件1</p> <button>点击我也执行</button> </div>\n</template> <script setup lang=\"ts\"></script> <!-- Event2.vue -->\n<template> <div class=\"child\"> <p>我是子组件2</p> <button @click=\"handler\">点击我触发自定义事件xxx</button> <button @click=\"$emit('click', 'AK47', 'J20')\"> 点击我触发自定义事件click </button> </div>\n</template>\n<script setup lang=\"ts\">\n//利用defineEmits方法返回函数触发自定义事件\n//defineEmits方法不需要引入直接使用\nlet $emit = defineEmits([\"xxx\", \"click\"]);\n//按钮点击回调\nconst handler = () => { //第一个参数:事件类型 第二个|三个|N参数即为注入数据 $emit(\"xxx\", \"东风导弹\", \"航母\");\n};\n</script>"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useContext.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useContext",
-        "slug": "usecontext",
-        "content": "useContext 是 React 提供的 Hook，用于在函数组件中方便地访问 context。处理跨组件状态共享的强大工具，正确使用它可以简化组件间的通信并提高代码的可维护性。"
-      },
-      {
-        "header": "1. 创建 Context",
-        "slug": "_1-创建-context",
-        "content": "首先，需要使用 React.createContext 创建一个 Context 对象。\nconst MyContext = React.createContext(defaultValue);"
-      },
-      {
-        "header": "2. 提供 Context 值",
-        "slug": "_2-提供-context-值",
-        "content": "使用 Context.Provider 组件来包裹组件树，以向树内的组件提供 Context 值。\n<MyContext.Provider value={/* 一些值 */}> <YourComponent />\n</MyContext.Provider>"
-      },
-      {
-        "header": "3. 消费 Context",
-        "slug": "_3-消费-context",
-        "content": "在函数组件中，使用 useContext 来消费 Context。\nimport { useContext } from 'react'; function YourComponent() { const value = useContext(MyContext); // ...\n}"
-      },
-      {
-        "header": "4. 渲染属性模式",
-        "slug": "_4-渲染属性模式",
-        "content": "useContext 的设计初衷是替代“渲染属性”模式（render props）。"
-      },
-      {
-        "header": "5. 没有中间组件",
-        "slug": "_5-没有中间组件",
-        "content": "useContext 允许你直接访问 Context 值，而不需要通过每一层组件手动传递 props。"
-      },
-      {
-        "header": "6. 依赖项",
-        "slug": "_6-依赖项",
-        "content": "useContext 会将其依赖的 Context 作为依赖项，因此当 Context 值变化时，组件会重新渲染。"
-      },
-      {
-        "header": "7. 默认值",
-        "slug": "_7-默认值",
-        "content": "自 React v16.3 起，Context API 支持默认值。如果在组件树中未找到 Provider，就会使用这个默认值。\nconst theme = useContext(MyContext);\n如果没有 MyContext.Provider 包裹组件，theme 将会是 undefined。"
-      },
-      {
-        "header": "8. 在自定义 Hook 中使用",
-        "slug": "_8-在自定义-hook-中使用",
-        "content": "可以在自定义 Hook 中使用 useContext 来访问 Context，这样可以在多个组件间复用 Context 逻辑。\nfunction useMyContext() { return useContext(MyContext);\n} function ComponentA() { const value = useMyContext(); // ...\n} function ComponentB() { const value = useMyContext(); // ...\n}"
-      },
-      {
-        "header": "9. 注意事项",
-        "slug": "_9-注意事项",
-        "content": "useContext 钩子会将其依赖的 Context 作为依赖项，因此当 Context 值变化时，组件会重新渲染。如果需要优化性能，可以考虑使用 React.memo 或 useMemo。\n如果在函数组件中使用 useContext，该组件将会在每次渲染时重新创建，除非它被 React.memo 包裹。"
-      },
-      {
-        "header": "10. Context 的更新",
-        "slug": "_10-context-的更新",
-        "content": "当 Provider 的 value 属性改变时，所有消费该 Context 的组件都会重新渲染。如果需要避免不必要的渲染，可以使用 useMemo 或 useReducer 来创建一个稳定的 value。"
-      },
-      {
-        "header": "11. 与 useReducer 结合",
-        "slug": "_11-与-usereducer-结合",
-        "content": "有时，管理 Context 的复杂状态可能需要一个 reducer 函数。这种情况下，可以将 useReducer 与 Context 结合使用。\nconst MyContext = React.createContext(); function MyProvider({ children }) { const [state, dispatch] = useReducer(reducer, initialState); return ( <MyContext.Provider value={{ state, dispatch }}> {children} </MyContext.Provider> );\n}"
-      },
-      {
-        "header": "12. 跨组件共享状态",
-        "slug": "_12-跨组件共享状态",
-        "content": "useContext 允许你跨多个组件层级共享状态，而不必使用 props 链式传递。"
-      },
-      {
-        "header": "13. Context 的嵌套",
-        "slug": "_13-context-的嵌套",
-        "content": "可以嵌套多个 Provider，以便在组件树的不同部分提供不同的 Context 值。"
-      },
-      {
-        "header": "14. 避免过度使用",
-        "slug": "_14-避免过度使用",
-        "content": "虽然 useContext 非常有用，但应避免过度使用，因为它可能导致难以追踪的渲染性能问题。"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useEffect.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useEffect",
-        "slug": "useeffect",
-        "content": "useEffect 是 React 中一个非常强大的 Hook，它允许你在函数组件中执行副作用操作，如数据获取、订阅或手动更改 DOM。正确使用它可以帮助你管理组件的生命周期和状态变化。"
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用",
-        "content": "useEffect 用于在组件渲染后执行副作用操作。它接受一个函数和一个依赖数组。\nimport { useEffect } from 'react'; function Example() { useEffect(() => { console.log('Component is rendered'); return () => { console.log('Cleanup'); }; }, []); // 空依赖数组表示这个effect只在挂载和卸载时运行\n}"
-      },
-      {
-        "header": "2. 清理函数",
-        "slug": "_2-清理函数",
-        "content": "useEffect 可以返回一个清理函数，用于执行清理操作，如取消网络请求、移除事件监听器等。\nuseEffect(() => { const subscription = props.source.subscribe(); return () => { subscription.unsubscribe(); };\n}, [props.source]); // props.source是依赖项"
-      },
-      {
-        "header": "3. 依赖数组",
-        "slug": "_3-依赖数组",
-        "content": "useEffect 的第二个参数是一个依赖数组，它决定了 effect 何时运行。如果依赖项改变，effect 会重新运行。\nuseEffect(() => { console.log('Effect runs when count changes');\n}, [count]); // 当count变化时，effect重新运行"
-      },
-      {
-        "header": "4. 副作用的模拟",
-        "slug": "_4-副作用的模拟",
-        "content": "在类组件中，useEffect 相当于componentDidMount、componentDidUpdate和componentWillUnmount的组合。"
-      },
-      {
-        "header": "5. 模拟componentDidMount和componentDidUpdate",
-        "slug": "_5-模拟componentdidmount和componentdidupdate",
-        "content": "通过添加依赖项，你可以模拟componentDidUpdate行为。\nuseEffect(() => { console.log('Mount or update when count changes');\n}, [count]); // 类似于componentDidUpdate"
-      },
-      {
-        "header": "6. 模拟componentWillUnmount",
-        "slug": "_6-模拟componentwillunmount",
-        "content": "通过返回一个清理函数，你可以模拟componentWillUnmount行为。\nuseEffect(() => { console.log('Cleanup when unmounting'); return () => { console.log('Component will unmount'); };\n}, []); // 类似于componentWillUnmount"
-      },
-      {
-        "header": "7. 副作用的依赖性",
-        "slug": "_7-副作用的依赖性",
-        "content": "确保将所有外部变量和 props 作为依赖项，以确保 effect 在依赖项变化时正确运行。"
-      },
-      {
-        "header": "8. 条件 Effect",
-        "slug": "_8-条件-effect",
-        "content": "你可以通过条件渲染或条件执行 effect 函数来控制 effect 的执行。\nuseEffect(() => { if (show) { console.log('Effect runs when show is true'); }\n}, [show]);"
-      },
-      {
-        "header": "9. 多个 Effect",
-        "slug": "_9-多个-effect",
-        "content": "你可以在组件中使用多个useEffect调用，以处理不同的副作用逻辑。\nuseEffect(() => { // 第一个effect\n}, [dependency1]); useEffect(() => { // 第二个effect\n}, [dependency2]);"
-      },
-      {
-        "header": "10. 性能优化",
-        "slug": "_10-性能优化",
-        "content": "如果你在 effect 中进行高开销操作，如数据获取或大规模计算，考虑使用useMemo或useCallback进行优化。"
-      },
-      {
-        "header": "11. 避免不必要的渲染",
-        "slug": "_11-避免不必要的渲染",
-        "content": "通过正确使用依赖数组，你可以避免不必要的组件渲染。"
-      },
-      {
-        "header": "12. 副作用的纯粹性",
-        "slug": "_12-副作用的纯粹性",
-        "content": "尽量保持 effect 函数的纯粹性，避免在 effect 内部产生副作用，除非是必须的。"
-      },
-      {
-        "header": "13. 使用useLayoutEffect",
-        "slug": "_13-使用uselayouteffect",
-        "content": "在必要时，可以使用useLayoutEffect来执行同步的副作用操作，如 DOM 测量。\nimport { useLayoutEffect } from 'react'; useLayoutEffect(() => { // Synchronous re-rendering\n});"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useMemo%E5%92%8CuseCallback.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useMemo 和 useCallback",
-        "slug": "usememo-和-usecallback",
-        "content": "useMemo 和 useCallback 是 React 提供的两个 Hook，用于优化性能，它们通过记忆化来避免不必要的计算和渲染。以下是这两个 Hook 的关键技术点和概念："
-      },
-      {
-        "header": "useMemo",
-        "slug": "usememo",
-        "content": ""
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用",
-        "content": "useMemo 用于对高开销的计算进行记忆化，以优化性能。\nimport { useMemo } from 'react'; function expensiveCalculation(x, y) { // 假设这是一个复杂的计算 return x * y;\n} function MyComponent({ x, y }) { const result = useMemo(() => expensiveCalculation(x, y), [x, y]); return <div>Result: {result}</div>;\n}"
-      },
-      {
-        "header": "2. 依赖数组",
-        "slug": "_2-依赖数组",
-        "content": "useMemo 接受一个函数和一个依赖数组，只有当依赖项改变时，才会重新计算。"
-      },
-      {
-        "header": "3. 避免不必要的计算",
-        "slug": "_3-避免不必要的计算",
-        "content": "useMemo 可以避免在每次渲染时都进行高开销的计算。"
-      },
-      {
-        "header": "4. 惰性计算",
-        "slug": "_4-惰性计算",
-        "content": "useMemo 可以用于惰性计算，即只有在需要时才进行计算。"
-      },
-      {
-        "header": "5. 与useMemo结合使用",
-        "slug": "_5-与usememo结合使用",
-        "content": "useMemo 可以与 useCallback 结合使用，以确保传递给子组件的回调函数的稳定性。"
-      },
-      {
-        "header": "useCallback",
-        "slug": "usecallback",
-        "content": ""
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用-1",
-        "content": "useCallback 用于返回一个记忆化的回调函数，这个函数只有在依赖项改变时才会重新创建。\nimport { useCallback } from 'react'; function MyComponent({ doSomething }) { const handleDoSomething = useCallback(() => { doSomething(); }, [doSomething]); return <button onClick={handleDoSomething}>Do Something</button>;\n}"
-      },
-      {
-        "header": "2. 依赖数组",
-        "slug": "_2-依赖数组-1",
-        "content": "useCallback 接受一个函数和一个依赖数组，只有当依赖项改变时，才会重新创建函数。"
-      },
-      {
-        "header": "3. 避免不必要的渲染",
-        "slug": "_3-避免不必要的渲染",
-        "content": "useCallback 可以避免子组件因为父组件的重新渲染而不必要的重新渲染。"
-      },
-      {
-        "header": "4. 稳定性",
-        "slug": "_4-稳定性",
-        "content": "useCallback 可以确保回调函数的引用稳定性，这对于传递给子组件或使用在useEffect中非常有用。"
-      },
-      {
-        "header": "5. 自定义 Hook",
-        "slug": "_5-自定义-hook",
-        "content": "useCallback 可以用于创建自定义 Hook，以在多个组件间复用回调逻辑。"
-      },
-      {
-        "header": "6. 与useMemo的区别",
-        "slug": "_6-与usememo的区别",
-        "content": "useMemo 用于优化高开销的计算。\nuseCallback 用于优化回调函数的创建。"
-      },
-      {
-        "header": "7. 性能注意事项",
-        "slug": "_7-性能注意事项",
-        "content": "过度使用 useMemo 和 useCallback 可能会导致性能下降，因为它们会增加代码的复杂性。\n应该在真的有性能瓶颈时才使用这两个 Hook。"
-      },
-      {
-        "header": "8. 与React.memo结合使用",
-        "slug": "_8-与react-memo结合使用",
-        "content": "useMemo 和 useCallback 可以与 React.memo 结合使用，以避免组件的不必要的渲染。"
-      },
-      {
-        "header": "9. 惰性初始化",
-        "slug": "_9-惰性初始化",
-        "content": "useMemo 和 useCallback 可以用于惰性初始化对象或函数。"
-      },
-      {
-        "header": "10. 避免深比较",
-        "slug": "_10-避免深比较",
-        "content": "在依赖数组中，应避免进行深比较，因为这可能会导致性能问题。"
-      },
-      {
-        "header": "11. 避免在渲染阶段使用",
-        "slug": "_11-避免在渲染阶段使用",
-        "content": "useMemo 和 useCallback 应该谨慎使用，以避免在渲染阶段进行复杂的计算或创建函数。"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useReducer.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useReducer",
-        "slug": "usereducer",
-        "content": "useReducer 是 React 提供的另一个 Hook，它让你可以在函数组件中使用 reducer 函数来管理复杂状态。"
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用",
-        "content": "useReducer 让你向组件传递一个 reducer 函数，这个函数会根据 action 来返回新的状态。\nimport { useReducer } from 'react'; function reducer(state, action) { switch (action.type) { case 'increment': return { count: state.count + 1 }; case 'decrement': return { count: state.count - 1 }; default: throw new Error(); }\n} function Counter() { const [state, dispatch] = useReducer(reducer, { count: 0 }); return ( <> Count: {state.count} <button onClick={() => dispatch({ type: 'increment' })}>+</button> <button onClick={() => dispatch({ type: 'decrement' })}>-</button> </> );\n}"
-      },
-      {
-        "header": "2. 初始化状态",
-        "slug": "_2-初始化状态",
-        "content": "useReducer 的第二个参数是初始状态。与 useState 不同，它不是在渲染后才定义，而是在组件创建时就定义。"
-      },
-      {
-        "header": "3. 调度动作",
-        "slug": "_3-调度动作",
-        "content": "useReducer 返回一个数组，其中第二个元素是一个 dispatch 函数，用来分派 action。"
-      },
-      {
-        "header": "4. Reducer 函数",
-        "slug": "_4-reducer-函数",
-        "content": "Reducer 是一个纯函数，它接受当前状态和一个动作对象，返回新的状态对象。"
-      },
-      {
-        "header": "5. 动作对象",
-        "slug": "_5-动作对象",
-        "content": "Action 是一个包含类型属性的对象，表示要执行什么操作。"
-      },
-      {
-        "header": "6. 状态更新逻辑",
-        "slug": "_6-状态更新逻辑",
-        "content": "Reducer 通常包含多个 case，每个 case 对应一种动作，返回对应动作的新状态。"
-      },
-      {
-        "header": "7. 状态不可变性",
-        "slug": "_7-状态不可变性",
-        "content": "与 Redux 类似，useReducer 要求状态更新时返回一个新对象，而不是修改原状态。"
-      },
-      {
-        "header": "8. 性能优化",
-        "slug": "_8-性能优化",
-        "content": "由于状态不可变性，useReducer 可以用于性能优化，如避免不必要的渲染。"
-      },
-      {
-        "header": "9. 自定义 Hook",
-        "slug": "_9-自定义-hook",
-        "content": "useReducer 可以与 useContext 结合使用，创建复杂的状态逻辑和全局状态管理。"
-      },
-      {
-        "header": "10. 与useState比较",
-        "slug": "_10-与usestate比较",
-        "content": "useState 适合管理简单状态。\nuseReducer 适合管理复杂状态逻辑，如多子值状态。"
-      },
-      {
-        "header": "11. 异步操作",
-        "slug": "_11-异步操作",
-        "content": "虽然 useReducer 本身不处理异步操作，但可以与 useEffect 结合使用执行异步操作。\nimport { useReducer, useEffect } from 'react'; function reducer(state, action) { // ...\n} function MyComponent() { const [state, dispatch] = useReducer(reducer, { /* 初始状态 */ }); useEffect(() => { // 异步操作 }, [state.value]); // 当state.value变化时执行 // ...\n}"
-      },
-      {
-        "header": "12. 初始状态作为函数",
-        "slug": "_12-初始状态作为函数",
-        "content": "如果初始状态需要根据 props 计算，可以传递一个函数给 useReducer。\nconst initialReducerState = { count: 0 };\nfunction reducer(state, action) { // ...\n} function Counter({ initialCount }) { const [state, dispatch] = useReducer( reducer, (initialCount) => ({ count: initialCount }), initialCount ); // ...\n}"
-      },
-      {
-        "header": "13. 调试",
-        "slug": "_13-调试",
-        "content": "使用 useReducer 的调试模式可以更容易地跟踪动作和状态的变化。"
-      },
-      {
-        "header": "14. 动作组合",
-        "slug": "_14-动作组合",
-        "content": "可以在 reducer 中组合多个动作，以处理复杂的状态转换。"
-      },
-      {
-        "header": "15. 状态提升",
-        "slug": "_15-状态提升",
-        "content": "对于深层嵌套组件的状态管理，可以考虑将状态提升到共同的父组件中。"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useRef.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useRef",
-        "slug": "useref",
-        "content": "useRef 是 React 提供的 Hook，用于在函数组件中访问 DOM 元素、管理内部状态或保存任何可变值。"
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用",
-        "content": "useRef 创建一个可变的 ref 对象，它在整个组件生命周期内持续存在。\nimport { useRef } from 'react'; function MyComponent() { const myRef = useRef(null); return <div ref={myRef}>Hello</div>;\n}"
-      },
-      {
-        "header": "2. 访问 DOM 元素",
-        "slug": "_2-访问-dom-元素",
-        "content": "useRef 常用于直接访问 DOM 元素，如获取输入字段或按钮。\nfunction TextInput() { const inputRef = useRef(null); function focusInput() { inputRef.current.focus(); } return ( <> <input ref={inputRef} type=\"text\" /> <button onClick={focusInput}>Focus the input</button> </> );\n}"
-      },
-      {
-        "header": "3. 初始值",
-        "slug": "_3-初始值",
-        "content": "useRef 可以接受一个初始值，该值将在组件挂载时被设置。\nconst ref = useRef(initialValue);"
-      },
-      {
-        "header": "4. 保存可变值",
-        "slug": "_4-保存可变值",
-        "content": "useRef 可以用来保存任何可变值，这个值在组件的整个生命周期内持续存在。\nfunction Timer() { const intervalRef = useRef(); function startTimer() { intervalRef.current = setInterval(() => { console.log('Tick'); }, 1000); } function stopTimer() { clearInterval(intervalRef.current); } useEffect(() => { startTimer(); return stopTimer; }, []); return null;\n}"
-      },
-      {
-        "header": "5. 传递回调函数",
-        "slug": "_5-传递回调函数",
-        "content": "useRef 可以用于保存回调函数，确保回调函数的稳定性。\nfunction MyComponent() { const handleButtonClick = useRef(() => { console.log('Button clicked'); }); return <button onClick={handleButtonClick.current}>Click me</button>;\n}"
-      },
-      {
-        "header": "6. 组合使用",
-        "slug": "_6-组合使用",
-        "content": "useRef 可以与 useEffect 组合使用，以处理副作用。\nimport { useRef, useEffect } from 'react'; function MyComponent() { const myRef = useRef(null); useEffect(() => { console.log('Ref current:', myRef.current); }, []); return <div ref={myRef}>Hello</div>;\n}"
-      },
-      {
-        "header": "7. 清除 Ref",
-        "slug": "_7-清除-ref",
-        "content": "虽然 useRef 创建的 ref 对象在组件卸载后仍然存在，但可以通过手动设置 null 来清除。\nfunction MyComponent() { const myRef = useRef(null); useEffect(() => { return () => { myRef.current = null; }; }, []); return <div ref={myRef}>Hello</div>;\n}"
-      },
-      {
-        "header": "8. 多个 Ref",
-        "slug": "_8-多个-ref",
-        "content": "可以在一个组件中使用多个 ref，只要每个 ref 都有唯一的引用。"
-      },
-      {
-        "header": "9. 与类组件的区别",
-        "slug": "_9-与类组件的区别",
-        "content": "在类组件中，通常使用React.createRef创建 ref，而在函数组件中使用useRef。"
-      },
-      {
-        "header": "10. Refs 与 Context",
-        "slug": "_10-refs-与-context",
-        "content": "useRef 可以与 useContext 结合使用，以在组件树中传递 DOM 元素引用。"
-      },
-      {
-        "header": "11. Refs 与 forwardRef",
-        "slug": "_11-refs-与-forwardref",
-        "content": "useRef 可以与 forwardRef 结合使用，以将 ref 传递给子组件。\nimport React, { forwardRef } from 'react'; const FancyButton = forwardRef((props, ref) => ( <button ref={ref} className=\"FancyButton\"> {props.children} </button>\n)); function App() { const buttonRef = useRef(); return <FancyButton ref={buttonRef}>Click me!</FancyButton>;\n}"
-      },
-      {
-        "header": "12. Refs 与 useImperativeHandle",
-        "slug": "_12-refs-与-useimperativehandle",
-        "content": "当使用 forwardRef 时，useImperativeHandle 可以用于控制子组件暴露给父组件的实例值。"
-      },
-      {
-        "header": "13. 调试",
-        "slug": "_13-调试",
-        "content": "useRef 可以用于调试目的，如保存组件的特定状态或日志信息。"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/Hooks/useState.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "useState",
-        "slug": "usestate",
-        "content": "useState 是最基本的 Hook，它允许你在函数组件中添加局部状态。useState 接受一个参数作为初始状态，并返回一个数组，其中第一个元素是当前状态，第二个元素是一个函数，用于更新状态。"
-      },
-      {
-        "header": "1. 基本使用",
-        "slug": "_1-基本使用",
-        "content": "useState允许你在函数组件中创建一个状态变量和一个更新该状态的函数。\nimport { useState } from 'react'; function Example() { const [count, setCount] = useState(0); // 初始状态为0 return ( <div> <p>You clicked {count} times</p> <button onClick={() => setCount(count + 1)}>Click me</button> </div> );\n}"
-      },
-      {
-        "header": "2. 初始状态",
-        "slug": "_2-初始状态",
-        "content": "你可以传递一个参数给useState作为初始状态值。如果没有提供参数，初始状态将是undefined。\nconst [state, setState] = useState(initialState);"
-      },
-      {
-        "header": "3. 更新状态",
-        "slug": "_3-更新状态",
-        "content": "useState返回一个数组，其第二个元素是一个函数，用来更新状态。状态更新可能是异步的。\nsetCount((prevCount) => prevCount + 1);"
-      },
-      {
-        "header": "4. 函数作为参数",
-        "slug": "_4-函数作为参数",
-        "content": "你可以传递一个函数给setState，该函数接收上一个状态作为参数，并返回一个新状态。\nsetCount((prevCount) => prevCount + 1);"
-      },
-      {
-        "header": "5. 多状态变量",
-        "slug": "_5-多状态变量",
-        "content": "如果你有多个状态需要管理，可以多次调用useState。\nconst [age, setAge] = useState(42);\nconst [fruit, setFruit] = useState('banana');\nconst [todos, setTodos] = useState([]);"
-      },
-      {
-        "header": "6. 状态惰性初始化",
-        "slug": "_6-状态惰性初始化",
-        "content": "你可以惰性地初始化状态，即在首次渲染时根据 props 或上下文计算初始状态。\nconst [state, setState] = useState(() => { const initialState = someExpensiveComputation(props); return initialState;\n});"
-      },
-      {
-        "header": "7. 使用状态进行数据提交",
-        "slug": "_7-使用状态进行数据提交",
-        "content": "你可以使用状态来处理表单数据，并在提交时使用其值。\nfunction Form() { const [input, setInput] = useState(''); function handleSubmit(event) { event.preventDefault(); console.log(input); } return ( <form onSubmit={handleSubmit}> <input value={input} onChange={(e) => setInput(e.target.value)} /> <button type=\"submit\">Submit</button> </form> );\n}"
-      },
-      {
-        "header": "8. 状态与副作用",
-        "slug": "_8-状态与副作用",
-        "content": "你可以结合useState和useEffect来处理与状态相关的副作用。\nimport { useState, useEffect } from 'react'; function Example() { const [count, setCount] = useState(0); useEffect(() => { document.title = `You clicked ${count} times`; }); return ( <div> <p>You clicked {count} times</p> <button onClick={() => setCount(count + 1)}>Click me</button> </div> );\n}"
-      },
-      {
-        "header": "9. 自定义 Hook",
-        "slug": "_9-自定义-hook",
-        "content": "你可以使用useState来创建自定义 Hook，以在多个组件间复用状态逻辑。\nfunction useFriendStatus(friendID) { const [isOnline, setIsOnline] = useState(null); useEffect(() => { function handleStatusChange(status) { setIsOnline(status.isOnline); } ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange); return () => { ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange); }; }, [friendID]); return isOnline;\n}"
-      },
-      {
-        "header": "10. 状态的不可变性",
-        "slug": "_10-状态的不可变性",
-        "content": "在更新状态时，不要直接修改状态对象，而是应该返回一个新对象。\nconst [user, setUser] = useState({ name: 'Kimi' }); // 正确\nsetUser((prevUser) => ({ ...prevUser, name: 'New Name' })); // 错误\nsetUser((user) => ({ ...user, name: 'New Name' }));"
-      },
-      {
-        "header": "11. 状态的依赖性",
-        "slug": "_11-状态的依赖性",
-        "content": "如果你在useEffect中使用状态，请确保将状态作为依赖项，以避免遗漏更新。\nuseEffect(() => { console.log(count);\n}, [count]); // 将count作为依赖项"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E5%87%BD%E6%95%B0%E7%BB%84%E4%BB%B6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "函数组件",
-        "slug": "函数组件",
-        "content": "函数组件是 React 16.8 版本引入 Hooks API 后的主要编程范式"
-      },
-      {
-        "header": "1. 定义函数组件",
-        "slug": "_1-定义函数组件",
-        "content": "函数组件是一个使用 JavaScript 函数定义的 React 组件。它接收一个 props 参数，并返回一个 React 元素。 const MyComponent = (props) => { return <div>{props.message}</div>;\n};"
-      },
-      {
-        "header": "2. 使用 Props",
-        "slug": "_2-使用-props",
-        "content": "函数组件可以通过 props 接收父组件传递的数据，并在组件内部使用。也可以通过解构赋值的方式从 props 中获取数据。 const MyComponent = ({ message }) => { return <div>{message}</div>;\n};"
-      },
-      {
-        "header": "3. 使用 Hooks",
-        "slug": "_3-使用-hooks",
-        "content": "Hooks 是 React 16.8 版本引入的新特性，它允许你在函数组件内部使用状态和其他 React 特性。"
-      },
-      {
-        "header": "4. 性能优化",
-        "slug": "_4-性能优化",
-        "content": "函数组件默认是记忆化的，但可以通过 React.memo 进行进一步优化。 const MyComponent = React.memo(function MyComponent(props) { // 仅当 props 发生变化时才重新渲染\n});"
-      },
-      {
-        "header": "5. 错误处理",
-        "slug": "_5-错误处理",
-        "content": "函数组件可以使用 try/catch 语句来捕获和处理错误。也可以使用 Error Boundaries 来捕获函数组件中的错误。 class ErrorBoundary extends React.Component { constructor(props) { super(props); this.state = { hasError: false }; } static getDerivedStateFromError(error) { return { hasError: true }; } componentDidCatch(error, errorInfo) { // 你同样可以将错误日志上报给服务器 console.log(error, errorInfo); } render() { if (this.state.hasError) { // 你可以渲染任何自定义的退路 UI return <h1>Something went wrong.</h1>; } return this.props.children; }\n}"
-      },
-      {
-        "header": "6. 条件渲染",
-        "slug": "_6-条件渲染",
-        "content": "在函数组件中，你可以使用 JavaScript 的逻辑来实现条件渲染。例如，你可以使用 if 语句或三元运算符来根据条件渲染不同的元素。 const MyComponent = ({ isLoading, data }) => { if (isLoading) { return <div>Loading...</div>; } if (!data) { return <div>No data available</div>; } return <div>{data}</div>;\n};"
-      },
-      {
-        "header": "7.列表渲染",
-        "slug": "_7-列表渲染",
-        "content": "const MyComponent = ({ items }) => { return ( <ul> {items.map((item) => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n};"
-      },
-      {
-        "header": "8. Fragment 和高阶组件",
-        "slug": "_8-fragment-和高阶组件",
-        "content": "使用 Fragment 来分组元素，而不添加额外的 DOM 节点。 import React, { Fragment } from 'react'; const MyComponent = () => { return ( <Fragment> <ChildA /> <ChildB /> </Fragment> );\n};"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%B1%BB%E7%BB%84%E4%BB%B6.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "类组件",
-        "slug": "类组件",
-        "content": ""
-      },
-      {
-        "header": "类组件技术点和概念",
-        "slug": "类组件技术点和概念",
-        "content": "类组件在 React 中是通过 ES6 类定义的，它们提供了更多的功能，如生命周期方法和状态管理。"
-      },
-      {
-        "header": "1. 定义类组件",
-        "slug": "_1-定义类组件",
-        "content": "类组件是通过继承React.Component来定义的。\nimport React, { Component } from 'react'; class MyComponent extends Component { render() { return <div>Hello, {this.props.name}</div>; }\n}"
-      },
-      {
-        "header": "2. 构造函数",
-        "slug": "_2-构造函数",
-        "content": "在构造函数中，可以初始化 state 和绑定方法。\nclass MyComponent extends Component { constructor(props) { super(props); this.state = { count: 0 }; this.handleClick = this.handleClick.bind(this); } handleClick() { this.setState({ count: this.state.count + 1 }); } render() { return ( <div> <p>You clicked {this.state.count} times</p> <button onClick={this.handleClick}>Click me</button> </div> ); }\n}"
-      },
-      {
-        "header": "3. render 方法",
-        "slug": "_3-render-方法",
-        "content": "render方法是类组件中唯一必须实现的方法，它返回要渲染的 React 元素。\nrender() { return <div>{this.props.message}</div>;\n}"
-      },
-      {
-        "header": "4. 生命周期方法",
-        "slug": "_4-生命周期方法",
-        "content": "类组件有多个生命周期方法，可以用来执行副作用操作或响应组件状态和 props 的变化。"
-      },
-      {
-        "header": "4.1 componentDidMount",
-        "slug": "_4-1-componentdidmount",
-        "content": "在组件挂载后执行，通常用于执行 DOM 操作或数据获取。\ncomponentDidMount() { console.log('Component is mounted');\n}"
-      },
-      {
-        "header": "4.2 componentDidUpdate",
-        "slug": "_4-2-componentdidupdate",
-        "content": "在组件更新后执行，可以用来处理 DOM 或执行副作用。\ncomponentDidUpdate(prevProps, prevState) { if (this.props.message !== prevProps.message) { console.log('Message has changed'); }\n}"
-      },
-      {
-        "header": "4.3 componentWillUnmount",
-        "slug": "_4-3-componentwillunmount",
-        "content": "在组件卸载前执行，通常用于清理操作，如取消网络请求或清除定时器。\ncomponentWillUnmount() { console.log('Component will unmount');\n}"
-      },
-      {
-        "header": "5. 状态管理",
-        "slug": "_5-状态管理",
-        "content": "类组件通过this.state来管理内部状态。\nthis.state = { count: 0 }; // 更新状态\nthis.setState({ count: this.state.count + 1 });"
-      },
-      {
-        "header": "6. 默认 Props 和 PropTypes",
-        "slug": "_6-默认-props-和-proptypes",
-        "content": "可以使用defaultProps和PropTypes来设置默认 props 和进行 props 类型检查。\nMyComponent.propTypes = { message: PropTypes.string.isRequired\n}; MyComponent.defaultProps = { message: 'Hello World'\n};"
-      },
-      {
-        "header": "7. 性能优化",
-        "slug": "_7-性能优化",
-        "content": "可以使用shouldComponentUpdate来进行性能优化，避免不必要的渲染。\nshouldComponentUpdate(nextProps, nextState) { return this.props.message !== nextProps.message;\n}"
-      },
-      {
-        "header": "8. Context",
-        "slug": "_8-context",
-        "content": "类组件可以使用contextType来消费 context。\nstatic contextType = MyContext; render() { const value = this.context; return <div>{value}</div>;\n}"
-      },
-      {
-        "header": "9. Refs",
-        "slug": "_9-refs",
-        "content": "类组件可以使用React.createRef来创建 refs，并可以通过this.ref.current来访问 DOM 元素或组件实例。\nconstructor(props) { super(props); this.myRef = React.createRef();\n} render() { return <div ref={this.myRef}>Hello</div>;\n}"
-      },
-      {
-        "header": "10. 错误处理",
-        "slug": "_10-错误处理",
-        "content": "类组件可以使用静态方法getDerivedStateFromError和componentDidCatch来捕获和处理错误。\nstatic getDerivedStateFromError(error) { return { hasError: true };\n} componentDidCatch(error, info) { // 错误处理逻辑\n}"
-      },
-      {
-        "header": "11. 条件渲染和列表渲染",
-        "slug": "_11-条件渲染和列表渲染",
-        "content": "与函数组件类似，类组件也可以进行条件渲染和列表渲染。\nrender() { const { items } = this.props; return ( <ul> {items.map(item => ( <li key={item.id}>{item.text}</li> ))} </ul> );\n}"
-      }
-    ]
-  },
-  {
-    "path": "/web/React/React%E6%8F%90%E5%8D%87/%E7%BB%84%E4%BB%B6/%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E5%90%88.html",
-    "title": "",
-    "pathLocale": "/",
-    "contents": [
-      {
-        "header": "组件的组合",
-        "slug": "组件的组合",
-        "content": "组件组合是 React 中的核心概念之一，它允许你将复杂的 UI 分解成独立可复用的组件。"
-      },
-      {
-        "header": "1. 组合基础",
-        "slug": "_1-组合基础",
-        "content": "在 React 中，组件可以嵌套组合，子组件可以接收来自父组件的 props。\nfunction Welcome(props) { return <h1>Hello, {props.name}</h1>;\n} function App() { return <Welcome name=\"Kimi\" />;\n}"
-      },
-      {
-        "header": "2. Props 传递",
-        "slug": "_2-props-传递",
-        "content": "父组件可以通过 props 向子组件传递数据。\nfunction Avatar(props) { return ( <img src={props.user.avatarUrl} alt={props.user.name} /> );\n} function UserInfo(props) { return ( <div> <Avatar user={props.user} /> <h2>{props.user.name}</h2> </div> );\n}"
-      },
-      {
-        "header": "3. 子组件组合",
-        "slug": "_3-子组件组合",
-        "content": "子组件可以进一步组合更小的组件。\nfunction Comment(props) { return ( <div className=\"Comment\"> <Avatar user={props.author} /> <div className=\"Comment-content\"> <div className=\"username\">{props.author.name}</div> <div className=\"text\">{props.text}</div> </div> </div> );\n}"
-      },
-      {
-        "header": "4. 条件渲染",
-        "slug": "_4-条件渲染",
-        "content": "组件可以根据条件渲染不同的子组件。\nfunction App() { const [isLoggedIn, setIsLoggedIn] = useState(false); function handleLoginClick() { setIsLoggedIn(true); } return ( <div> {isLoggedIn ? <Dashboard /> : <Login />} <button onClick={handleLoginClick}>Log in</button> </div> );\n}"
-      },
-      {
-        "header": "5. 列表渲染",
-        "slug": "_5-列表渲染",
-        "content": "父组件可以使用 JavaScript 的map方法渲染子组件列表。\nfunction NumberList(props) { const numbers = props.numbers; return ( <ul> {numbers.map((number) => ( <ListItem key={number.id} value={number} /> ))} </ul> );\n}"
-      },
-      {
-        "header": "6. Fragments",
-        "slug": "_6-fragments",
-        "content": "使用React.Fragment可以组合多个子组件而不添加额外的 DOM 元素。\nimport React, { Fragment } from 'react'; function Dialog({ children, title }) { return ( <Fragment> <h1>{title}</h1> <p>{children}</p> </Fragment> );\n}"
-      },
-      {
-        "header": "7. 高阶组件（HOC）",
-        "slug": "_7-高阶组件-hoc",
-        "content": "高阶组件是一个函数，它接受一个组件并返回一个新的组件。\nfunction withExtraInfo(WrappedComponent) { return class extends React.Component { render() { const extraInfo = someFunctionToCollectExtraInfo(); return ( <WrappedComponent {...this.props} extraInfo={extraInfo} /> ); } };\n}"
-      },
-      {
-        "header": "8. Context API",
-        "slug": "_8-context-api",
-        "content": "Context 允许你在组件树中传递值，而不必在每个层级手动传递 props。\nconst MyContext = React.createContext(defaultValue); function App() { return ( <MyContext.Provider value={/* some value */}> <ChildComponent /> </MyContext.Provider> );\n} function ChildComponent() { return ( <MyContext.Consumer> {value => /* 渲染一些东西 */} </MyContext.Consumer> );\n}"
-      },
-      {
-        "header": "9. 组件的封装和复用",
-        "slug": "_9-组件的封装和复用",
-        "content": "你应该构建可复用的组件，这样你可以在不同的项目中使用它们。\nfunction Button({ onClick, children }) { return <button onClick={onClick}>{children}</button>;\n} function App() { return <Button onClick={() => alert('Clicked!')}>Click me</Button>;\n}"
-      },
-      {
-        "header": "10. 组件的拆分",
-        "slug": "_10-组件的拆分",
-        "content": "将大组件拆分为更小的子组件，可以提高代码的可维护性和可读性。\n// 大组件\nfunction Post({ user, content }) { return ( <article> <UserInfo user={user} /> <Content content={content} /> </article> );\n} // 小组件\nfunction UserInfo({ user }) { // ...\n} function Content({ content }) { // ...\n}"
-      },
-      {
-        "header": "11. 组件之间的通信",
-        "slug": "_11-组件之间的通信",
-        "content": "组件之间可以通过 props、state 提升、Context 或状态管理库（如 Redux）进行通信。"
-      },
-      {
-        "header": "12. 组件的性能优化",
-        "slug": "_12-组件的性能优化",
-        "content": "通过避免不必要的渲染和使用React.memo、useMemo、useCallback等进行性能优化。\n组件组合是 React 中最重要的概念之一，它使得构建大型应用程序变得简单和可维护。通过合理地组合组件，你可以创建出既强大又灵活的用户界面。"
       }
     ]
   },
@@ -14971,18 +14971,3 @@ export const searchIndex = [
   }
 ]
 export const UPD_NAME = 'update-vuepress-plugin-full-text-search2-search-index'
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__[UPD_NAME]) {
-    __VUE_HMR_RUNTIME__[UPD_NAME](searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    if (__VUE_HMR_RUNTIME__[UPD_NAME]) {
-      __VUE_HMR_RUNTIME__[UPD_NAME](searchIndex)
-    }
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Ts/对象类型/属性修饰符.html.vue"
 const data = JSON.parse("{\"path\":\"/web/Ts/%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B/%E5%B1%9E%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"属性修饰符\",\"slug\":\"属性修饰符\",\"link\":\"#属性修饰符\",\"children\":[{\"level\":3,\"title\":\"可选属性\",\"slug\":\"可选属性\",\"link\":\"#可选属性\",\"children\":[]},{\"level\":3,\"title\":\"必需属性\",\"slug\":\"必需属性\",\"link\":\"#必需属性\",\"children\":[]},{\"level\":3,\"title\":\"只读属性\",\"slug\":\"只读属性\",\"link\":\"#只读属性\",\"children\":[]},{\"level\":3,\"title\":\"属性修饰符的组合\",\"slug\":\"属性修饰符的组合\",\"link\":\"#属性修饰符的组合\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727255714000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"web/Ts/对象类型/属性修饰符.md\",\"excerpt\":\"<h2>属性修饰符</h2>\\n<blockquote>\\n<p>对象类型的属性可以被赋予不同的修饰符，以定义它们的特性，如是否可选、是否只读等。</p>\\n</blockquote>\\n<h3>可选属性</h3>\\n<div class=\\\"language-typescript\\\" data-ext=\\\"ts\\\" data-title=\\\"ts\\\"><pre class=\\\"language-typescript\\\"><code><span class=\\\"token keyword\\\">interface</span> <span class=\\\"token class-name\\\">Person</span> <span class=\\\"token punctuation\\\">{</span>\\n  name<span class=\\\"token operator\\\">:</span> <span class=\\\"token builtin\\\">string</span><span class=\\\"token punctuation\\\">;</span>\\n  age<span class=\\\"token operator\\\">?</span><span class=\\\"token operator\\\">:</span> <span class=\\\"token builtin\\\">number</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// 可选属性，不需要在所有对象中都提供</span>\\n<span class=\\\"token punctuation\\\">}</span>\\n\\n<span class=\\\"token keyword\\\">const</span> person1<span class=\\\"token operator\\\">:</span> Person <span class=\\\"token operator\\\">=</span> <span class=\\\"token punctuation\\\">{</span>\\n  name<span class=\\\"token operator\\\">:</span> <span class=\\\"token string\\\">\\\"Alice\\\"</span><span class=\\\"token punctuation\\\">,</span>\\n  <span class=\\\"token comment\\\">// age 属性被省略，将被赋值为 undefined</span>\\n<span class=\\\"token punctuation\\\">}</span><span class=\\\"token punctuation\\\">;</span>\\n\\n<span class=\\\"token keyword\\\">const</span> person2<span class=\\\"token operator\\\">:</span> Person <span class=\\\"token operator\\\">=</span> <span class=\\\"token punctuation\\\">{</span>\\n  name<span class=\\\"token operator\\\">:</span> <span class=\\\"token string\\\">\\\"Bob\\\"</span><span class=\\\"token punctuation\\\">,</span>\\n  age<span class=\\\"token operator\\\">:</span> <span class=\\\"token number\\\">30</span><span class=\\\"token punctuation\\\">,</span> <span class=\\\"token comment\\\">// 提供了 age 属性</span>\\n<span class=\\\"token punctuation\\\">}</span><span class=\\\"token punctuation\\\">;</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

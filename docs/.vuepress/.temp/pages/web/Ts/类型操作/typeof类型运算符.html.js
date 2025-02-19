@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Ts/类型操作/typeof类型运算符.html.vue"
 const data = JSON.parse("{\"path\":\"/web/Ts/%E7%B1%BB%E5%9E%8B%E6%93%8D%E4%BD%9C/typeof%E7%B1%BB%E5%9E%8B%E8%BF%90%E7%AE%97%E7%AC%A6.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"typeof 类型运算符\",\"slug\":\"typeof-类型运算符\",\"link\":\"#typeof-类型运算符\",\"children\":[{\"level\":3,\"title\":\"基本用法\",\"slug\":\"基本用法\",\"link\":\"#基本用法\",\"children\":[]},{\"level\":3,\"title\":\"在函数中使用\",\"slug\":\"在函数中使用\",\"link\":\"#在函数中使用\",\"children\":[]},{\"level\":3,\"title\":\"获取对象属性的类型\",\"slug\":\"获取对象属性的类型\",\"link\":\"#获取对象属性的类型\",\"children\":[]},{\"level\":3,\"title\":\"获取类实例的类型\",\"slug\":\"获取类实例的类型\",\"link\":\"#获取类实例的类型\",\"children\":[]},{\"level\":3,\"title\":\"获取类静态属性的类型\",\"slug\":\"获取类静态属性的类型\",\"link\":\"#获取类静态属性的类型\",\"children\":[]},{\"level\":3,\"title\":\"注意事项\",\"slug\":\"注意事项\",\"link\":\"#注意事项\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727429003000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":2}]},\"filePathRelative\":\"web/Ts/类型操作/typeof类型运算符.md\",\"excerpt\":\"<h2>typeof 类型运算符</h2>\\n<blockquote>\\n<p>typeof 类型运算符用于获取一个变量或对象属性的类型。这种类型运算符对于创建与现有数据结构相同类型的新类型非常有用。</p>\\n</blockquote>\\n<h3>基本用法</h3>\\n<blockquote>\\n<p>TypeOfX 是一个类型，它与变量 x 的类型相同，即 number。TypeOfPerson 是一个类型，它与 person 对象的类型相同。</p>\\n</blockquote>\\n<div class=\\\"language-typescript\\\" data-ext=\\\"ts\\\" data-title=\\\"ts\\\"><pre class=\\\"language-typescript\\\"><code><span class=\\\"token keyword\\\">let</span> x <span class=\\\"token operator\\\">=</span> <span class=\\\"token number\\\">10</span><span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token keyword\\\">type</span> <span class=\\\"token class-name\\\">TypeOfX</span> <span class=\\\"token operator\\\">=</span> <span class=\\\"token keyword\\\">typeof</span> x<span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token comment\\\">// TypeOfX 类型为 number</span>\\n\\n<span class=\\\"token keyword\\\">const</span> person <span class=\\\"token operator\\\">=</span> <span class=\\\"token punctuation\\\">{</span>\\n  name<span class=\\\"token operator\\\">:</span> <span class=\\\"token string\\\">\\\"Alice\\\"</span><span class=\\\"token punctuation\\\">,</span>\\n  age<span class=\\\"token operator\\\">:</span> <span class=\\\"token number\\\">30</span><span class=\\\"token punctuation\\\">,</span>\\n<span class=\\\"token punctuation\\\">}</span><span class=\\\"token punctuation\\\">;</span>\\n\\n<span class=\\\"token keyword\\\">type</span> <span class=\\\"token class-name\\\">TypeOfPerson</span> <span class=\\\"token operator\\\">=</span> <span class=\\\"token keyword\\\">typeof</span> person<span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token comment\\\">// TypeOfPerson 类型为 { name: string; age: number; }</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

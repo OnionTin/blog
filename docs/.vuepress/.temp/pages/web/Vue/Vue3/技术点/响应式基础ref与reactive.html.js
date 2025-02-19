@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Vue/Vue3/技术点/响应式基础ref与reactive.html.vue"
 const data = JSON.parse("{\"path\":\"/web/Vue/Vue3/%E6%8A%80%E6%9C%AF%E7%82%B9/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%9F%BA%E7%A1%80ref%E4%B8%8Ereactive.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"响应式基础 ref 与 reactive\",\"slug\":\"响应式基础-ref-与-reactive\",\"link\":\"#响应式基础-ref-与-reactive\",\"children\":[{\"level\":3,\"title\":\"ref\",\"slug\":\"ref\",\"link\":\"#ref\",\"children\":[]},{\"level\":3,\"title\":\"reactive\",\"slug\":\"reactive\",\"link\":\"#reactive\",\"children\":[]},{\"level\":3,\"title\":\"注意事项\",\"slug\":\"注意事项\",\"link\":\"#注意事项\",\"children\":[]},{\"level\":3,\"title\":\"使用场景\",\"slug\":\"使用场景\",\"link\":\"#使用场景\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727600594000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":2}]},\"filePathRelative\":\"web/Vue/Vue3/技术点/响应式基础ref与reactive.md\",\"excerpt\":\"<h2>响应式基础 ref 与 reactive</h2>\\n<blockquote>\\n<p>响应式系统是使用 Proxy 实现的，它提供了更细粒度的响应式控制。Vue 3 引入了 ref 和 reactive 两个 API 来创建响应式数据。</p>\\n</blockquote>\\n<h3>ref</h3>\\n<p>ref 用于将一个普通的 JavaScript 值转换为响应式值。它主要用于处理基础类型数据（如字符串、数字等）。当在模板中使用 ref 时，Vue 会自动解包.value，所以你可以直接使用 count 而不是 count.value。</p>\\n<div class=\\\"language-javascript\\\" data-ext=\\\"js\\\" data-title=\\\"js\\\"><pre class=\\\"language-javascript\\\"><code><span class=\\\"token keyword\\\">import</span> <span class=\\\"token punctuation\\\">{</span> ref <span class=\\\"token punctuation\\\">}</span> <span class=\\\"token keyword\\\">from</span> <span class=\\\"token string\\\">\\\"vue\\\"</span><span class=\\\"token punctuation\\\">;</span>\\n\\n<span class=\\\"token keyword\\\">const</span> count <span class=\\\"token operator\\\">=</span> <span class=\\\"token function\\\">ref</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token number\\\">0</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// 创建一个响应式的数字</span>\\nconsole<span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">log</span><span class=\\\"token punctuation\\\">(</span>count<span class=\\\"token punctuation\\\">.</span>value<span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// 输出 0</span>\\n\\ncount<span class=\\\"token punctuation\\\">.</span>value<span class=\\\"token operator\\\">++</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// 修改响应式数据</span>\\nconsole<span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">log</span><span class=\\\"token punctuation\\\">(</span>count<span class=\\\"token punctuation\\\">.</span>value<span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// 输出 1</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

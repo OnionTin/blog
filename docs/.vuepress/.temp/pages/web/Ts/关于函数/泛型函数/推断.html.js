@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Ts/关于函数/泛型函数/推断.html.vue"
 const data = JSON.parse("{\"path\":\"/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E6%B3%9B%E5%9E%8B%E5%87%BD%E6%95%B0/%E6%8E%A8%E6%96%AD.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"推断\",\"slug\":\"推断\",\"link\":\"#推断\",\"children\":[{\"level\":3,\"title\":\"泛型推断的基本例子\",\"slug\":\"泛型推断的基本例子\",\"link\":\"#泛型推断的基本例子\",\"children\":[]},{\"level\":3,\"title\":\"泛型推断在对象中的应用\",\"slug\":\"泛型推断在对象中的应用\",\"link\":\"#泛型推断在对象中的应用\",\"children\":[]},{\"level\":3,\"title\":\"泛型类中的推断\",\"slug\":\"泛型类中的推断\",\"link\":\"#泛型类中的推断\",\"children\":[]},{\"level\":3,\"title\":\"泛型约束与推断\",\"slug\":\"泛型约束与推断\",\"link\":\"#泛型约束与推断\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727255714000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"web/Ts/关于函数/泛型函数/推断.md\",\"excerpt\":\"<h2>推断</h2>\\n<blockquote>\\n<p>泛型推断是指编译器根据上下文环境自动确定泛型参数类型的过程。这使得开发者在调用泛型函数或构造泛型类型时，不必显式指定泛型参数，从而简化了代码。</p>\\n</blockquote>\\n<h3>泛型推断的基本例子</h3>\\n<blockquote>\\n<p>在这个例子中，即使没有显式指定泛型参数，TypeScript 编译器也能够根据传递给 identity 函数的参数类型，推断出 T 应该是 number 类型或 string 类型。</p>\\n</blockquote>\\n<div class=\\\"language-typescript\\\" data-ext=\\\"ts\\\" data-title=\\\"ts\\\"><pre class=\\\"language-typescript\\\"><code><span class=\\\"token keyword\\\">function</span> <span class=\\\"token generic-function\\\"><span class=\\\"token function\\\">identity</span><span class=\\\"token generic class-name\\\"><span class=\\\"token operator\\\">&lt;</span><span class=\\\"token constant\\\">T</span><span class=\\\"token operator\\\">&gt;</span></span></span><span class=\\\"token punctuation\\\">(</span>arg<span class=\\\"token operator\\\">:</span> <span class=\\\"token constant\\\">T</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token operator\\\">:</span> <span class=\\\"token constant\\\">T</span> <span class=\\\"token punctuation\\\">{</span>\\n  <span class=\\\"token keyword\\\">return</span> arg<span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token punctuation\\\">}</span>\\n\\n<span class=\\\"token keyword\\\">const</span> result <span class=\\\"token operator\\\">=</span> <span class=\\\"token function\\\">identity</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token number\\\">42</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// TypeScript 推断 T 为 number</span>\\n<span class=\\\"token keyword\\\">const</span> strResult <span class=\\\"token operator\\\">=</span> <span class=\\\"token function\\\">identity</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token string\\\">\\\"Hello, World!\\\"</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span> <span class=\\\"token comment\\\">// TypeScript 推断 T 为 string</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/admin/Java/SpringCloud/获取注册中心中服务信息.html.vue"
 const data = JSON.parse("{\"path\":\"/admin/Java/SpringCloud/%E8%8E%B7%E5%8F%96%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83%E4%B8%AD%E6%9C%8D%E5%8A%A1%E4%BF%A1%E6%81%AF.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"获取注册中心中服务信息\",\"slug\":\"获取注册中心中服务信息\",\"link\":\"#获取注册中心中服务信息\",\"children\":[{\"level\":3,\"title\":\"1. 依赖\",\"slug\":\"_1-依赖\",\"link\":\"#_1-依赖\",\"children\":[]},{\"level\":3,\"title\":\"2. 获取方法\",\"slug\":\"_2-获取方法\",\"link\":\"#_2-获取方法\",\"children\":[]},{\"level\":3,\"title\":\"3. 启动类\",\"slug\":\"_3-启动类\",\"link\":\"#_3-启动类\",\"children\":[]}]}],\"git\":{\"updatedTime\":1726648298000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"admin/Java/SpringCloud/获取注册中心中服务信息.md\",\"excerpt\":\"<h2>获取注册中心中服务信息</h2>\\n<blockquote>\\n<p>联合办公，需要暴漏自己的服务信息，以及获取其他服务的信息；也叫服务注册与发现。</p>\\n</blockquote>\\n<h3>1. 依赖</h3>\\n<div class=\\\"language-xml\\\" data-ext=\\\"xml\\\" data-title=\\\"xml\\\"><pre class=\\\"language-xml\\\"><code><span class=\\\"token comment\\\">&lt;!--导入Eureka--&gt;</span>\\n  <span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;</span>dependency</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n    <span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;</span>groupId</span><span class=\\\"token punctuation\\\">&gt;</span></span>org.springframework.cloud<span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>groupId</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n    <span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;</span>artifactId</span><span class=\\\"token punctuation\\\">&gt;</span></span>spring-cloud-starter-eureka<span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>artifactId</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n    <span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;</span>version</span><span class=\\\"token punctuation\\\">&gt;</span></span>1.4.6.RELEASE<span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>version</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n  <span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>dependency</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n<span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>dependencies</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

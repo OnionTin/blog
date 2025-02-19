@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/React/React提升/事件处理.html.vue"
 const data = JSON.parse("{\"path\":\"/web/React/React%E6%8F%90%E5%8D%87/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"事件处理\",\"slug\":\"事件处理\",\"link\":\"#事件处理\",\"children\":[{\"level\":3,\"title\":\"1. 事件命名\",\"slug\":\"_1-事件命名\",\"link\":\"#_1-事件命名\",\"children\":[]},{\"level\":3,\"title\":\"2. 处理函数\",\"slug\":\"_2-处理函数\",\"link\":\"#_2-处理函数\",\"children\":[]},{\"level\":3,\"title\":\"3. 传递参数\",\"slug\":\"_3-传递参数\",\"link\":\"#_3-传递参数\",\"children\":[]},{\"level\":3,\"title\":\"4. 事件对象\",\"slug\":\"_4-事件对象\",\"link\":\"#_4-事件对象\",\"children\":[]},{\"level\":3,\"title\":\"5. 默认行为\",\"slug\":\"_5-默认行为\",\"link\":\"#_5-默认行为\",\"children\":[]},{\"level\":3,\"title\":\"6. 事件传播\",\"slug\":\"_6-事件传播\",\"link\":\"#_6-事件传播\",\"children\":[]},{\"level\":3,\"title\":\"7. 事件监听\",\"slug\":\"_7-事件监听\",\"link\":\"#_7-事件监听\",\"children\":[]},{\"level\":3,\"title\":\"8. 箭头函数\",\"slug\":\"_8-箭头函数\",\"link\":\"#_8-箭头函数\",\"children\":[]},{\"level\":3,\"title\":\"9. 内联函数\",\"slug\":\"_9-内联函数\",\"link\":\"#_9-内联函数\",\"children\":[]},{\"level\":3,\"title\":\"10. 事件池\",\"slug\":\"_10-事件池\",\"link\":\"#_10-事件池\",\"children\":[]},{\"level\":3,\"title\":\"11. 键盘事件\",\"slug\":\"_11-键盘事件\",\"link\":\"#_11-键盘事件\",\"children\":[]},{\"level\":3,\"title\":\"12. 鼠标事件\",\"slug\":\"_12-鼠标事件\",\"link\":\"#_12-鼠标事件\",\"children\":[]},{\"level\":3,\"title\":\"13. 触摸事件\",\"slug\":\"_13-触摸事件\",\"link\":\"#_13-触摸事件\",\"children\":[]},{\"level\":3,\"title\":\"14. 焦点事件\",\"slug\":\"_14-焦点事件\",\"link\":\"#_14-焦点事件\",\"children\":[]},{\"level\":3,\"title\":\"15. 综合事件处理\",\"slug\":\"_15-综合事件处理\",\"link\":\"#_15-综合事件处理\",\"children\":[]}]}],\"git\":{\"updatedTime\":1728487189000,\"contributors\":[{\"name\":\"OnionTin]\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"web/React/React提升/事件处理.md\",\"excerpt\":\"<!-- @format -->\\n<h2>事件处理</h2>\\n<p>React 中的事件处理与原生 JavaScript 事件处理有所不同，它使用合成事件系统。</p>\\n<h3>1. 事件命名</h3>\\n<p>React 事件通常使用小写字母命名，即使用驼峰命名法（camelCase），而不是全部小写。</p>\\n<div class=\\\"language-jsx\\\" data-ext=\\\"jsx\\\" data-title=\\\"jsx\\\"><pre class=\\\"language-jsx\\\"><code><span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;</span>button</span> <span class=\\\"token attr-name\\\">onClick</span><span class=\\\"token script language-javascript\\\"><span class=\\\"token script-punctuation punctuation\\\">=</span><span class=\\\"token punctuation\\\">{</span>handleClick<span class=\\\"token punctuation\\\">}</span></span><span class=\\\"token punctuation\\\">&gt;</span></span><span class=\\\"token plain-text\\\">Click me</span><span class=\\\"token tag\\\"><span class=\\\"token tag\\\"><span class=\\\"token punctuation\\\">&lt;/</span>button</span><span class=\\\"token punctuation\\\">&gt;</span></span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

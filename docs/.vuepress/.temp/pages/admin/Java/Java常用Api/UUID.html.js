@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/admin/Java/Java常用Api/UUID.html.vue"
 const data = JSON.parse("{\"path\":\"/admin/Java/Java%E5%B8%B8%E7%94%A8Api/UUID.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"UUID\",\"slug\":\"uuid\",\"link\":\"#uuid\",\"children\":[{\"level\":3,\"title\":\"常见成员方法\",\"slug\":\"常见成员方法\",\"link\":\"#常见成员方法\",\"children\":[]}]}],\"git\":{\"updatedTime\":1710404435000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"admin/Java/Java常用Api/UUID.md\",\"excerpt\":\"<h2>UUID</h2>\\n<p>需要导包，在 java.util 包下</p>\\n<p>一般不用他的构造</p>\\n<h3>常见成员方法</h3>\\n<table>\\n<thead>\\n<tr>\\n<th>方法</th>\\n<th>作用</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td>static UUID randomUUID()</td>\\n<td>随机数序列</td>\\n</tr>\\n<tr>\\n<td>String toString()</td>\\n<td>转成字符串类型</td>\\n</tr>\\n</tbody>\\n</table>\\n<div class=\\\"language-java\\\" data-ext=\\\"java\\\" data-title=\\\"java\\\"><pre class=\\\"language-java\\\"><code><span class=\\\"token class-name\\\">String</span> uuid <span class=\\\"token operator\\\">=</span> <span class=\\\"token constant\\\">UUID</span><span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">randomUUID</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">toString</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token class-name\\\">System</span><span class=\\\"token punctuation\\\">.</span>out<span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">println</span><span class=\\\"token punctuation\\\">(</span>uuid<span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token comment\\\">// 输出结果带-：dcf611f4-80c8-4610-ae94-1df5e9694af9</span>\\nuuid <span class=\\\"token operator\\\">=</span> uuid<span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">replaceAll</span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token string\\\">\\\"-\\\"</span><span class=\\\"token punctuation\\\">,</span> <span class=\\\"token string\\\">\\\"\\\"</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token class-name\\\">System</span><span class=\\\"token punctuation\\\">.</span>out<span class=\\\"token punctuation\\\">.</span><span class=\\\"token function\\\">println</span><span class=\\\"token punctuation\\\">(</span>uuid<span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token comment\\\">// 输出结果不带-：dcf611f480c84610ae941df5e9694af9</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

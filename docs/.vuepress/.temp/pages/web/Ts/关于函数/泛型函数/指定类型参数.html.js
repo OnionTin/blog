@@ -1,16 +1,3 @@
 import comp from "D:/Programs/web/blog/docs/.vuepress/.temp/pages/web/Ts/关于函数/泛型函数/指定类型参数.html.vue"
 const data = JSON.parse("{\"path\":\"/web/Ts/%E5%85%B3%E4%BA%8E%E5%87%BD%E6%95%B0/%E6%B3%9B%E5%9E%8B%E5%87%BD%E6%95%B0/%E6%8C%87%E5%AE%9A%E7%B1%BB%E5%9E%8B%E5%8F%82%E6%95%B0.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"指定类型参数\",\"slug\":\"指定类型参数\",\"link\":\"#指定类型参数\",\"children\":[{\"level\":3,\"title\":\"指定泛型参数\",\"slug\":\"指定泛型参数\",\"link\":\"#指定泛型参数\",\"children\":[]},{\"level\":3,\"title\":\"在数组中指定泛型参数\",\"slug\":\"在数组中指定泛型参数\",\"link\":\"#在数组中指定泛型参数\",\"children\":[]},{\"level\":3,\"title\":\"在类中指定泛型参数\",\"slug\":\"在类中指定泛型参数\",\"link\":\"#在类中指定泛型参数\",\"children\":[]},{\"level\":3,\"title\":\"在接口中指定泛型参数\",\"slug\":\"在接口中指定泛型参数\",\"link\":\"#在接口中指定泛型参数\",\"children\":[]},{\"level\":3,\"title\":\"在条件类型中指定泛型参数\",\"slug\":\"在条件类型中指定泛型参数\",\"link\":\"#在条件类型中指定泛型参数\",\"children\":[]}]}],\"git\":{\"updatedTime\":1727255714000,\"contributors\":[{\"name\":\"OnionTin\",\"email\":\"2775376881@qq.com\",\"commits\":1}]},\"filePathRelative\":\"web/Ts/关于函数/泛型函数/指定类型参数.md\",\"excerpt\":\"<h2>指定类型参数</h2>\\n<blockquote>\\n<p>当使用泛型时，有时可能想要显式指定泛型参数的类型，而不是让编译器去推断。这通常在编译器无法从上下文中推断出类型，或者你想要明确你的意图时发生。</p>\\n</blockquote>\\n<h3>指定泛型参数</h3>\\n<blockquote>\\n<p>你可以通过在泛型函数、类或接口的后面添加尖括号 &lt;&gt; 并指定类型参数来实现。我们显式地告诉 identity 函数，我们想要使用 string 类型的泛型参数。</p>\\n</blockquote>\\n<div class=\\\"language-typescript\\\" data-ext=\\\"ts\\\" data-title=\\\"ts\\\"><pre class=\\\"language-typescript\\\"><code><span class=\\\"token keyword\\\">function</span> <span class=\\\"token generic-function\\\"><span class=\\\"token function\\\">identity</span><span class=\\\"token generic class-name\\\"><span class=\\\"token operator\\\">&lt;</span><span class=\\\"token constant\\\">T</span><span class=\\\"token operator\\\">&gt;</span></span></span><span class=\\\"token punctuation\\\">(</span>arg<span class=\\\"token operator\\\">:</span> <span class=\\\"token constant\\\">T</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token operator\\\">:</span> <span class=\\\"token constant\\\">T</span> <span class=\\\"token punctuation\\\">{</span>\\n  <span class=\\\"token keyword\\\">return</span> arg<span class=\\\"token punctuation\\\">;</span>\\n<span class=\\\"token punctuation\\\">}</span>\\n\\n<span class=\\\"token comment\\\">// 显式指定泛型参数为 string</span>\\n<span class=\\\"token keyword\\\">const</span> result <span class=\\\"token operator\\\">=</span> <span class=\\\"token generic-function\\\"><span class=\\\"token function\\\">identity</span><span class=\\\"token generic class-name\\\"><span class=\\\"token operator\\\">&lt;</span><span class=\\\"token builtin\\\">string</span><span class=\\\"token operator\\\">&gt;</span></span></span><span class=\\\"token punctuation\\\">(</span><span class=\\\"token string\\\">\\\"Hello, World!\\\"</span><span class=\\\"token punctuation\\\">)</span><span class=\\\"token punctuation\\\">;</span>\\n</code></pre></div>\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
