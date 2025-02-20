@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/blog/\",\"lang\":\"zh-CN\",\"title\":\"你好，幸运儿！\",\"description\":\"OnionTin's owner blog\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/blog/favicon.ico\"}]],\"locales\":{}}")
